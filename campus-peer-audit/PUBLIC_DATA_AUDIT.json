@@ -1,0 +1,61 @@
+{
+  "binary_scientific_figures_reviewed_separately": [
+    "enhanced_analysis/robustness_overview.png",
+    "enhanced_analysis/robustness_overview.pdf"
+  ],
+  "human_survey_data_included": false,
+  "limitation": "Pattern checks supplement an explicit allowlist; they do not prove absence of every possible identifier.",
+  "original_profile_name_matches": 0,
+  "private_archive_included": false,
+  "profiles_anonymized": true,
+  "runtime_or_connection_credentials_included": false,
+  "sensitive_pattern_counts": {
+    "email": 0,
+    "ipv4": 0,
+    "private_key": 0,
+    "credential_literal": 0,
+    "student_identifier": 0
+  },
+  "status": "allowlist_and_privacy_scan_passed",
+  "paper_source_scanned": true,
+  "submission_identifier_included": false,
+  "scanned_text_bodies": 74,
+  "benign_ip_pattern_exclusions": [
+    {
+      "file": "requirements-gpu.lock",
+      "kind": "package_version"
+    },
+    {
+      "file": "requirements-gpu.lock",
+      "kind": "package_version"
+    },
+    {
+      "file": "requirements-gpu.lock",
+      "kind": "package_version"
+    },
+    {
+      "file": "requirements-gpu.lock",
+      "kind": "package_version"
+    },
+    {
+      "file": "requirements-gpu.lock",
+      "kind": "package_version"
+    },
+    {
+      "file": "requirements-gpu.lock",
+      "kind": "package_version"
+    },
+    {
+      "file": "requirements-gpu.lock",
+      "kind": "package_version"
+    },
+    {
+      "file": "tools/run_experiment.py",
+      "kind": "loopback_default"
+    },
+    {
+      "file": "tools/run_experiment.py",
+      "kind": "loopback_default"
+    }
+  ]
+}

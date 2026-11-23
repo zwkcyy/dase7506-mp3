@@ -1,0 +1,495 @@
+{
+  "schema_version": 1,
+  "verification": "passed",
+  "verified_at_utc": "2026-11-22T15:36:28.281927+00:00",
+  "error_code": null,
+  "verifier_sha256": "745cdeb4a68b0d628521b0dc622343700b972659877ed679e2c905a82fdac6e5",
+  "summary": {
+    "fixture": false,
+    "planned_samples": 840,
+    "final_samples": 840,
+    "generation_records": 840,
+    "batches": 53,
+    "batch_size": 16,
+    "http_requests": 0,
+    "analysis_checked": true
+  },
+  "input_sha256": {
+    "analysis.result": "045d6b637c97d080770cac143c8877665bb23dc7a5d90099c64c9485159b91af",
+    "execution.freeze": "ccb58b6ef6f1aa9374ed658d100e97e93d1731038629286da29554afde8e12cd",
+    "prepared.cells": "4f6052a8815380ea3ef19d9becd5409d659c59404f8b23770bc02c5ced2a9d26",
+    "prepared.preflight": "b78a58ab240c65ad062e34922a5bf6c939dc68cbcf72e8e0ffdb16606d5094fe",
+    "prepared.schedule": "18233cdacd9cdc8b8816ebcd67fc3e6a21224cdeddbfb9009c174392a05b4d41",
+    "protocol.freeze": "185aaa45c5f218cd3a5fb9e31136b662261c56ec9cfe832c2138ee7a62d18008",
+    "run.attempts": "6178e4ae141918ca5ad6357478118b86df6b2442cb4887dcce030db93dec21ce",
+    "run.engine_identity": "f4c967a31e9860c985ec1d33d1c03403c3f2740334fcae37086352c2b285dee5",
+    "run.final": "5301e8a9ea1e6aef2cc750fd07f3e664b81331fc9a7a7546cdd5c63db79c0fae",
+    "run.generation": "8ac2c4d782ceeda7249cbdc27f27dee18f251f5d8516ea647c2099d5806a98a3",
+    "run.manifest": "417f39cc809efac425ec5bb02d241a4e5dee211441b1741abb5cb7addb45856c",
+    "source.run_experiment.py": "b1e603feff84f1c3333c9fe08732e936643ff943b0ce559360210a8d98dff1af",
+    "source.run_experiment_batch.py": "3d0d59f6e96feefaa205011b16118d5979e2f147ade91087e9013c8f357e14e9"
+  },
+  "checks": [
+    {
+      "check": "analysis.action_counts",
+      "passed": true,
+      "checked": 196,
+      "failed": 0
+    },
+    {
+      "check": "analysis.cell_counts",
+      "passed": true,
+      "checked": 28,
+      "failed": 0
+    },
+    {
+      "check": "analysis.cell_coverage",
+      "passed": true,
+      "checked": 1,
+      "failed": 0
+    },
+    {
+      "check": "analysis.cell_labels",
+      "passed": true,
+      "checked": 28,
+      "failed": 0
+    },
+    {
+      "check": "analysis.identity",
+      "passed": true,
+      "checked": 1,
+      "failed": 0
+    },
+    {
+      "check": "analysis.primary_target",
+      "passed": true,
+      "checked": 28,
+      "failed": 0
+    },
+    {
+      "check": "analysis.proportion_counts",
+      "passed": true,
+      "checked": 448,
+      "failed": 0
+    },
+    {
+      "check": "analysis.proportion_estimates",
+      "passed": true,
+      "checked": 448,
+      "failed": 0
+    },
+    {
+      "check": "analysis.reported_counts",
+      "passed": true,
+      "checked": 28,
+      "failed": 0
+    },
+    {
+      "check": "analysis.run_fingerprints",
+      "passed": true,
+      "checked": 1,
+      "failed": 0
+    },
+    {
+      "check": "analysis.served_model_counts",
+      "passed": true,
+      "checked": 1,
+      "failed": 0
+    },
+    {
+      "check": "analysis.total_counts",
+      "passed": true,
+      "checked": 1,
+      "failed": 0
+    },
+    {
+      "check": "analysis.unique_cells",
+      "passed": true,
+      "checked": 28,
+      "failed": 0
+    },
+    {
+      "check": "batch.event_pair",
+      "passed": true,
+      "checked": 53,
+      "failed": 0
+    },
+    {
+      "check": "batch.invocation_schedule",
+      "passed": true,
+      "checked": 53,
+      "failed": 0
+    },
+    {
+      "check": "batch.padded_width",
+      "passed": true,
+      "checked": 53,
+      "failed": 0
+    },
+    {
+      "check": "engine.configuration",
+      "passed": true,
+      "checked": 1,
+      "failed": 0
+    },
+    {
+      "check": "engine.frozen_dtype_attention",
+      "passed": true,
+      "checked": 1,
+      "failed": 0
+    },
+    {
+      "check": "engine.padding",
+      "passed": true,
+      "checked": 1,
+      "failed": 0
+    },
+    {
+      "check": "execution.frozen_before_run",
+      "passed": true,
+      "checked": 1,
+      "failed": 0
+    },
+    {
+      "check": "execution.frozen_engine_batch_seed",
+      "passed": true,
+      "checked": 1,
+      "failed": 0
+    },
+    {
+      "check": "execution.frozen_prepared_hashes",
+      "passed": true,
+      "checked": 3,
+      "failed": 0
+    },
+    {
+      "check": "execution.frozen_sampling",
+      "passed": true,
+      "checked": 1,
+      "failed": 0
+    },
+    {
+      "check": "execution.source_fingerprints",
+      "passed": true,
+      "checked": 2,
+      "failed": 0
+    },
+    {
+      "check": "inputs.stable_during_verification",
+      "passed": true,
+      "checked": 13,
+      "failed": 0
+    },
+    {
+      "check": "prepared.complete_cell_quotas",
+      "passed": true,
+      "checked": 1,
+      "failed": 0
+    },
+    {
+      "check": "prepared.message_hashes",
+      "passed": true,
+      "checked": 28,
+      "failed": 0
+    },
+    {
+      "check": "prepared.preflight_counts",
+      "passed": true,
+      "checked": 1,
+      "failed": 0
+    },
+    {
+      "check": "prepared.preflight_hashes",
+      "passed": true,
+      "checked": 1,
+      "failed": 0
+    },
+    {
+      "check": "prepared.prompt_alias",
+      "passed": true,
+      "checked": 28,
+      "failed": 0
+    },
+    {
+      "check": "prepared.prompt_hashes",
+      "passed": true,
+      "checked": 56,
+      "failed": 0
+    },
+    {
+      "check": "prepared.replicates",
+      "passed": true,
+      "checked": 28,
+      "failed": 0
+    },
+    {
+      "check": "prepared.schedule_hashes",
+      "passed": true,
+      "checked": 840,
+      "failed": 0
+    },
+    {
+      "check": "prepared.schedule_replicates",
+      "passed": true,
+      "checked": 840,
+      "failed": 0
+    },
+    {
+      "check": "prepared.unique_cells",
+      "passed": true,
+      "checked": 28,
+      "failed": 0
+    },
+    {
+      "check": "prepared.unique_plan_ids",
+      "passed": true,
+      "checked": 840,
+      "failed": 0
+    },
+    {
+      "check": "row.actual_input_hashes",
+      "passed": true,
+      "checked": 840,
+      "failed": 0
+    },
+    {
+      "check": "row.batch_and_seed",
+      "passed": true,
+      "checked": 840,
+      "failed": 0
+    },
+    {
+      "check": "row.checkpoint_eos",
+      "passed": true,
+      "checked": 840,
+      "failed": 0
+    },
+    {
+      "check": "row.content_hash",
+      "passed": true,
+      "checked": 840,
+      "failed": 0
+    },
+    {
+      "check": "row.eos_trim_and_length",
+      "passed": true,
+      "checked": 840,
+      "failed": 0
+    },
+    {
+      "check": "row.generation_copy",
+      "passed": true,
+      "checked": 840,
+      "failed": 0
+    },
+    {
+      "check": "row.generation_sampling",
+      "passed": true,
+      "checked": 840,
+      "failed": 0
+    },
+    {
+      "check": "row.identity",
+      "passed": true,
+      "checked": 840,
+      "failed": 0
+    },
+    {
+      "check": "row.independent_parser",
+      "passed": true,
+      "checked": 840,
+      "failed": 0
+    },
+    {
+      "check": "row.invocation_hashes",
+      "passed": true,
+      "checked": 840,
+      "failed": 0
+    },
+    {
+      "check": "row.native_no_http",
+      "passed": true,
+      "checked": 840,
+      "failed": 0
+    },
+    {
+      "check": "row.neutral_generation_defaults",
+      "passed": true,
+      "checked": 840,
+      "failed": 0
+    },
+    {
+      "check": "row.padding_hashes",
+      "passed": true,
+      "checked": 840,
+      "failed": 0
+    },
+    {
+      "check": "row.prepared_hashes",
+      "passed": true,
+      "checked": 840,
+      "failed": 0
+    },
+    {
+      "check": "row.timing_scope",
+      "passed": true,
+      "checked": 840,
+      "failed": 0
+    },
+    {
+      "check": "row.token_arrays",
+      "passed": true,
+      "checked": 840,
+      "failed": 0
+    },
+    {
+      "check": "row.token_counts",
+      "passed": true,
+      "checked": 840,
+      "failed": 0
+    },
+    {
+      "check": "row.token_hashes",
+      "passed": true,
+      "checked": 840,
+      "failed": 0
+    },
+    {
+      "check": "row.validity_and_error",
+      "passed": true,
+      "checked": 840,
+      "failed": 0
+    },
+    {
+      "check": "run.batch_event_count",
+      "passed": true,
+      "checked": 1,
+      "failed": 0
+    },
+    {
+      "check": "run.complete_final_schedule",
+      "passed": true,
+      "checked": 1,
+      "failed": 0
+    },
+    {
+      "check": "run.complete_generation_schedule",
+      "passed": true,
+      "checked": 1,
+      "failed": 0
+    },
+    {
+      "check": "run.fixture_policy",
+      "passed": true,
+      "checked": 1,
+      "failed": 0
+    },
+    {
+      "check": "run.frozen_model_revision",
+      "passed": true,
+      "checked": 1,
+      "failed": 0
+    },
+    {
+      "check": "run.frozen_plan",
+      "passed": true,
+      "checked": 1,
+      "failed": 0
+    },
+    {
+      "check": "run.frozen_prepared_hashes",
+      "passed": true,
+      "checked": 3,
+      "failed": 0
+    },
+    {
+      "check": "run.frozen_sampling",
+      "passed": true,
+      "checked": 1,
+      "failed": 0
+    },
+    {
+      "check": "run.native_engine",
+      "passed": true,
+      "checked": 1,
+      "failed": 0
+    },
+    {
+      "check": "run.neutral_fixed_sampling",
+      "passed": true,
+      "checked": 1,
+      "failed": 0
+    },
+    {
+      "check": "run.no_http_manifest",
+      "passed": true,
+      "checked": 1,
+      "failed": 0
+    },
+    {
+      "check": "run.per_cell_completion",
+      "passed": true,
+      "checked": 1,
+      "failed": 0
+    },
+    {
+      "check": "run.planned_quotas",
+      "passed": true,
+      "checked": 1,
+      "failed": 0
+    },
+    {
+      "check": "run.prepared_fingerprint",
+      "passed": true,
+      "checked": 1,
+      "failed": 0
+    },
+    {
+      "check": "run.row_artifacts_present",
+      "passed": true,
+      "checked": 840,
+      "failed": 0
+    },
+    {
+      "check": "run.seed_base",
+      "passed": true,
+      "checked": 1,
+      "failed": 0
+    },
+    {
+      "check": "run.shared_rng_documented",
+      "passed": true,
+      "checked": 1,
+      "failed": 0
+    },
+    {
+      "check": "run.source_fingerprints",
+      "passed": true,
+      "checked": 2,
+      "failed": 0
+    },
+    {
+      "check": "run.suffix",
+      "passed": true,
+      "checked": 1,
+      "failed": 0
+    },
+    {
+      "check": "run.unique_final_ids",
+      "passed": true,
+      "checked": 840,
+      "failed": 0
+    },
+    {
+      "check": "run.unique_generation_ids",
+      "passed": true,
+      "checked": 840,
+      "failed": 0
+    }
+  ],
+  "limits": [
+    "No tokenizer decode or model generation is repeated.",
+    "Token hashes establish internal artifact consistency, not independent model-output reproduction.",
+    "Completion acceptance requires the full frozen plan; partial runs fail quota checks."
+  ]
+}

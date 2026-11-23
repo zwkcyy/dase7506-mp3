@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.venv/
+models/
+runs_new/
+reproduced*/
+*.log
+.env
+.env.*
+
+*.aux
+*.out
+*.bbl
+*.blg
+*.synctex.gz
+paper/main.pdf

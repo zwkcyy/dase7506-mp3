@@ -1,0 +1,51 @@
+{
+  "status": "frozen_before_first_native_pilot",
+  "frozen_at_utc": "2026-11-22T14:54:06.191867+00:00",
+  "formal_plans": [
+    {
+      "name": "qwen3_main",
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "prepared": "prepared",
+      "calls": 840
+    },
+    {
+      "name": "qwen25_main",
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+      "prepared": "prepared",
+      "calls": 840
+    },
+    {
+      "name": "qwen3_time16",
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "prepared": "prepared_time16",
+      "calls": 360
+    }
+  ],
+  "total_formal_calls": 2040,
+  "sampling": {
+    "temperature": 1.0,
+    "top_p": 1.0,
+    "top_k": 0,
+    "repetition_penalty": 1.0,
+    "max_new_tokens": 1024,
+    "do_sample": true,
+    "use_model_defaults": false
+  },
+  "max_tokens_note": "Raised from offline default512 to1024 before observing any model replies, to allow inherited JSON schema. Same cap for both models.",
+  "pilot_policy": "Separate outputs, format/capacity/throughput validation only, never merged into formal effects. Execution engine batch/concurrency may be fixed after throughput pilot; record before formal data.",
+  "scope_boundary": "No additional GPU research arms after formal data inspection. Finish all three plans, return and verify raw/runtime artifacts, then Stop this Pod; never Terminate.",
+  "source_hashes": {
+    "tools/run_experiment.py": "b1e603feff84f1c3333c9fe08732e936643ff943b0ce559360210a8d98dff1af",
+    "tools/serve_transformers.py": "8714d1ee1994fbfc17b92239d73c1d781ea22b1948e425b979a5b4a0e99e35d2",
+    "tools/analyze_experiment.py": "7cbd463c65f26413e32e181e257e23f7263e680cdef3aa287105b3652c7be555",
+    "prepared/cells.jsonl": "4f6052a8815380ea3ef19d9becd5409d659c59404f8b23770bc02c5ced2a9d26",
+    "prepared/schedule.jsonl": "18233cdacd9cdc8b8816ebcd67fc3e6a21224cdeddbfb9009c174392a05b4d41",
+    "prepared/preflight.json": "b78a58ab240c65ad062e34922a5bf6c939dc68cbcf72e8e0ffdb16606d5094fe",
+    "prepared_time16/cells.jsonl": "9d427a7cea32743e5a91ec597e426892e8e8851c023d9499eb73f65547be185b",
+    "prepared_time16/schedule.jsonl": "1a5f5f7120471de01d7715b2b1ada597be1ff995248ee1cc1dc8c5784db6b631",
+    "prepared_time16/preflight.json": "6f385b31457eaa0a73f5c8c294ca785a34434640076d2325d4b1169eacbea705"
+  }
+}

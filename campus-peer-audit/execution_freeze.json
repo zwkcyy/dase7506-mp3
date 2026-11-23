@@ -1,0 +1,37 @@
+{
+  "status": "formal_execution_frozen_before_formal_samples",
+  "frozen_at_utc": "2026-11-22T15:04:12.435924+00:00",
+  "scientific_plan": "protocol_freeze.json",
+  "formal_calls": 2040,
+  "execution_engine": "transformers_batch",
+  "transport": "in_process",
+  "batch_size": 16,
+  "seed_base": 20261122,
+  "seed_rule": "seed_base + batch_index, first batch_index=1, shared PRNG stream per batch; fixed shuffled schedule",
+  "dtype": "bfloat16",
+  "attention_implementation": "sdpa",
+  "sampling": {
+    "temperature": 1.0,
+    "top_p": 1.0,
+    "top_k": 0,
+    "repetition_penalty": 1.0,
+    "max_new_tokens": 1024,
+    "use_model_defaults": false
+  },
+  "capacity_pilots": "runtime/capacity_state.json; both28 complete/28 valid/0 truncated; selection based solely on capacity and speed; all pilots excluded from formal data",
+  "remote_source_sha256": {
+    "tools/run_experiment_batch.py": "3d0d59f6e96feefaa205011b16118d5979e2f147ade91087e9013c8f357e14e9",
+    "tools/run_experiment.py": "b1e603feff84f1c3333c9fe08732e936643ff943b0ce559360210a8d98dff1af",
+    "tools/analyze_experiment.py": "d62c25c663d0421174fdd78f9ca91bebd9eea875e4e465cc70e953bbccc21f80",
+    "run_gpu_pipeline.py": "a7e37e653cd5e606ff56252e39b6ecd6e85f294ccde90d1e64108259bae504ca",
+    "prepared/cells.jsonl": "4f6052a8815380ea3ef19d9becd5409d659c59404f8b23770bc02c5ced2a9d26",
+    "prepared/schedule.jsonl": "18233cdacd9cdc8b8816ebcd67fc3e6a21224cdeddbfb9009c174392a05b4d41",
+    "prepared/preflight.json": "b78a58ab240c65ad062e34922a5bf6c939dc68cbcf72e8e0ffdb16606d5094fe",
+    "prepared_pilot/cells.jsonl": "5a0ce18b9c3fc257068d52ea9d298fa7d2606faddd40165f9484247388676721",
+    "prepared_pilot/schedule.jsonl": "cc7a22e75710c9acb261b46198454588b5412b91e95870f2558c18412014191a",
+    "prepared_pilot/preflight.json": "79e0baaed1007682ce0cd3f8d4a28084dcb425d04ed4d8bea3cb4c01ef1399d7",
+    "prepared_time16/cells.jsonl": "9d427a7cea32743e5a91ec597e426892e8e8851c023d9499eb73f65547be185b",
+    "prepared_time16/schedule.jsonl": "1a5f5f7120471de01d7715b2b1ada597be1ff995248ee1cc1dc8c5784db6b631",
+    "prepared_time16/preflight.json": "6f385b31457eaa0a73f5c8c294ca785a34434640076d2325d4b1169eacbea705"
+  }
+}

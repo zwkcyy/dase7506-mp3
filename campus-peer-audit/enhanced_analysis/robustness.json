@@ -1,0 +1,3576 @@
+{
+  "analysis_stage": "posthoc_cpu_robustness_enhancement",
+  "control_effects": [
+    {
+      "a_cell_id": "C013",
+      "action": "rest",
+      "arm": "energy_control",
+      "b_cell_id": "C014",
+      "batch_bootstrap": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": false,
+        "percentile95": [
+          0.0,
+          0.11764705882352941
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "batch_bootstrap_valid_only": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": false,
+        "percentile95": [
+          0.0,
+          0.11764705882352941
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "contrast": "q10_minus_q90",
+      "contrast_status": "frozen_scientific_contrast",
+      "cp_alpha_per_endpoint": 0.0015625,
+      "cp_endpoint_a": {
+        "count": 1,
+        "interval": [
+          2.6051505147651463e-05,
+          0.27562879983366073
+        ],
+        "n": 30
+      },
+      "cp_endpoint_b": {
+        "count": 0,
+        "interval": [
+          0.0,
+          0.21218121083926184
+        ],
+        "n": 30
+      },
+      "enhancement_status": "posthoc_robustness_analysis",
+      "estimate": 0.03333333333333333,
+      "family": "controls_family",
+      "invalid_a": 0,
+      "invalid_assignment_identification_range": [
+        0.03333333333333333,
+        0.03333333333333333
+      ],
+      "invalid_assignment_simultaneous_cp_envelope": [
+        -0.2121551593341142,
+        0.27562879983366073
+      ],
+      "invalid_b": 0,
+      "original_newcombe95": [
+        -0.0834459754325434,
+        0.1667039099140917
+      ],
+      "persona_id": "P01",
+      "run": "qwen3_main",
+      "simultaneous_cp95": [
+        -0.2121551593341142,
+        0.27562879983366073
+      ],
+      "valid_only_estimate": 0.03333333333333333,
+      "valid_only_newcombe95": [
+        -0.0834459754325434,
+        0.1667039099140917
+      ]
+    },
+    {
+      "a_cell_id": "C021",
+      "action": "eat",
+      "arm": "hunger_control",
+      "b_cell_id": "C022",
+      "batch_bootstrap": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": true,
+        "percentile95": [
+          0.0,
+          0.0
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "batch_bootstrap_valid_only": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": true,
+        "percentile95": [
+          0.0,
+          0.0
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "contrast": "q10_minus_q90",
+      "contrast_status": "frozen_scientific_contrast",
+      "cp_alpha_per_endpoint": 0.0015625,
+      "cp_endpoint_a": {
+        "count": 0,
+        "interval": [
+          0.0,
+          0.21218121083926184
+        ],
+        "n": 30
+      },
+      "cp_endpoint_b": {
+        "count": 0,
+        "interval": [
+          0.0,
+          0.21218121083926184
+        ],
+        "n": 30
+      },
+      "enhancement_status": "posthoc_robustness_analysis",
+      "estimate": 0.0,
+      "family": "controls_family",
+      "invalid_a": 0,
+      "invalid_assignment_identification_range": [
+        0.0,
+        0.0
+      ],
+      "invalid_assignment_simultaneous_cp_envelope": [
+        -0.21218121083926184,
+        0.21218121083926184
+      ],
+      "invalid_b": 0,
+      "original_newcombe95": [
+        -0.11351339317396873,
+        0.11351339317396873
+      ],
+      "persona_id": "P01",
+      "run": "qwen3_main",
+      "simultaneous_cp95": [
+        -0.21218121083926184,
+        0.21218121083926184
+      ],
+      "valid_only_estimate": 0.0,
+      "valid_only_newcombe95": [
+        -0.11351339317396873,
+        0.11351339317396873
+      ]
+    },
+    {
+      "a_cell_id": "C015",
+      "action": "rest",
+      "arm": "energy_control",
+      "b_cell_id": "C016",
+      "batch_bootstrap": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": false,
+        "percentile95": [
+          0.4054054054054054,
+          0.7307692307692308
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "batch_bootstrap_valid_only": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": false,
+        "percentile95": [
+          0.4054054054054054,
+          0.7307692307692308
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "contrast": "q10_minus_q90",
+      "contrast_status": "frozen_scientific_contrast",
+      "cp_alpha_per_endpoint": 0.0015625,
+      "cp_endpoint_a": {
+        "count": 30,
+        "interval": [
+          0.7878187891607382,
+          1.0
+        ],
+        "n": 30
+      },
+      "cp_endpoint_b": {
+        "count": 13,
+        "interval": [
+          0.1730153472345381,
+          0.7235236336216055
+        ],
+        "n": 30
+      },
+      "enhancement_status": "posthoc_robustness_analysis",
+      "estimate": 0.5666666666666667,
+      "family": "controls_family",
+      "invalid_a": 0,
+      "invalid_assignment_identification_range": [
+        0.5666666666666667,
+        0.5666666666666667
+      ],
+      "invalid_assignment_simultaneous_cp_envelope": [
+        0.06429515553913268,
+        0.8269846527654618
+      ],
+      "invalid_b": 0,
+      "original_newcombe95": [
+        0.3583324564577781,
+        0.7262251442353347
+      ],
+      "persona_id": "P02",
+      "run": "qwen3_main",
+      "simultaneous_cp95": [
+        0.06429515553913268,
+        0.8269846527654618
+      ],
+      "valid_only_estimate": 0.5666666666666667,
+      "valid_only_newcombe95": [
+        0.3583324564577781,
+        0.7262251442353347
+      ]
+    },
+    {
+      "a_cell_id": "C023",
+      "action": "eat",
+      "arm": "hunger_control",
+      "b_cell_id": "C024",
+      "batch_bootstrap": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": true,
+        "percentile95": [
+          0.0,
+          0.0
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "batch_bootstrap_valid_only": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": true,
+        "percentile95": [
+          0.0,
+          0.0
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "contrast": "q10_minus_q90",
+      "contrast_status": "frozen_scientific_contrast",
+      "cp_alpha_per_endpoint": 0.0015625,
+      "cp_endpoint_a": {
+        "count": 0,
+        "interval": [
+          0.0,
+          0.21218121083926184
+        ],
+        "n": 30
+      },
+      "cp_endpoint_b": {
+        "count": 0,
+        "interval": [
+          0.0,
+          0.21218121083926184
+        ],
+        "n": 30
+      },
+      "enhancement_status": "posthoc_robustness_analysis",
+      "estimate": 0.0,
+      "family": "controls_family",
+      "invalid_a": 0,
+      "invalid_assignment_identification_range": [
+        0.0,
+        0.0
+      ],
+      "invalid_assignment_simultaneous_cp_envelope": [
+        -0.21218121083926184,
+        0.21218121083926184
+      ],
+      "invalid_b": 0,
+      "original_newcombe95": [
+        -0.11351339317396873,
+        0.11351339317396873
+      ],
+      "persona_id": "P02",
+      "run": "qwen3_main",
+      "simultaneous_cp95": [
+        -0.21218121083926184,
+        0.21218121083926184
+      ],
+      "valid_only_estimate": 0.0,
+      "valid_only_newcombe95": [
+        -0.11351339317396873,
+        0.11351339317396873
+      ]
+    },
+    {
+      "a_cell_id": "C017",
+      "action": "rest",
+      "arm": "energy_control",
+      "b_cell_id": "C018",
+      "batch_bootstrap": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": true,
+        "percentile95": [
+          0.0,
+          0.0
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "batch_bootstrap_valid_only": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": true,
+        "percentile95": [
+          0.0,
+          0.0
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "contrast": "q10_minus_q90",
+      "contrast_status": "frozen_scientific_contrast",
+      "cp_alpha_per_endpoint": 0.0015625,
+      "cp_endpoint_a": {
+        "count": 0,
+        "interval": [
+          0.0,
+          0.21218121083926184
+        ],
+        "n": 30
+      },
+      "cp_endpoint_b": {
+        "count": 0,
+        "interval": [
+          0.0,
+          0.21218121083926184
+        ],
+        "n": 30
+      },
+      "enhancement_status": "posthoc_robustness_analysis",
+      "estimate": 0.0,
+      "family": "controls_family",
+      "invalid_a": 0,
+      "invalid_assignment_identification_range": [
+        -0.13333333333333333,
+        0.0
+      ],
+      "invalid_assignment_simultaneous_cp_envelope": [
+        -0.4187160030151048,
+        0.21218121083926184
+      ],
+      "invalid_b": 4,
+      "original_newcombe95": [
+        -0.11351339317396873,
+        0.11351339317396873
+      ],
+      "persona_id": "P03",
+      "run": "qwen3_main",
+      "simultaneous_cp95": [
+        -0.21218121083926184,
+        0.21218121083926184
+      ],
+      "valid_only_estimate": 0.0,
+      "valid_only_newcombe95": [
+        -0.12872892185921525,
+        0.11351339317396873
+      ]
+    },
+    {
+      "a_cell_id": "C025",
+      "action": "eat",
+      "arm": "hunger_control",
+      "b_cell_id": "C026",
+      "batch_bootstrap": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": true,
+        "percentile95": [
+          0.0,
+          0.0
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "batch_bootstrap_valid_only": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": true,
+        "percentile95": [
+          0.0,
+          0.0
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "contrast": "q10_minus_q90",
+      "contrast_status": "frozen_scientific_contrast",
+      "cp_alpha_per_endpoint": 0.0015625,
+      "cp_endpoint_a": {
+        "count": 0,
+        "interval": [
+          0.0,
+          0.21218121083926184
+        ],
+        "n": 30
+      },
+      "cp_endpoint_b": {
+        "count": 0,
+        "interval": [
+          0.0,
+          0.21218121083926184
+        ],
+        "n": 30
+      },
+      "enhancement_status": "posthoc_robustness_analysis",
+      "estimate": 0.0,
+      "family": "controls_family",
+      "invalid_a": 1,
+      "invalid_assignment_identification_range": [
+        -0.16666666666666666,
+        0.03333333333333333
+      ],
+      "invalid_assignment_simultaneous_cp_envelope": [
+        -0.4592793263611855,
+        0.27562879983366073
+      ],
+      "invalid_b": 5,
+      "original_newcombe95": [
+        -0.11351339317396873,
+        0.11351339317396873
+      ],
+      "persona_id": "P03",
+      "run": "qwen3_main",
+      "simultaneous_cp95": [
+        -0.21218121083926184,
+        0.21218121083926184
+      ],
+      "valid_only_estimate": 0.0,
+      "valid_only_newcombe95": [
+        -0.13319225093904843,
+        0.11696979849974071
+      ]
+    },
+    {
+      "a_cell_id": "C019",
+      "action": "rest",
+      "arm": "energy_control",
+      "b_cell_id": "C020",
+      "batch_bootstrap": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": true,
+        "percentile95": [
+          0.0,
+          0.0
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "batch_bootstrap_valid_only": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": true,
+        "percentile95": [
+          0.0,
+          0.0
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "contrast": "q10_minus_q90",
+      "contrast_status": "frozen_scientific_contrast",
+      "cp_alpha_per_endpoint": 0.0015625,
+      "cp_endpoint_a": {
+        "count": 0,
+        "interval": [
+          0.0,
+          0.21218121083926184
+        ],
+        "n": 30
+      },
+      "cp_endpoint_b": {
+        "count": 0,
+        "interval": [
+          0.0,
+          0.21218121083926184
+        ],
+        "n": 30
+      },
+      "enhancement_status": "posthoc_robustness_analysis",
+      "estimate": 0.0,
+      "family": "controls_family",
+      "invalid_a": 0,
+      "invalid_assignment_identification_range": [
+        0.0,
+        0.0
+      ],
+      "invalid_assignment_simultaneous_cp_envelope": [
+        -0.21218121083926184,
+        0.21218121083926184
+      ],
+      "invalid_b": 0,
+      "original_newcombe95": [
+        -0.11351339317396873,
+        0.11351339317396873
+      ],
+      "persona_id": "P04",
+      "run": "qwen3_main",
+      "simultaneous_cp95": [
+        -0.21218121083926184,
+        0.21218121083926184
+      ],
+      "valid_only_estimate": 0.0,
+      "valid_only_newcombe95": [
+        -0.11351339317396873,
+        0.11351339317396873
+      ]
+    },
+    {
+      "a_cell_id": "C027",
+      "action": "eat",
+      "arm": "hunger_control",
+      "b_cell_id": "C028",
+      "batch_bootstrap": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": true,
+        "percentile95": [
+          0.0,
+          0.0
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "batch_bootstrap_valid_only": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": true,
+        "percentile95": [
+          0.0,
+          0.0
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "contrast": "q10_minus_q90",
+      "contrast_status": "frozen_scientific_contrast",
+      "cp_alpha_per_endpoint": 0.0015625,
+      "cp_endpoint_a": {
+        "count": 0,
+        "interval": [
+          0.0,
+          0.21218121083926184
+        ],
+        "n": 30
+      },
+      "cp_endpoint_b": {
+        "count": 0,
+        "interval": [
+          0.0,
+          0.21218121083926184
+        ],
+        "n": 30
+      },
+      "enhancement_status": "posthoc_robustness_analysis",
+      "estimate": 0.0,
+      "family": "controls_family",
+      "invalid_a": 0,
+      "invalid_assignment_identification_range": [
+        0.0,
+        0.0
+      ],
+      "invalid_assignment_simultaneous_cp_envelope": [
+        -0.21218121083926184,
+        0.21218121083926184
+      ],
+      "invalid_b": 0,
+      "original_newcombe95": [
+        -0.11351339317396873,
+        0.11351339317396873
+      ],
+      "persona_id": "P04",
+      "run": "qwen3_main",
+      "simultaneous_cp95": [
+        -0.21218121083926184,
+        0.21218121083926184
+      ],
+      "valid_only_estimate": 0.0,
+      "valid_only_newcombe95": [
+        -0.11351339317396873,
+        0.11351339317396873
+      ]
+    },
+    {
+      "a_cell_id": "C013",
+      "action": "rest",
+      "arm": "energy_control",
+      "b_cell_id": "C014",
+      "batch_bootstrap": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": false,
+        "percentile95": [
+          -0.08221452702702707,
+          0.35314175896731076
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "batch_bootstrap_valid_only": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": false,
+        "percentile95": [
+          -0.08221452702702707,
+          0.35314175896731076
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "contrast": "q10_minus_q90",
+      "contrast_status": "frozen_scientific_contrast",
+      "cp_alpha_per_endpoint": 0.0015625,
+      "cp_endpoint_a": {
+        "count": 17,
+        "interval": [
+          0.27647636637839457,
+          0.8269846527654618
+        ],
+        "n": 30
+      },
+      "cp_endpoint_b": {
+        "count": 13,
+        "interval": [
+          0.1730153472345381,
+          0.7235236336216055
+        ],
+        "n": 30
+      },
+      "enhancement_status": "posthoc_robustness_analysis",
+      "estimate": 0.1333333333333333,
+      "family": "controls_family",
+      "invalid_a": 0,
+      "invalid_assignment_identification_range": [
+        0.1333333333333333,
+        0.1333333333333333
+      ],
+      "invalid_assignment_simultaneous_cp_envelope": [
+        -0.447047267243211,
+        0.6539693055309237
+      ],
+      "invalid_b": 0,
+      "original_newcombe95": [
+        -0.11372072032089584,
+        0.3589830963025469
+      ],
+      "persona_id": "P01",
+      "run": "qwen25_main",
+      "simultaneous_cp95": [
+        -0.447047267243211,
+        0.6539693055309237
+      ],
+      "valid_only_estimate": 0.1333333333333333,
+      "valid_only_newcombe95": [
+        -0.11372072032089584,
+        0.3589830963025469
+      ]
+    },
+    {
+      "a_cell_id": "C021",
+      "action": "eat",
+      "arm": "hunger_control",
+      "b_cell_id": "C022",
+      "batch_bootstrap": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": false,
+        "percentile95": [
+          -0.10714285714285714,
+          0.0
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "batch_bootstrap_valid_only": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": false,
+        "percentile95": [
+          -0.11538461538461539,
+          0.0
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "contrast": "q10_minus_q90",
+      "contrast_status": "frozen_scientific_contrast",
+      "cp_alpha_per_endpoint": 0.0015625,
+      "cp_endpoint_a": {
+        "count": 0,
+        "interval": [
+          0.0,
+          0.21218121083926184
+        ],
+        "n": 30
+      },
+      "cp_endpoint_b": {
+        "count": 1,
+        "interval": [
+          2.6051505147651463e-05,
+          0.27562879983366073
+        ],
+        "n": 30
+      },
+      "enhancement_status": "posthoc_robustness_analysis",
+      "estimate": -0.03333333333333333,
+      "family": "controls_family",
+      "invalid_a": 0,
+      "invalid_assignment_identification_range": [
+        -0.1,
+        -0.03333333333333333
+      ],
+      "invalid_assignment_simultaneous_cp_envelope": [
+        -0.3753745464652355,
+        0.2121551593341142
+      ],
+      "invalid_b": 2,
+      "original_newcombe95": [
+        -0.1667039099140917,
+        0.0834459754325434
+      ],
+      "persona_id": "P01",
+      "run": "qwen25_main",
+      "simultaneous_cp95": [
+        -0.27562879983366073,
+        0.2121551593341142
+      ],
+      "valid_only_estimate": -0.03571428571428571,
+      "valid_only_newcombe95": [
+        -0.17712197743353314,
+        0.08154004723434465
+      ]
+    },
+    {
+      "a_cell_id": "C015",
+      "action": "rest",
+      "arm": "energy_control",
+      "b_cell_id": "C016",
+      "batch_bootstrap": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": false,
+        "percentile95": [
+          0.04327922077922079,
+          0.42857142857142855
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "batch_bootstrap_valid_only": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": false,
+        "percentile95": [
+          0.041666666666666664,
+          0.4282142857142856
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "contrast": "q10_minus_q90",
+      "contrast_status": "frozen_scientific_contrast",
+      "cp_alpha_per_endpoint": 0.0015625,
+      "cp_endpoint_a": {
+        "count": 8,
+        "interval": [
+          0.06932959129835595,
+          0.568947777661476
+        ],
+        "n": 30
+      },
+      "cp_endpoint_b": {
+        "count": 1,
+        "interval": [
+          2.6051505147651463e-05,
+          0.27562879983366073
+        ],
+        "n": 30
+      },
+      "enhancement_status": "posthoc_robustness_analysis",
+      "estimate": 0.23333333333333334,
+      "family": "controls_family",
+      "invalid_a": 0,
+      "invalid_assignment_identification_range": [
+        0.2,
+        0.23333333333333334
+      ],
+      "invalid_assignment_simultaneous_cp_envelope": [
+        -0.25897821250588504,
+        0.5689217261563283
+      ],
+      "invalid_b": 1,
+      "original_newcombe95": [
+        0.05065124703462073,
+        0.4132487629526488
+      ],
+      "persona_id": "P02",
+      "run": "qwen25_main",
+      "simultaneous_cp95": [
+        -0.20629920853530478,
+        0.5689217261563283
+      ],
+      "valid_only_estimate": 0.232183908045977,
+      "valid_only_newcombe95": [
+        0.0466340164297851,
+        0.4122457761205616
+      ]
+    },
+    {
+      "a_cell_id": "C023",
+      "action": "eat",
+      "arm": "hunger_control",
+      "b_cell_id": "C024",
+      "batch_bootstrap": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": true,
+        "percentile95": [
+          0.0,
+          0.0
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "batch_bootstrap_valid_only": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": true,
+        "percentile95": [
+          0.0,
+          0.0
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "contrast": "q10_minus_q90",
+      "contrast_status": "frozen_scientific_contrast",
+      "cp_alpha_per_endpoint": 0.0015625,
+      "cp_endpoint_a": {
+        "count": 0,
+        "interval": [
+          0.0,
+          0.21218121083926184
+        ],
+        "n": 30
+      },
+      "cp_endpoint_b": {
+        "count": 0,
+        "interval": [
+          0.0,
+          0.21218121083926184
+        ],
+        "n": 30
+      },
+      "enhancement_status": "posthoc_robustness_analysis",
+      "estimate": 0.0,
+      "family": "controls_family",
+      "invalid_a": 0,
+      "invalid_assignment_identification_range": [
+        0.0,
+        0.0
+      ],
+      "invalid_assignment_simultaneous_cp_envelope": [
+        -0.21218121083926184,
+        0.21218121083926184
+      ],
+      "invalid_b": 0,
+      "original_newcombe95": [
+        -0.11351339317396873,
+        0.11351339317396873
+      ],
+      "persona_id": "P02",
+      "run": "qwen25_main",
+      "simultaneous_cp95": [
+        -0.21218121083926184,
+        0.21218121083926184
+      ],
+      "valid_only_estimate": 0.0,
+      "valid_only_newcombe95": [
+        -0.11351339317396873,
+        0.11351339317396873
+      ]
+    },
+    {
+      "a_cell_id": "C017",
+      "action": "rest",
+      "arm": "energy_control",
+      "b_cell_id": "C018",
+      "batch_bootstrap": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": true,
+        "percentile95": [
+          0.0,
+          0.0
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "batch_bootstrap_valid_only": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": true,
+        "percentile95": [
+          0.0,
+          0.0
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "contrast": "q10_minus_q90",
+      "contrast_status": "frozen_scientific_contrast",
+      "cp_alpha_per_endpoint": 0.0015625,
+      "cp_endpoint_a": {
+        "count": 0,
+        "interval": [
+          0.0,
+          0.21218121083926184
+        ],
+        "n": 30
+      },
+      "cp_endpoint_b": {
+        "count": 0,
+        "interval": [
+          0.0,
+          0.21218121083926184
+        ],
+        "n": 30
+      },
+      "enhancement_status": "posthoc_robustness_analysis",
+      "estimate": 0.0,
+      "family": "controls_family",
+      "invalid_a": 0,
+      "invalid_assignment_identification_range": [
+        0.0,
+        0.0
+      ],
+      "invalid_assignment_simultaneous_cp_envelope": [
+        -0.21218121083926184,
+        0.21218121083926184
+      ],
+      "invalid_b": 0,
+      "original_newcombe95": [
+        -0.11351339317396873,
+        0.11351339317396873
+      ],
+      "persona_id": "P03",
+      "run": "qwen25_main",
+      "simultaneous_cp95": [
+        -0.21218121083926184,
+        0.21218121083926184
+      ],
+      "valid_only_estimate": 0.0,
+      "valid_only_newcombe95": [
+        -0.11351339317396873,
+        0.11351339317396873
+      ]
+    },
+    {
+      "a_cell_id": "C025",
+      "action": "eat",
+      "arm": "hunger_control",
+      "b_cell_id": "C026",
+      "batch_bootstrap": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": false,
+        "percentile95": [
+          0.0,
+          0.17391304347826086
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "batch_bootstrap_valid_only": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": false,
+        "percentile95": [
+          0.0,
+          0.17391304347826086
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "contrast": "q10_minus_q90",
+      "contrast_status": "frozen_scientific_contrast",
+      "cp_alpha_per_endpoint": 0.0015625,
+      "cp_endpoint_a": {
+        "count": 2,
+        "interval": [
+          0.0013572059916383107,
+          0.32830780380424096
+        ],
+        "n": 30
+      },
+      "cp_endpoint_b": {
+        "count": 0,
+        "interval": [
+          0.0,
+          0.21218121083926184
+        ],
+        "n": 30
+      },
+      "enhancement_status": "posthoc_robustness_analysis",
+      "estimate": 0.06666666666666667,
+      "family": "controls_family",
+      "invalid_a": 0,
+      "invalid_assignment_identification_range": [
+        0.06666666666666667,
+        0.06666666666666667
+      ],
+      "invalid_assignment_simultaneous_cp_envelope": [
+        -0.21082400484762354,
+        0.32830780380424096
+      ],
+      "invalid_b": 0,
+      "original_newcombe95": [
+        -0.05665215635044715,
+        0.21323458362616915
+      ],
+      "persona_id": "P03",
+      "run": "qwen25_main",
+      "simultaneous_cp95": [
+        -0.21082400484762354,
+        0.32830780380424096
+      ],
+      "valid_only_estimate": 0.06666666666666667,
+      "valid_only_newcombe95": [
+        -0.05665215635044715,
+        0.21323458362616915
+      ]
+    },
+    {
+      "a_cell_id": "C019",
+      "action": "rest",
+      "arm": "energy_control",
+      "b_cell_id": "C020",
+      "batch_bootstrap": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": false,
+        "percentile95": [
+          0.0,
+          0.10526315789473684
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "batch_bootstrap_valid_only": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": false,
+        "percentile95": [
+          0.0,
+          0.10526315789473684
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "contrast": "q10_minus_q90",
+      "contrast_status": "frozen_scientific_contrast",
+      "cp_alpha_per_endpoint": 0.0015625,
+      "cp_endpoint_a": {
+        "count": 1,
+        "interval": [
+          2.6051505147651463e-05,
+          0.27562879983366073
+        ],
+        "n": 30
+      },
+      "cp_endpoint_b": {
+        "count": 0,
+        "interval": [
+          0.0,
+          0.21218121083926184
+        ],
+        "n": 30
+      },
+      "enhancement_status": "posthoc_robustness_analysis",
+      "estimate": 0.03333333333333333,
+      "family": "controls_family",
+      "invalid_a": 0,
+      "invalid_assignment_identification_range": [
+        0.03333333333333333,
+        0.03333333333333333
+      ],
+      "invalid_assignment_simultaneous_cp_envelope": [
+        -0.2121551593341142,
+        0.27562879983366073
+      ],
+      "invalid_b": 0,
+      "original_newcombe95": [
+        -0.0834459754325434,
+        0.1667039099140917
+      ],
+      "persona_id": "P04",
+      "run": "qwen25_main",
+      "simultaneous_cp95": [
+        -0.2121551593341142,
+        0.27562879983366073
+      ],
+      "valid_only_estimate": 0.03333333333333333,
+      "valid_only_newcombe95": [
+        -0.0834459754325434,
+        0.1667039099140917
+      ]
+    },
+    {
+      "a_cell_id": "C027",
+      "action": "eat",
+      "arm": "hunger_control",
+      "b_cell_id": "C028",
+      "batch_bootstrap": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": false,
+        "percentile95": [
+          0.0,
+          0.17142857142857143
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "batch_bootstrap_valid_only": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": false,
+        "percentile95": [
+          0.0,
+          0.17142857142857143
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "contrast": "q10_minus_q90",
+      "contrast_status": "frozen_scientific_contrast",
+      "cp_alpha_per_endpoint": 0.0015625,
+      "cp_endpoint_a": {
+        "count": 2,
+        "interval": [
+          0.0013572059916383107,
+          0.32830780380424096
+        ],
+        "n": 30
+      },
+      "cp_endpoint_b": {
+        "count": 0,
+        "interval": [
+          0.0,
+          0.21218121083926184
+        ],
+        "n": 30
+      },
+      "enhancement_status": "posthoc_robustness_analysis",
+      "estimate": 0.06666666666666667,
+      "family": "controls_family",
+      "invalid_a": 0,
+      "invalid_assignment_identification_range": [
+        0.06666666666666667,
+        0.06666666666666667
+      ],
+      "invalid_assignment_simultaneous_cp_envelope": [
+        -0.21082400484762354,
+        0.32830780380424096
+      ],
+      "invalid_b": 0,
+      "original_newcombe95": [
+        -0.05665215635044715,
+        0.21323458362616915
+      ],
+      "persona_id": "P04",
+      "run": "qwen25_main",
+      "simultaneous_cp95": [
+        -0.21082400484762354,
+        0.32830780380424096
+      ],
+      "valid_only_estimate": 0.06666666666666667,
+      "valid_only_newcombe95": [
+        -0.05665215635044715,
+        0.21323458362616915
+      ]
+    }
+  ],
+  "exploratory_difference_of_peer_responses": [
+    {
+      "a_run": "qwen3_time16",
+      "b_run": "qwen3_main",
+      "batch_bootstrap": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": true,
+        "percentile95": [
+          0.0,
+          0.0
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "comparison": "time",
+      "estimand": "(high-low peer response in a_run) minus (high-low peer response in b_run)",
+      "estimate": 0.0,
+      "interval_status": "pointwise exploratory sensitivity, not multiplicity-adjusted confirmatory inference",
+      "persona_id": "P01",
+      "status": "posthoc_exploratory_fixed_conditions"
+    },
+    {
+      "a_run": "qwen3_time16",
+      "b_run": "qwen3_main",
+      "batch_bootstrap": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": false,
+        "percentile95": [
+          -0.43903092334494775,
+          -0.1111111111111111
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "comparison": "time",
+      "estimand": "(high-low peer response in a_run) minus (high-low peer response in b_run)",
+      "estimate": -0.26666666666666666,
+      "interval_status": "pointwise exploratory sensitivity, not multiplicity-adjusted confirmatory inference",
+      "persona_id": "P02",
+      "status": "posthoc_exploratory_fixed_conditions"
+    },
+    {
+      "a_run": "qwen3_time16",
+      "b_run": "qwen3_main",
+      "batch_bootstrap": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": true,
+        "percentile95": [
+          0.0,
+          0.0
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "comparison": "time",
+      "estimand": "(high-low peer response in a_run) minus (high-low peer response in b_run)",
+      "estimate": 0.0,
+      "interval_status": "pointwise exploratory sensitivity, not multiplicity-adjusted confirmatory inference",
+      "persona_id": "P03",
+      "status": "posthoc_exploratory_fixed_conditions"
+    },
+    {
+      "a_run": "qwen3_time16",
+      "b_run": "qwen3_main",
+      "batch_bootstrap": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": true,
+        "percentile95": [
+          0.0,
+          0.0
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "comparison": "time",
+      "estimand": "(high-low peer response in a_run) minus (high-low peer response in b_run)",
+      "estimate": 0.0,
+      "interval_status": "pointwise exploratory sensitivity, not multiplicity-adjusted confirmatory inference",
+      "persona_id": "P04",
+      "status": "posthoc_exploratory_fixed_conditions"
+    },
+    {
+      "a_run": "qwen25_main",
+      "b_run": "qwen3_main",
+      "batch_bootstrap": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": false,
+        "percentile95": [
+          -0.19310919540229887,
+          0.3131870315693845
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "comparison": "checkpoint",
+      "estimand": "(high-low peer response in a_run) minus (high-low peer response in b_run)",
+      "estimate": 0.06666666666666671,
+      "interval_status": "pointwise exploratory sensitivity, not multiplicity-adjusted confirmatory inference",
+      "persona_id": "P01",
+      "status": "posthoc_exploratory_fixed_conditions"
+    },
+    {
+      "a_run": "qwen25_main",
+      "b_run": "qwen3_main",
+      "batch_bootstrap": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": false,
+        "percentile95": [
+          -0.3930061327561328,
+          0.04951638026365233
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "comparison": "checkpoint",
+      "estimand": "(high-low peer response in a_run) minus (high-low peer response in b_run)",
+      "estimate": -0.16666666666666669,
+      "interval_status": "pointwise exploratory sensitivity, not multiplicity-adjusted confirmatory inference",
+      "persona_id": "P02",
+      "status": "posthoc_exploratory_fixed_conditions"
+    },
+    {
+      "a_run": "qwen25_main",
+      "b_run": "qwen3_main",
+      "batch_bootstrap": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": false,
+        "percentile95": [
+          -0.21957994579945794,
+          0.0
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "comparison": "checkpoint",
+      "estimand": "(high-low peer response in a_run) minus (high-low peer response in b_run)",
+      "estimate": -0.1,
+      "interval_status": "pointwise exploratory sensitivity, not multiplicity-adjusted confirmatory inference",
+      "persona_id": "P03",
+      "status": "posthoc_exploratory_fixed_conditions"
+    },
+    {
+      "a_run": "qwen25_main",
+      "b_run": "qwen3_main",
+      "batch_bootstrap": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": false,
+        "percentile95": [
+          -0.04702286557256131,
+          0.16666666666666666
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "comparison": "checkpoint",
+      "estimand": "(high-low peer response in a_run) minus (high-low peer response in b_run)",
+      "estimate": 0.06666666666666667,
+      "interval_status": "pointwise exploratory sensitivity, not multiplicity-adjusted confirmatory inference",
+      "persona_id": "P04",
+      "status": "posthoc_exploratory_fixed_conditions"
+    }
+  ],
+  "exploratory_per_dose_time_checkpoint_comparisons": [
+    {
+      "a_run": "qwen3_time16",
+      "b_run": "qwen3_main",
+      "comparison": "time",
+      "estimate": 0.0,
+      "level": "q10",
+      "persona_id": "P01",
+      "pointwise_newcombe95": [
+        -0.11351339317396873,
+        0.11351339317396873
+      ],
+      "status": "posthoc_exploratory_fixed_conditions",
+      "valid_only": {
+        "a": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "b": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "estimate": 0.0,
+        "newcombe_wilson95": [
+          -0.11351339317396873,
+          0.11351339317396873
+        ]
+      }
+    },
+    {
+      "a_run": "qwen3_time16",
+      "b_run": "qwen3_main",
+      "comparison": "time",
+      "estimate": 0.0,
+      "level": "q50",
+      "persona_id": "P01",
+      "pointwise_newcombe95": [
+        -0.11351339317396873,
+        0.11351339317396873
+      ],
+      "status": "posthoc_exploratory_fixed_conditions",
+      "valid_only": {
+        "a": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "b": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "estimate": 0.0,
+        "newcombe_wilson95": [
+          -0.11351339317396873,
+          0.11351339317396873
+        ]
+      }
+    },
+    {
+      "a_run": "qwen3_time16",
+      "b_run": "qwen3_main",
+      "comparison": "time",
+      "estimate": 0.0,
+      "level": "q90",
+      "persona_id": "P01",
+      "pointwise_newcombe95": [
+        -0.11351339317396873,
+        0.11351339317396873
+      ],
+      "status": "posthoc_exploratory_fixed_conditions",
+      "valid_only": {
+        "a": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "b": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "estimate": 0.0,
+        "newcombe_wilson95": [
+          -0.11351339317396873,
+          0.11351339317396873
+        ]
+      }
+    },
+    {
+      "a_run": "qwen3_time16",
+      "b_run": "qwen3_main",
+      "comparison": "time",
+      "estimate": -0.03333333333333333,
+      "level": "q10",
+      "persona_id": "P02",
+      "pointwise_newcombe95": [
+        -0.1667039099140917,
+        0.0834459754325434
+      ],
+      "status": "posthoc_exploratory_fixed_conditions",
+      "valid_only": {
+        "a": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "b": {
+          "count": 1,
+          "denominator": 30,
+          "estimate": 0.03333333333333333,
+          "wilson95": [
+            0.005908590381612455,
+            0.1667039099140917
+          ]
+        },
+        "estimate": -0.03333333333333333,
+        "newcombe_wilson95": [
+          -0.1667039099140917,
+          0.0834459754325434
+        ]
+      }
+    },
+    {
+      "a_run": "qwen3_time16",
+      "b_run": "qwen3_main",
+      "comparison": "time",
+      "estimate": -0.2,
+      "level": "q50",
+      "persona_id": "P02",
+      "pointwise_newcombe95": [
+        -0.3730569641314826,
+        -0.045405148967097686
+      ],
+      "status": "posthoc_exploratory_fixed_conditions",
+      "valid_only": {
+        "a": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "b": {
+          "count": 6,
+          "denominator": 30,
+          "estimate": 0.2,
+          "wilson95": [
+            0.09505107177289876,
+            0.3730569641314826
+          ]
+        },
+        "estimate": -0.2,
+        "newcombe_wilson95": [
+          -0.3730569641314826,
+          -0.045405148967097686
+        ]
+      }
+    },
+    {
+      "a_run": "qwen3_time16",
+      "b_run": "qwen3_main",
+      "comparison": "time",
+      "estimate": -0.3,
+      "level": "q90",
+      "persona_id": "P02",
+      "pointwise_newcombe95": [
+        -0.4787578745871496,
+        -0.12487665973720499
+      ],
+      "status": "posthoc_exploratory_fixed_conditions",
+      "valid_only": {
+        "a": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "b": {
+          "count": 9,
+          "denominator": 30,
+          "estimate": 0.3,
+          "wilson95": [
+            0.16664748268243804,
+            0.4787578745871496
+          ]
+        },
+        "estimate": -0.3,
+        "newcombe_wilson95": [
+          -0.4787578745871496,
+          -0.12487665973720499
+        ]
+      }
+    },
+    {
+      "a_run": "qwen3_time16",
+      "b_run": "qwen3_main",
+      "comparison": "time",
+      "estimate": 0.0,
+      "level": "q10",
+      "persona_id": "P03",
+      "pointwise_newcombe95": [
+        -0.11351339317396873,
+        0.11351339317396873
+      ],
+      "status": "posthoc_exploratory_fixed_conditions",
+      "valid_only": {
+        "a": {
+          "count": 0,
+          "denominator": 22,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.14865487460862087
+          ]
+        },
+        "b": {
+          "count": 0,
+          "denominator": 27,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.12455502974186704
+          ]
+        },
+        "estimate": 0.0,
+        "newcombe_wilson95": [
+          -0.12455502974186704,
+          0.14865487460862087
+        ]
+      }
+    },
+    {
+      "a_run": "qwen3_time16",
+      "b_run": "qwen3_main",
+      "comparison": "time",
+      "estimate": 0.0,
+      "level": "q50",
+      "persona_id": "P03",
+      "pointwise_newcombe95": [
+        -0.11351339317396873,
+        0.11351339317396873
+      ],
+      "status": "posthoc_exploratory_fixed_conditions",
+      "valid_only": {
+        "a": {
+          "count": 0,
+          "denominator": 24,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.13797620467498012
+          ]
+        },
+        "b": {
+          "count": 0,
+          "denominator": 28,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.12064330476584559
+          ]
+        },
+        "estimate": 0.0,
+        "newcombe_wilson95": [
+          -0.12064330476584559,
+          0.13797620467498012
+        ]
+      }
+    },
+    {
+      "a_run": "qwen3_time16",
+      "b_run": "qwen3_main",
+      "comparison": "time",
+      "estimate": 0.0,
+      "level": "q90",
+      "persona_id": "P03",
+      "pointwise_newcombe95": [
+        -0.11351339317396873,
+        0.11351339317396873
+      ],
+      "status": "posthoc_exploratory_fixed_conditions",
+      "valid_only": {
+        "a": {
+          "count": 0,
+          "denominator": 26,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.12872892185921525
+          ]
+        },
+        "b": {
+          "count": 0,
+          "denominator": 26,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.12872892185921525
+          ]
+        },
+        "estimate": 0.0,
+        "newcombe_wilson95": [
+          -0.12872892185921525,
+          0.12872892185921525
+        ]
+      }
+    },
+    {
+      "a_run": "qwen3_time16",
+      "b_run": "qwen3_main",
+      "comparison": "time",
+      "estimate": 0.0,
+      "level": "q10",
+      "persona_id": "P04",
+      "pointwise_newcombe95": [
+        -0.11351339317396873,
+        0.11351339317396873
+      ],
+      "status": "posthoc_exploratory_fixed_conditions",
+      "valid_only": {
+        "a": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "b": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "estimate": 0.0,
+        "newcombe_wilson95": [
+          -0.11351339317396873,
+          0.11351339317396873
+        ]
+      }
+    },
+    {
+      "a_run": "qwen3_time16",
+      "b_run": "qwen3_main",
+      "comparison": "time",
+      "estimate": 0.0,
+      "level": "q50",
+      "persona_id": "P04",
+      "pointwise_newcombe95": [
+        -0.11351339317396873,
+        0.11351339317396873
+      ],
+      "status": "posthoc_exploratory_fixed_conditions",
+      "valid_only": {
+        "a": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "b": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "estimate": 0.0,
+        "newcombe_wilson95": [
+          -0.11351339317396873,
+          0.11351339317396873
+        ]
+      }
+    },
+    {
+      "a_run": "qwen3_time16",
+      "b_run": "qwen3_main",
+      "comparison": "time",
+      "estimate": 0.0,
+      "level": "q90",
+      "persona_id": "P04",
+      "pointwise_newcombe95": [
+        -0.11351339317396873,
+        0.11351339317396873
+      ],
+      "status": "posthoc_exploratory_fixed_conditions",
+      "valid_only": {
+        "a": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "b": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "estimate": 0.0,
+        "newcombe_wilson95": [
+          -0.11351339317396873,
+          0.11351339317396873
+        ]
+      }
+    },
+    {
+      "a_run": "qwen25_main",
+      "b_run": "qwen3_main",
+      "comparison": "checkpoint",
+      "estimate": 0.3333333333333333,
+      "level": "q10",
+      "persona_id": "P01",
+      "pointwise_newcombe95": [
+        0.1522966336347215,
+        0.5121994835545616
+      ],
+      "status": "posthoc_exploratory_fixed_conditions",
+      "valid_only": {
+        "a": {
+          "count": 10,
+          "denominator": 30,
+          "estimate": 0.3333333333333333,
+          "wilson95": [
+            0.19230498083676142,
+            0.5121994835545616
+          ]
+        },
+        "b": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "estimate": 0.3333333333333333,
+        "newcombe_wilson95": [
+          0.1522966336347215,
+          0.5121994835545616
+        ]
+      }
+    },
+    {
+      "a_run": "qwen25_main",
+      "b_run": "qwen3_main",
+      "comparison": "checkpoint",
+      "estimate": 0.26666666666666666,
+      "level": "q50",
+      "persona_id": "P01",
+      "pointwise_newcombe95": [
+        0.09793515097729,
+        0.44447961695188887
+      ],
+      "status": "posthoc_exploratory_fixed_conditions",
+      "valid_only": {
+        "a": {
+          "count": 8,
+          "denominator": 30,
+          "estimate": 0.26666666666666666,
+          "wilson95": [
+            0.14182663319596325,
+            0.44447961695188887
+          ]
+        },
+        "b": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "estimate": 0.26666666666666666,
+        "newcombe_wilson95": [
+          0.09793515097729,
+          0.44447961695188887
+        ]
+      }
+    },
+    {
+      "a_run": "qwen25_main",
+      "b_run": "qwen3_main",
+      "comparison": "checkpoint",
+      "estimate": 0.4,
+      "level": "q90",
+      "persona_id": "P01",
+      "pointwise_newcombe95": [
+        0.20860991506000698,
+        0.5767963974667752
+      ],
+      "status": "posthoc_exploratory_fixed_conditions",
+      "valid_only": {
+        "a": {
+          "count": 12,
+          "denominator": 30,
+          "estimate": 0.4,
+          "wilson95": [
+            0.24590628116801863,
+            0.5767963974667752
+          ]
+        },
+        "b": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "estimate": 0.4,
+        "newcombe_wilson95": [
+          0.20860991506000698,
+          0.5767963974667752
+        ]
+      }
+    },
+    {
+      "a_run": "qwen25_main",
+      "b_run": "qwen3_main",
+      "comparison": "checkpoint",
+      "estimate": 0.8,
+      "level": "q10",
+      "persona_id": "P02",
+      "pointwise_newcombe95": [
+        0.5847306742420171,
+        0.897248333978755
+      ],
+      "status": "posthoc_exploratory_fixed_conditions",
+      "valid_only": {
+        "a": {
+          "count": 25,
+          "denominator": 30,
+          "estimate": 0.8333333333333334,
+          "wilson95": [
+            0.6643564949358398,
+            0.9266345762815145
+          ]
+        },
+        "b": {
+          "count": 1,
+          "denominator": 30,
+          "estimate": 0.03333333333333333,
+          "wilson95": [
+            0.005908590381612455,
+            0.1667039099140917
+          ]
+        },
+        "estimate": 0.8,
+        "newcombe_wilson95": [
+          0.5847306742420171,
+          0.897248333978755
+        ]
+      }
+    },
+    {
+      "a_run": "qwen25_main",
+      "b_run": "qwen3_main",
+      "comparison": "checkpoint",
+      "estimate": 0.6000000000000001,
+      "level": "q50",
+      "persona_id": "P02",
+      "pointwise_newcombe95": [
+        0.35526049426214323,
+        0.7484201976552872
+      ],
+      "status": "posthoc_exploratory_fixed_conditions",
+      "valid_only": {
+        "a": {
+          "count": 24,
+          "denominator": 30,
+          "estimate": 0.8,
+          "wilson95": [
+            0.6269430358685175,
+            0.9049489282271013
+          ]
+        },
+        "b": {
+          "count": 6,
+          "denominator": 30,
+          "estimate": 0.2,
+          "wilson95": [
+            0.09505107177289876,
+            0.3730569641314826
+          ]
+        },
+        "estimate": 0.6000000000000001,
+        "newcombe_wilson95": [
+          0.35526049426214323,
+          0.7484201976552872
+        ]
+      }
+    },
+    {
+      "a_run": "qwen25_main",
+      "b_run": "qwen3_main",
+      "comparison": "checkpoint",
+      "estimate": 0.6333333333333333,
+      "level": "q90",
+      "persona_id": "P02",
+      "pointwise_newcombe95": [
+        0.40216990195033386,
+        0.7751259126715655
+      ],
+      "status": "posthoc_exploratory_fixed_conditions",
+      "valid_only": {
+        "a": {
+          "count": 28,
+          "denominator": 30,
+          "estimate": 0.9333333333333333,
+          "wilson95": [
+            0.7867654163738309,
+            0.9815229762087296
+          ]
+        },
+        "b": {
+          "count": 9,
+          "denominator": 30,
+          "estimate": 0.3,
+          "wilson95": [
+            0.16664748268243804,
+            0.4787578745871496
+          ]
+        },
+        "estimate": 0.6333333333333333,
+        "newcombe_wilson95": [
+          0.40216990195033386,
+          0.7751259126715655
+        ]
+      }
+    },
+    {
+      "a_run": "qwen25_main",
+      "b_run": "qwen3_main",
+      "comparison": "checkpoint",
+      "estimate": 0.1,
+      "level": "q10",
+      "persona_id": "P03",
+      "pointwise_newcombe95": [
+        -0.031005591413989175,
+        0.25621082579184085
+      ],
+      "status": "posthoc_exploratory_fixed_conditions",
+      "valid_only": {
+        "a": {
+          "count": 3,
+          "denominator": 30,
+          "estimate": 0.1,
+          "wilson95": [
+            0.03459988874733419,
+            0.25621082579184085
+          ]
+        },
+        "b": {
+          "count": 0,
+          "denominator": 27,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.12455502974186704
+          ]
+        },
+        "estimate": 0.1,
+        "newcombe_wilson95": [
+          -0.040680951041206864,
+          0.25621082579184085
+        ]
+      }
+    },
+    {
+      "a_run": "qwen25_main",
+      "b_run": "qwen3_main",
+      "comparison": "checkpoint",
+      "estimate": 0.03333333333333333,
+      "level": "q50",
+      "persona_id": "P03",
+      "pointwise_newcombe95": [
+        -0.0834459754325434,
+        0.1667039099140917
+      ],
+      "status": "posthoc_exploratory_fixed_conditions",
+      "valid_only": {
+        "a": {
+          "count": 1,
+          "denominator": 30,
+          "estimate": 0.03333333333333333,
+          "wilson95": [
+            0.005908590381612455,
+            0.1667039099140917
+          ]
+        },
+        "b": {
+          "count": 0,
+          "denominator": 28,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.12064330476584559
+          ]
+        },
+        "estimate": 0.03333333333333333,
+        "newcombe_wilson95": [
+          -0.0903878189034312,
+          0.1667039099140917
+        ]
+      }
+    },
+    {
+      "a_run": "qwen25_main",
+      "b_run": "qwen3_main",
+      "comparison": "checkpoint",
+      "estimate": 0.0,
+      "level": "q90",
+      "persona_id": "P03",
+      "pointwise_newcombe95": [
+        -0.11351339317396873,
+        0.11351339317396873
+      ],
+      "status": "posthoc_exploratory_fixed_conditions",
+      "valid_only": {
+        "a": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "b": {
+          "count": 0,
+          "denominator": 26,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.12872892185921525
+          ]
+        },
+        "estimate": 0.0,
+        "newcombe_wilson95": [
+          -0.12872892185921525,
+          0.11351339317396873
+        ]
+      }
+    },
+    {
+      "a_run": "qwen25_main",
+      "b_run": "qwen3_main",
+      "comparison": "checkpoint",
+      "estimate": 0.06666666666666667,
+      "level": "q10",
+      "persona_id": "P04",
+      "pointwise_newcombe95": [
+        -0.05665215635044715,
+        0.21323458362616915
+      ],
+      "status": "posthoc_exploratory_fixed_conditions",
+      "valid_only": {
+        "a": {
+          "count": 2,
+          "denominator": 29,
+          "estimate": 0.06896551724137931,
+          "wilson95": [
+            0.019121266169433368,
+            0.21964580150275687
+          ]
+        },
+        "b": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "estimate": 0.06896551724137931,
+        "newcombe_wilson95": [
+          -0.05500923742581572,
+          0.21964580150275687
+        ]
+      }
+    },
+    {
+      "a_run": "qwen25_main",
+      "b_run": "qwen3_main",
+      "comparison": "checkpoint",
+      "estimate": 0.06666666666666667,
+      "level": "q50",
+      "persona_id": "P04",
+      "pointwise_newcombe95": [
+        -0.05665215635044715,
+        0.21323458362616915
+      ],
+      "status": "posthoc_exploratory_fixed_conditions",
+      "valid_only": {
+        "a": {
+          "count": 2,
+          "denominator": 30,
+          "estimate": 0.06666666666666667,
+          "wilson95": [
+            0.01847702379127039,
+            0.21323458362616918
+          ]
+        },
+        "b": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "estimate": 0.06666666666666667,
+        "newcombe_wilson95": [
+          -0.05665215635044715,
+          0.21323458362616915
+        ]
+      }
+    },
+    {
+      "a_run": "qwen25_main",
+      "b_run": "qwen3_main",
+      "comparison": "checkpoint",
+      "estimate": 0.13333333333333333,
+      "level": "q90",
+      "persona_id": "P04",
+      "pointwise_newcombe95": [
+        -0.005674691804672283,
+        0.2968132668203629
+      ],
+      "status": "posthoc_exploratory_fixed_conditions",
+      "valid_only": {
+        "a": {
+          "count": 4,
+          "denominator": 30,
+          "estimate": 0.13333333333333333,
+          "wilson95": [
+            0.053096554840547455,
+            0.2968132668203629
+          ]
+        },
+        "b": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "estimate": 0.13333333333333333,
+        "newcombe_wilson95": [
+          -0.005674691804672283,
+          0.2968132668203629
+        ]
+      }
+    }
+  ],
+  "fixed_profile_averages": [
+    {
+      "batch_bootstrap": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": false,
+        "percentile95": [
+          0.027777777777777776,
+          0.10975773083623691
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "fixed_four_profiles_mean": 0.06666666666666667,
+      "interpretation": "Equal-weight description of these same four fixed text profiles, not a sample of a student population.",
+      "run": "qwen3_main",
+      "simultaneous_cp_family_implied_mean_bounds": [
+        -0.19761658994198258,
+        0.3021619773477213
+      ]
+    },
+    {
+      "batch_bootstrap": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": true,
+        "percentile95": [
+          0.0,
+          0.0
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "fixed_four_profiles_mean": 0.0,
+      "interpretation": "Equal-weight description of these same four fixed text profiles, not a sample of a student population.",
+      "run": "qwen3_time16",
+      "simultaneous_cp_family_implied_mean_bounds": [
+        -0.20459016079356557,
+        0.20459016079356557
+      ]
+    },
+    {
+      "batch_bootstrap": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": false,
+        "percentile95": [
+          -0.049049596474561606,
+          0.1080252006171195
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "fixed_four_profiles_mean": 0.03333333333333334,
+      "interpretation": "Equal-weight description of these same four fixed text profiles, not a sample of a student population.",
+      "run": "qwen25_main",
+      "simultaneous_cp_family_implied_mean_bounds": [
+        -0.35975064002410784,
+        0.4084800380100065
+      ]
+    }
+  ],
+  "formal_calls": 2040,
+  "generated_at_utc": "2026-11-23T14:35:24.265440+00:00",
+  "limitations": [
+    "All enhancements were specified after inspecting the original results; original freezes remain unchanged.",
+    "CP/Bonferroni intervals are conservative and depend on binomial marginal sampling assumptions; two separately defined families are not a joint 95% family.",
+    "Computational-batch resampling is a sensitivity analysis, not proof of within-batch dependence or a more correct randomized-cluster sampling model.",
+    "Percentile bootstrap is degenerate at observed boundaries and cannot replace nonzero binomial uncertainty limits.",
+    "Time and checkpoint differences are posthoc exploratory contrasts for fixed conditions; different checkpoints confound size, training and family.",
+    "Invalid sensitivity permits hypothetical binary assignments; invalid outputs need not possess a well-defined hidden action.",
+    "Four bundled text profiles do not isolate individual personality traits or represent real students."
+  ],
+  "method_plan": {
+    "action_composition": "All 7 valid actions plus invalid; counts and completed/valid denominators by run/profile/arm/level. Overview heatmap uses peer arm only and pools 3 equally sampled peer levels (90 completed per profile/run), explicitly descriptive.",
+    "batch_bootstrap": {
+      "interpretation": "Sensitivity to the computational grouping. Shared PRNG does not itself establish within-batch correlation or make batches a superior statistical sampling unit. Not a population or randomized-cluster inference.",
+      "interval": "pointwise percentile 2.5% and 97.5%",
+      "master_seed": 20261123,
+      "resamples": 10000,
+      "run_seeds": {
+        "qwen25_main": 2026112303,
+        "qwen3_main": 2026112301,
+        "qwen3_time16": 2026112302
+      },
+      "sampling": "resample the observed number of batches with replacement, include all rows of selected batches; independent resampling streams across runs",
+      "undefined": "retain and report count of undefined replicates, never substitute zero",
+      "unit": "observed computational batch_index within each run"
+    },
+    "created_at_utc": "2026-11-23T14:31:08.459014+00:00",
+    "disclosure": "Original formal outcomes have already been inspected. This is not a retrospective preregistration; original scientific/execution freezes and all original analyses remain unchanged.",
+    "exploratory_only": {
+      "model": "Qwen2.5-7B 11:00 minus Qwen3-4B 11:00; per-dose changes and difference of high-low peer responses, 4 fixed profiles only",
+      "scope": "Only these two fixed checkpoints and these fixed contexts; no checkpoint-size, reasoning-capability, or student-population causal claim. No new model calls.",
+      "time": "Qwen3 16:00 minus Qwen3 11:00; per-dose changes and difference of high-low peer responses, 4 fixed profiles only"
+    },
+    "formal_calls": 2040,
+    "formal_runs": [
+      "qwen3_main",
+      "qwen3_time16",
+      "qwen25_main"
+    ],
+    "implementation": "stdlib finite-binomial-tail inversion for CP (n=30 endpoints); numpy/matplotlib only for visualization; no scipy/statsmodels runtime requirement.",
+    "invalid_sensitivity": {
+      "additional": "CP/Bonferroni sensitivity envelope uses lower CP bound at valid-target count and upper CP bound at valid-target+invalid count. This is a hypothetical binary-outcome assignment sensitivity, not proof that invalid outputs possess a true latent action.",
+      "retained": [
+        "valid-only estimate and original Newcombe interval",
+        "completed-data worst-case target assignment identification range"
+      ]
+    },
+    "method_source": "https://www.statsmodels.org/stable/generated/statsmodels.stats.proportion.proportion_confint.html",
+    "multiplicity": {
+      "controls_family": {
+        "contrasts": 16,
+        "family_alpha": 0.05,
+        "two_sided_CP_alpha_per_endpoint": 0.0015625,
+        "unique_endpoint_proportions": 32
+      },
+      "coverage": "At least 95% simultaneous coverage within each separately defined family under binomial marginal sampling assumptions. Two families are not jointly a single 95% family; exact endpoint construction is conservative.",
+      "method": "Clopper-Pearson exact binomial endpoint intervals; Bonferroni allocation across all endpoints of each complete family; difference interval [L_A-U_B,U_A-L_B].",
+      "no_p_values": true,
+      "peer_family": {
+        "contrasts": 12,
+        "family_alpha": 0.05,
+        "two_sided_CP_alpha_per_endpoint": 0.0020833333333333333,
+        "unique_endpoint_proportions": 24
+      }
+    },
+    "outcome": {
+      "control_energy": "valid AND action == rest per completed call",
+      "control_satiety": "valid AND action == eat per completed call",
+      "go_class": "separate action, never merged with study",
+      "primary": "valid AND action == study per completed call"
+    },
+    "outputs": "NEW enhanced_analysis/ JSON and CSV statistical artifacts, compact peer forest + action heatmap PDF/PNG, dependency notes; no edits to original frozen/raw/analysis and no paper file written by this tool.",
+    "pilots_included": false,
+    "prespecified_contrasts_retained": {
+      "peer": "q90 minus q10, 4 fixed profiles x 3 runs = 12 contrasts",
+      "state_controls": "q10 minus q90, 4 profiles x 2 arms x 2 model runs = 16 contrasts"
+    },
+    "schema_version": 1,
+    "status": "posthoc_cpu_enhancement_plan_fixed_before_enhancement_execution"
+  },
+  "original_analyzer_sha256": "d62c25c663d0421174fdd78f9ca91bebd9eea875e4e465cc70e953bbccc21f80",
+  "peer_arm_action_composition": [
+    {
+      "chat": 0.1111111111111111,
+      "completed": 90,
+      "eat": 0.0,
+      "exercise": 0.0,
+      "go_class": 0.0,
+      "invalid": 0.0,
+      "persona_id": "P01",
+      "pooling": "peer arm only, equal 30 calls at each of three signal levels",
+      "rest": 0.022222222222222223,
+      "run": "qwen3_main",
+      "study": 0.0,
+      "wander": 0.8666666666666667
+    },
+    {
+      "chat": 0.0,
+      "completed": 90,
+      "eat": 0.0,
+      "exercise": 0.0,
+      "go_class": 0.0,
+      "invalid": 0.0,
+      "persona_id": "P02",
+      "pooling": "peer arm only, equal 30 calls at each of three signal levels",
+      "rest": 0.8,
+      "run": "qwen3_main",
+      "study": 0.17777777777777778,
+      "wander": 0.022222222222222223
+    },
+    {
+      "chat": 0.5888888888888889,
+      "completed": 90,
+      "eat": 0.0,
+      "exercise": 0.3,
+      "go_class": 0.0,
+      "invalid": 0.1,
+      "persona_id": "P03",
+      "pooling": "peer arm only, equal 30 calls at each of three signal levels",
+      "rest": 0.0,
+      "run": "qwen3_main",
+      "study": 0.0,
+      "wander": 0.011111111111111112
+    },
+    {
+      "chat": 1.0,
+      "completed": 90,
+      "eat": 0.0,
+      "exercise": 0.0,
+      "go_class": 0.0,
+      "invalid": 0.0,
+      "persona_id": "P04",
+      "pooling": "peer arm only, equal 30 calls at each of three signal levels",
+      "rest": 0.0,
+      "run": "qwen3_main",
+      "study": 0.0,
+      "wander": 0.0
+    },
+    {
+      "chat": 0.14444444444444443,
+      "completed": 90,
+      "eat": 0.0,
+      "exercise": 0.0,
+      "go_class": 0.0,
+      "invalid": 0.0,
+      "persona_id": "P01",
+      "pooling": "peer arm only, equal 30 calls at each of three signal levels",
+      "rest": 0.0,
+      "run": "qwen3_time16",
+      "study": 0.0,
+      "wander": 0.8555555555555555
+    },
+    {
+      "chat": 0.0,
+      "completed": 90,
+      "eat": 0.0,
+      "exercise": 0.0,
+      "go_class": 0.0,
+      "invalid": 0.0,
+      "persona_id": "P02",
+      "pooling": "peer arm only, equal 30 calls at each of three signal levels",
+      "rest": 1.0,
+      "run": "qwen3_time16",
+      "study": 0.0,
+      "wander": 0.0
+    },
+    {
+      "chat": 0.0,
+      "completed": 90,
+      "eat": 0.0,
+      "exercise": 0.8,
+      "go_class": 0.0,
+      "invalid": 0.2,
+      "persona_id": "P03",
+      "pooling": "peer arm only, equal 30 calls at each of three signal levels",
+      "rest": 0.0,
+      "run": "qwen3_time16",
+      "study": 0.0,
+      "wander": 0.0
+    },
+    {
+      "chat": 1.0,
+      "completed": 90,
+      "eat": 0.0,
+      "exercise": 0.0,
+      "go_class": 0.0,
+      "invalid": 0.0,
+      "persona_id": "P04",
+      "pooling": "peer arm only, equal 30 calls at each of three signal levels",
+      "rest": 0.0,
+      "run": "qwen3_time16",
+      "study": 0.0,
+      "wander": 0.0
+    },
+    {
+      "chat": 0.17777777777777778,
+      "completed": 90,
+      "eat": 0.0,
+      "exercise": 0.06666666666666667,
+      "go_class": 0.0,
+      "invalid": 0.0,
+      "persona_id": "P01",
+      "pooling": "peer arm only, equal 30 calls at each of three signal levels",
+      "rest": 0.3888888888888889,
+      "run": "qwen25_main",
+      "study": 0.3333333333333333,
+      "wander": 0.03333333333333333
+    },
+    {
+      "chat": 0.03333333333333333,
+      "completed": 90,
+      "eat": 0.044444444444444446,
+      "exercise": 0.0,
+      "go_class": 0.011111111111111112,
+      "invalid": 0.0,
+      "persona_id": "P02",
+      "pooling": "peer arm only, equal 30 calls at each of three signal levels",
+      "rest": 0.05555555555555555,
+      "run": "qwen25_main",
+      "study": 0.8555555555555555,
+      "wander": 0.0
+    },
+    {
+      "chat": 0.08888888888888889,
+      "completed": 90,
+      "eat": 0.011111111111111112,
+      "exercise": 0.8222222222222222,
+      "go_class": 0.0,
+      "invalid": 0.0,
+      "persona_id": "P03",
+      "pooling": "peer arm only, equal 30 calls at each of three signal levels",
+      "rest": 0.011111111111111112,
+      "run": "qwen25_main",
+      "study": 0.044444444444444446,
+      "wander": 0.022222222222222223
+    },
+    {
+      "chat": 0.16666666666666666,
+      "completed": 90,
+      "eat": 0.0,
+      "exercise": 0.6777777777777778,
+      "go_class": 0.0,
+      "invalid": 0.011111111111111112,
+      "persona_id": "P04",
+      "pooling": "peer arm only, equal 30 calls at each of three signal levels",
+      "rest": 0.03333333333333333,
+      "run": "qwen25_main",
+      "study": 0.08888888888888889,
+      "wander": 0.022222222222222223
+    }
+  ],
+  "peer_effects": [
+    {
+      "a_cell_id": "C003",
+      "action": "study",
+      "arm": "peer_signal",
+      "b_cell_id": "C001",
+      "batch_bootstrap": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": true,
+        "percentile95": [
+          0.0,
+          0.0
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "batch_bootstrap_valid_only": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": true,
+        "percentile95": [
+          0.0,
+          0.0
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "contrast": "q90_minus_q10",
+      "contrast_status": "frozen_scientific_contrast",
+      "cp_alpha_per_endpoint": 0.0020833333333333333,
+      "cp_endpoint_a": {
+        "count": 0,
+        "interval": [
+          0.0,
+          0.20459016079356557
+        ],
+        "n": 30
+      },
+      "cp_endpoint_b": {
+        "count": 0,
+        "interval": [
+          0.0,
+          0.20459016079356557
+        ],
+        "n": 30
+      },
+      "enhancement_status": "posthoc_robustness_analysis",
+      "estimate": 0.0,
+      "family": "peer_family",
+      "invalid_a": 0,
+      "invalid_assignment_identification_range": [
+        0.0,
+        0.0
+      ],
+      "invalid_assignment_simultaneous_cp_envelope": [
+        -0.20459016079356557,
+        0.20459016079356557
+      ],
+      "invalid_b": 0,
+      "original_newcombe95": [
+        -0.11351339317396873,
+        0.11351339317396873
+      ],
+      "persona_id": "P01",
+      "run": "qwen3_main",
+      "simultaneous_cp95": [
+        -0.20459016079356557,
+        0.20459016079356557
+      ],
+      "valid_only_estimate": 0.0,
+      "valid_only_newcombe95": [
+        -0.11351339317396873,
+        0.11351339317396873
+      ]
+    },
+    {
+      "a_cell_id": "C006",
+      "action": "study",
+      "arm": "peer_signal",
+      "b_cell_id": "C004",
+      "batch_bootstrap": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": false,
+        "percentile95": [
+          0.1111111111111111,
+          0.43903092334494764
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "batch_bootstrap_valid_only": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": false,
+        "percentile95": [
+          0.1111111111111111,
+          0.43903092334494764
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "contrast": "q90_minus_q10",
+      "contrast_status": "frozen_scientific_contrast",
+      "cp_alpha_per_endpoint": 0.0020833333333333333,
+      "cp_endpoint_a": {
+        "count": 9,
+        "interval": [
+          0.09106254720315951,
+          0.5949121667260322
+        ],
+        "n": 30
+      },
+      "cp_endpoint_b": {
+        "count": 1,
+        "interval": [
+          3.473971584355275e-05,
+          0.2677584245903931
+        ],
+        "n": 30
+      },
+      "enhancement_status": "posthoc_robustness_analysis",
+      "estimate": 0.26666666666666666,
+      "family": "peer_family",
+      "invalid_a": 0,
+      "invalid_assignment_identification_range": [
+        0.26666666666666666,
+        0.26666666666666666
+      ],
+      "invalid_assignment_simultaneous_cp_envelope": [
+        -0.1766958773872336,
+        0.5948774270101886
+      ],
+      "invalid_b": 0,
+      "original_newcombe95": [
+        0.07806495783979894,
+        0.44751603562570685
+      ],
+      "persona_id": "P02",
+      "run": "qwen3_main",
+      "simultaneous_cp95": [
+        -0.1766958773872336,
+        0.5948774270101886
+      ],
+      "valid_only_estimate": 0.26666666666666666,
+      "valid_only_newcombe95": [
+        0.07806495783979894,
+        0.44751603562570685
+      ]
+    },
+    {
+      "a_cell_id": "C009",
+      "action": "study",
+      "arm": "peer_signal",
+      "b_cell_id": "C007",
+      "batch_bootstrap": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": true,
+        "percentile95": [
+          0.0,
+          0.0
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "batch_bootstrap_valid_only": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": true,
+        "percentile95": [
+          0.0,
+          0.0
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "contrast": "q90_minus_q10",
+      "contrast_status": "frozen_scientific_contrast",
+      "cp_alpha_per_endpoint": 0.0020833333333333333,
+      "cp_endpoint_a": {
+        "count": 0,
+        "interval": [
+          0.0,
+          0.20459016079356557
+        ],
+        "n": 30
+      },
+      "cp_endpoint_b": {
+        "count": 0,
+        "interval": [
+          0.0,
+          0.20459016079356557
+        ],
+        "n": 30
+      },
+      "enhancement_status": "posthoc_robustness_analysis",
+      "estimate": 0.0,
+      "family": "peer_family",
+      "invalid_a": 4,
+      "invalid_assignment_identification_range": [
+        -0.1,
+        0.13333333333333333
+      ],
+      "invalid_assignment_simultaneous_cp_envelope": [
+        -0.3673115349379318,
+        0.4106599283749054
+      ],
+      "invalid_b": 3,
+      "original_newcombe95": [
+        -0.11351339317396873,
+        0.11351339317396873
+      ],
+      "persona_id": "P03",
+      "run": "qwen3_main",
+      "simultaneous_cp95": [
+        -0.20459016079356557,
+        0.20459016079356557
+      ],
+      "valid_only_estimate": 0.0,
+      "valid_only_newcombe95": [
+        -0.12455502974186704,
+        0.12872892185921525
+      ]
+    },
+    {
+      "a_cell_id": "C012",
+      "action": "study",
+      "arm": "peer_signal",
+      "b_cell_id": "C010",
+      "batch_bootstrap": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": true,
+        "percentile95": [
+          0.0,
+          0.0
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "batch_bootstrap_valid_only": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": true,
+        "percentile95": [
+          0.0,
+          0.0
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "contrast": "q90_minus_q10",
+      "contrast_status": "frozen_scientific_contrast",
+      "cp_alpha_per_endpoint": 0.0020833333333333333,
+      "cp_endpoint_a": {
+        "count": 0,
+        "interval": [
+          0.0,
+          0.20459016079356557
+        ],
+        "n": 30
+      },
+      "cp_endpoint_b": {
+        "count": 0,
+        "interval": [
+          0.0,
+          0.20459016079356557
+        ],
+        "n": 30
+      },
+      "enhancement_status": "posthoc_robustness_analysis",
+      "estimate": 0.0,
+      "family": "peer_family",
+      "invalid_a": 0,
+      "invalid_assignment_identification_range": [
+        0.0,
+        0.0
+      ],
+      "invalid_assignment_simultaneous_cp_envelope": [
+        -0.20459016079356557,
+        0.20459016079356557
+      ],
+      "invalid_b": 0,
+      "original_newcombe95": [
+        -0.11351339317396873,
+        0.11351339317396873
+      ],
+      "persona_id": "P04",
+      "run": "qwen3_main",
+      "simultaneous_cp95": [
+        -0.20459016079356557,
+        0.20459016079356557
+      ],
+      "valid_only_estimate": 0.0,
+      "valid_only_newcombe95": [
+        -0.11351339317396873,
+        0.11351339317396873
+      ]
+    },
+    {
+      "a_cell_id": "C003",
+      "action": "study",
+      "arm": "peer_signal",
+      "b_cell_id": "C001",
+      "batch_bootstrap": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": true,
+        "percentile95": [
+          0.0,
+          0.0
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "batch_bootstrap_valid_only": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": true,
+        "percentile95": [
+          0.0,
+          0.0
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "contrast": "q90_minus_q10",
+      "contrast_status": "frozen_scientific_contrast",
+      "cp_alpha_per_endpoint": 0.0020833333333333333,
+      "cp_endpoint_a": {
+        "count": 0,
+        "interval": [
+          0.0,
+          0.20459016079356557
+        ],
+        "n": 30
+      },
+      "cp_endpoint_b": {
+        "count": 0,
+        "interval": [
+          0.0,
+          0.20459016079356557
+        ],
+        "n": 30
+      },
+      "enhancement_status": "posthoc_robustness_analysis",
+      "estimate": 0.0,
+      "family": "peer_family",
+      "invalid_a": 0,
+      "invalid_assignment_identification_range": [
+        0.0,
+        0.0
+      ],
+      "invalid_assignment_simultaneous_cp_envelope": [
+        -0.20459016079356557,
+        0.20459016079356557
+      ],
+      "invalid_b": 0,
+      "original_newcombe95": [
+        -0.11351339317396873,
+        0.11351339317396873
+      ],
+      "persona_id": "P01",
+      "run": "qwen3_time16",
+      "simultaneous_cp95": [
+        -0.20459016079356557,
+        0.20459016079356557
+      ],
+      "valid_only_estimate": 0.0,
+      "valid_only_newcombe95": [
+        -0.11351339317396873,
+        0.11351339317396873
+      ]
+    },
+    {
+      "a_cell_id": "C006",
+      "action": "study",
+      "arm": "peer_signal",
+      "b_cell_id": "C004",
+      "batch_bootstrap": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": true,
+        "percentile95": [
+          0.0,
+          0.0
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "batch_bootstrap_valid_only": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": true,
+        "percentile95": [
+          0.0,
+          0.0
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "contrast": "q90_minus_q10",
+      "contrast_status": "frozen_scientific_contrast",
+      "cp_alpha_per_endpoint": 0.0020833333333333333,
+      "cp_endpoint_a": {
+        "count": 0,
+        "interval": [
+          0.0,
+          0.20459016079356557
+        ],
+        "n": 30
+      },
+      "cp_endpoint_b": {
+        "count": 0,
+        "interval": [
+          0.0,
+          0.20459016079356557
+        ],
+        "n": 30
+      },
+      "enhancement_status": "posthoc_robustness_analysis",
+      "estimate": 0.0,
+      "family": "peer_family",
+      "invalid_a": 0,
+      "invalid_assignment_identification_range": [
+        0.0,
+        0.0
+      ],
+      "invalid_assignment_simultaneous_cp_envelope": [
+        -0.20459016079356557,
+        0.20459016079356557
+      ],
+      "invalid_b": 0,
+      "original_newcombe95": [
+        -0.11351339317396873,
+        0.11351339317396873
+      ],
+      "persona_id": "P02",
+      "run": "qwen3_time16",
+      "simultaneous_cp95": [
+        -0.20459016079356557,
+        0.20459016079356557
+      ],
+      "valid_only_estimate": 0.0,
+      "valid_only_newcombe95": [
+        -0.11351339317396873,
+        0.11351339317396873
+      ]
+    },
+    {
+      "a_cell_id": "C009",
+      "action": "study",
+      "arm": "peer_signal",
+      "b_cell_id": "C007",
+      "batch_bootstrap": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": true,
+        "percentile95": [
+          0.0,
+          0.0
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "batch_bootstrap_valid_only": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": true,
+        "percentile95": [
+          0.0,
+          0.0
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "contrast": "q90_minus_q10",
+      "contrast_status": "frozen_scientific_contrast",
+      "cp_alpha_per_endpoint": 0.0020833333333333333,
+      "cp_endpoint_a": {
+        "count": 0,
+        "interval": [
+          0.0,
+          0.20459016079356557
+        ],
+        "n": 30
+      },
+      "cp_endpoint_b": {
+        "count": 0,
+        "interval": [
+          0.0,
+          0.20459016079356557
+        ],
+        "n": 30
+      },
+      "enhancement_status": "posthoc_robustness_analysis",
+      "estimate": 0.0,
+      "family": "peer_family",
+      "invalid_a": 4,
+      "invalid_assignment_identification_range": [
+        -0.26666666666666666,
+        0.13333333333333333
+      ],
+      "invalid_assignment_simultaneous_cp_envelope": [
+        -0.5613244100641475,
+        0.4106599283749054
+      ],
+      "invalid_b": 8,
+      "original_newcombe95": [
+        -0.11351339317396873,
+        0.11351339317396873
+      ],
+      "persona_id": "P03",
+      "run": "qwen3_time16",
+      "simultaneous_cp95": [
+        -0.20459016079356557,
+        0.20459016079356557
+      ],
+      "valid_only_estimate": 0.0,
+      "valid_only_newcombe95": [
+        -0.14865487460862087,
+        0.12872892185921525
+      ]
+    },
+    {
+      "a_cell_id": "C012",
+      "action": "study",
+      "arm": "peer_signal",
+      "b_cell_id": "C010",
+      "batch_bootstrap": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": true,
+        "percentile95": [
+          0.0,
+          0.0
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "batch_bootstrap_valid_only": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": true,
+        "percentile95": [
+          0.0,
+          0.0
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "contrast": "q90_minus_q10",
+      "contrast_status": "frozen_scientific_contrast",
+      "cp_alpha_per_endpoint": 0.0020833333333333333,
+      "cp_endpoint_a": {
+        "count": 0,
+        "interval": [
+          0.0,
+          0.20459016079356557
+        ],
+        "n": 30
+      },
+      "cp_endpoint_b": {
+        "count": 0,
+        "interval": [
+          0.0,
+          0.20459016079356557
+        ],
+        "n": 30
+      },
+      "enhancement_status": "posthoc_robustness_analysis",
+      "estimate": 0.0,
+      "family": "peer_family",
+      "invalid_a": 0,
+      "invalid_assignment_identification_range": [
+        0.0,
+        0.0
+      ],
+      "invalid_assignment_simultaneous_cp_envelope": [
+        -0.20459016079356557,
+        0.20459016079356557
+      ],
+      "invalid_b": 0,
+      "original_newcombe95": [
+        -0.11351339317396873,
+        0.11351339317396873
+      ],
+      "persona_id": "P04",
+      "run": "qwen3_time16",
+      "simultaneous_cp95": [
+        -0.20459016079356557,
+        0.20459016079356557
+      ],
+      "valid_only_estimate": 0.0,
+      "valid_only_newcombe95": [
+        -0.11351339317396873,
+        0.11351339317396873
+      ]
+    },
+    {
+      "a_cell_id": "C003",
+      "action": "study",
+      "arm": "peer_signal",
+      "b_cell_id": "C001",
+      "batch_bootstrap": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": false,
+        "percentile95": [
+          -0.19310919540229887,
+          0.3131870315693845
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "batch_bootstrap_valid_only": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": false,
+        "percentile95": [
+          -0.19310919540229887,
+          0.3131870315693845
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "contrast": "q90_minus_q10",
+      "contrast_status": "frozen_scientific_contrast",
+      "cp_alpha_per_endpoint": 0.0020833333333333333,
+      "cp_endpoint_a": {
+        "count": 12,
+        "interval": [
+          0.15466598536893306,
+          0.6882154411141568
+        ],
+        "n": 30
+      },
+      "cp_endpoint_b": {
+        "count": 10,
+        "interval": [
+          0.11103730071457979,
+          0.6272007152581114
+        ],
+        "n": 30
+      },
+      "enhancement_status": "posthoc_robustness_analysis",
+      "estimate": 0.06666666666666671,
+      "family": "peer_family",
+      "invalid_a": 0,
+      "invalid_assignment_identification_range": [
+        0.06666666666666671,
+        0.06666666666666671
+      ],
+      "invalid_assignment_simultaneous_cp_envelope": [
+        -0.47253472988917833,
+        0.577178140399577
+      ],
+      "invalid_b": 0,
+      "original_newcombe95": [
+        -0.16942224429365926,
+        0.29282139769197
+      ],
+      "persona_id": "P01",
+      "run": "qwen25_main",
+      "simultaneous_cp95": [
+        -0.47253472988917833,
+        0.577178140399577
+      ],
+      "valid_only_estimate": 0.06666666666666671,
+      "valid_only_newcombe95": [
+        -0.16942224429365926,
+        0.29282139769197
+      ]
+    },
+    {
+      "a_cell_id": "C006",
+      "action": "study",
+      "arm": "peer_signal",
+      "b_cell_id": "C004",
+      "batch_bootstrap": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": false,
+        "percentile95": [
+          -0.057843363971664404,
+          0.24767340186694947
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "batch_bootstrap_valid_only": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": false,
+        "percentile95": [
+          -0.057843363971664404,
+          0.24767340186694947
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "contrast": "q90_minus_q10",
+      "contrast_status": "frozen_scientific_contrast",
+      "cp_alpha_per_endpoint": 0.0020833333333333333,
+      "cp_endpoint_a": {
+        "count": 28,
+        "interval": [
+          0.6797013302453989,
+          0.998429721107144
+        ],
+        "n": 30
+      },
+      "cp_endpoint_b": {
+        "count": 25,
+        "interval": [
+          0.5487222752702141,
+          0.9736620419842892
+        ],
+        "n": 30
+      },
+      "enhancement_status": "posthoc_robustness_analysis",
+      "estimate": 0.09999999999999998,
+      "family": "peer_family",
+      "invalid_a": 0,
+      "invalid_assignment_identification_range": [
+        0.09999999999999998,
+        0.09999999999999998
+      ],
+      "invalid_assignment_simultaneous_cp_envelope": [
+        -0.29396071173889027,
+        0.4497074458369299
+      ],
+      "invalid_b": 0,
+      "original_newcombe95": [
+        -0.07374485954273044,
+        0.27571401081095065
+      ],
+      "persona_id": "P02",
+      "run": "qwen25_main",
+      "simultaneous_cp95": [
+        -0.29396071173889027,
+        0.4497074458369299
+      ],
+      "valid_only_estimate": 0.09999999999999998,
+      "valid_only_newcombe95": [
+        -0.07374485954273044,
+        0.27571401081095065
+      ]
+    },
+    {
+      "a_cell_id": "C009",
+      "action": "study",
+      "arm": "peer_signal",
+      "b_cell_id": "C007",
+      "batch_bootstrap": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": false,
+        "percentile95": [
+          -0.21957994579945794,
+          0.0
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "batch_bootstrap_valid_only": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": false,
+        "percentile95": [
+          -0.21957994579945794,
+          0.0
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "contrast": "q90_minus_q10",
+      "contrast_status": "frozen_scientific_contrast",
+      "cp_alpha_per_endpoint": 0.0020833333333333333,
+      "cp_endpoint_a": {
+        "count": 0,
+        "interval": [
+          0.0,
+          0.20459016079356557
+        ],
+        "n": 30
+      },
+      "cp_endpoint_b": {
+        "count": 3,
+        "interval": [
+          0.006645244472096088,
+          0.3673115349379318
+        ],
+        "n": 30
+      },
+      "enhancement_status": "posthoc_robustness_analysis",
+      "estimate": -0.1,
+      "family": "peer_family",
+      "invalid_a": 0,
+      "invalid_assignment_identification_range": [
+        -0.1,
+        -0.1
+      ],
+      "invalid_assignment_simultaneous_cp_envelope": [
+        -0.3673115349379318,
+        0.1979449163214695
+      ],
+      "invalid_b": 0,
+      "original_newcombe95": [
+        -0.25621082579184085,
+        0.031005591413989175
+      ],
+      "persona_id": "P03",
+      "run": "qwen25_main",
+      "simultaneous_cp95": [
+        -0.3673115349379318,
+        0.1979449163214695
+      ],
+      "valid_only_estimate": -0.1,
+      "valid_only_newcombe95": [
+        -0.25621082579184085,
+        0.031005591413989175
+      ]
+    },
+    {
+      "a_cell_id": "C012",
+      "action": "study",
+      "arm": "peer_signal",
+      "b_cell_id": "C010",
+      "batch_bootstrap": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": false,
+        "percentile95": [
+          -0.04702286557256131,
+          0.16666666666666666
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "batch_bootstrap_valid_only": {
+        "defined_replicates": 10000,
+        "empirical_support_degenerate": false,
+        "percentile95": [
+          -0.05027489260177603,
+          0.16588235294117645
+        ],
+        "replicates": 10000,
+        "undefined_replicates": 0,
+        "warning": "Percentile resampling cannot generate unobserved successes. Zero-width boundary intervals do not establish a zero population probability or zero effect."
+      },
+      "contrast": "q90_minus_q10",
+      "contrast_status": "frozen_scientific_contrast",
+      "cp_alpha_per_endpoint": 0.0020833333333333333,
+      "cp_endpoint_a": {
+        "count": 4,
+        "interval": [
+          0.015103086224170195,
+          0.4106599283749054
+        ],
+        "n": 30
+      },
+      "cp_endpoint_b": {
+        "count": 2,
+        "interval": [
+          0.0015702788928559077,
+          0.3202986697546012
+        ],
+        "n": 30
+      },
+      "enhancement_status": "posthoc_robustness_analysis",
+      "estimate": 0.06666666666666667,
+      "family": "peer_family",
+      "invalid_a": 0,
+      "invalid_assignment_identification_range": [
+        0.033333333333333326,
+        0.06666666666666667
+      ],
+      "invalid_assignment_simultaneous_cp_envelope": [
+        -0.3522084487137616,
+        0.4090896494820495
+      ],
+      "invalid_b": 1,
+      "original_newcombe95": [
+        -0.10042640591489792,
+        0.2371012005304991
+      ],
+      "persona_id": "P04",
+      "run": "qwen25_main",
+      "simultaneous_cp95": [
+        -0.305195583530431,
+        0.4090896494820495
+      ],
+      "valid_only_estimate": 0.06436781609195402,
+      "valid_only_newcombe95": [
+        -0.10634389612484127,
+        0.23527755255493848
+      ]
+    }
+  ],
+  "pilots_included": false,
+  "plan_sha256": "ad4dcc983bbf8aabddd3121c94c73f0b2ed2e8021aec0e61afd1af3a991023fb",
+  "runs": {
+    "qwen25_main": {
+      "batch_sizes": {
+        "8": 1,
+        "16": 52
+      },
+      "computational_batches": 53,
+      "model": "Qwen/Qwen2.5-7B-Instruct",
+      "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+      "totals": {
+        "completed": 840,
+        "invalid": 4,
+        "not_completed": 0,
+        "planned": 840,
+        "valid": 836
+      }
+    },
+    "qwen3_main": {
+      "batch_sizes": {
+        "8": 1,
+        "16": 52
+      },
+      "computational_batches": 53,
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "totals": {
+        "completed": 840,
+        "invalid": 19,
+        "not_completed": 0,
+        "planned": 840,
+        "valid": 821
+      }
+    },
+    "qwen3_time16": {
+      "batch_sizes": {
+        "8": 1,
+        "16": 22
+      },
+      "computational_batches": 23,
+      "model": "Qwen/Qwen3-4B-Instruct-2507",
+      "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+      "totals": {
+        "completed": 360,
+        "invalid": 18,
+        "not_completed": 0,
+        "planned": 360,
+        "valid": 342
+      }
+    }
+  },
+  "schema_version": 1,
+  "source_hashes": {
+    "remote_return/analysis/qwen25_main/analysis.json": "045d6b637c97d080770cac143c8877665bb23dc7a5d90099c64c9485159b91af",
+    "remote_return/analysis/qwen3_main/analysis.json": "4ae6aaf618c74d32cd5b04801314d0ac62c08cf5550b08639550fb52b5bfcd43",
+    "remote_return/analysis/qwen3_time16/analysis.json": "cc00858c155852e9cda7acf8c03c0d7db41197a4ee7026ccd43ade372abca67d",
+    "remote_return/prepared/cells.jsonl": "4f6052a8815380ea3ef19d9becd5409d659c59404f8b23770bc02c5ced2a9d26",
+    "remote_return/prepared/preflight.json": "b78a58ab240c65ad062e34922a5bf6c939dc68cbcf72e8e0ffdb16606d5094fe",
+    "remote_return/prepared/schedule.jsonl": "18233cdacd9cdc8b8816ebcd67fc3e6a21224cdeddbfb9009c174392a05b4d41",
+    "remote_return/prepared_time16/cells.jsonl": "9d427a7cea32743e5a91ec597e426892e8e8851c023d9499eb73f65547be185b",
+    "remote_return/prepared_time16/preflight.json": "6f385b31457eaa0a73f5c8c294ca785a34434640076d2325d4b1169eacbea705",
+    "remote_return/prepared_time16/schedule.jsonl": "1a5f5f7120471de01d7715b2b1ada597be1ff995248ee1cc1dc8c5784db6b631",
+    "remote_return/runs/qwen25_main/final.jsonl": "5301e8a9ea1e6aef2cc750fd07f3e664b81331fc9a7a7546cdd5c63db79c0fae",
+    "remote_return/runs/qwen25_main/manifest.json": "417f39cc809efac425ec5bb02d241a4e5dee211441b1741abb5cb7addb45856c",
+    "remote_return/runs/qwen3_main/final.jsonl": "1100ff5c45bdda39317912cc5fbf38fe1edf93148cf22f3ecc41e1e23975af73",
+    "remote_return/runs/qwen3_main/manifest.json": "f93bc34a910ea29fc24f0c47dee2426a9fac95d1512347056f0dca188fc49c7b",
+    "remote_return/runs/qwen3_time16/final.jsonl": "962bd8cba71cbd5e983720efa68e086cb7abe987812f44dd574d28b529f56356",
+    "remote_return/runs/qwen3_time16/manifest.json": "fdadefd9e5c19d6c584004defae2056bc268eabbca22af716ba57f9c1b45ccf6"
+  },
+  "tool_sha256": "b8a97f6a6d494f1edd4878324581acfe0ace81f40019431355d34a03b1c471b6"
+}

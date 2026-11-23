@@ -1,0 +1,179 @@
+\documentclass[conference]{IEEEtran}
+\usepackage{amsmath,amssymb,graphicx,booktabs,array}
+\usepackage[hidelinks]{hyperref}
+\usepackage{url}
+\usepackage{balance}
+\providecommand{\StudentID}{}
+\newcommand{\code}[1]{\texttt{#1}}
+\newcommand{\Qthree}{Qwen3-4B}
+\newcommand{\Qtwo}{Qwen2.5-7B}
+\graphicspath{{./}{../manuscript/}}
+\title{Auditing Peer-Signal Sensitivity in Campus LLM Agents}
+\author{\IEEEauthorblockN{Wenkang Zhu}\IEEEauthorblockA{DASE7506 Advanced Machine Learning Methods\\The University of Hong Kong\ifx\StudentID\empty\else\\\StudentID\fi}}
+\begin{document}
+\maketitle
+\pagestyle{plain}
+\begin{abstract}
+Does a campus language-model agent choose to study more often when its prompt reports stronger recent peer study? We audit an inherited single-step decision interface with four fixed profile texts, three peer-signal levels, and energy and satiety controls. A frozen protocol produced 2,040 completions across Qwen3-4B-Instruct-2507, Qwen2.5-7B-Instruct, and a Qwen3 afternoon context: 1,999 outputs passed the registered validity rules, 41 failed, and none were truncated. At 11:00, one Qwen3 profile increased valid-study responses from 1/30 to 9/30; the other three produced none. Qwen2.5 responses differed in their baseline action distributions, while every afternoon Qwen3 cell had zero valid-study outputs. A subsequent, explicitly post-result analysis adds simultaneous uncertainty intervals, batch-resampling sensitivity, and complete action accounting. All 12 simultaneous peer intervals include zero. The findings support a local, prompt-conditioned response, not a general peer-influence mechanism or a validated student simulation. Code, data, and reproduction instructions are public at \url{https://github.com/zwkcyy/dase7506-mp3/tree/main/campus-peer-audit}.
+\end{abstract}
+\begin{IEEEkeywords}
+LLM agents, controlled evaluation, social simulation, uncertainty, reproducibility
+\end{IEEEkeywords}
+
+\section{Introduction}
+Our research problem is whether increasing a numerical summary of peers' recent study changes a campus LLM agent's next-action distribution, and whether the response persists across profile texts, checkpoints, and a second decision time. A simulator can produce plausible activity narratives without reliably responding to its intended inputs. Measuring an individual decision component is therefore useful before interpreting population trajectories or social feedback.
+
+LLM agent architectures combine language-model decisions with memory, planning, and execution. Generative Agents demonstrates this broader setting \cite{park2023generative}, while Agent-Kernel separates cognition, environment, and execution in a modular framework \cite{mao2025agentkernel}. The supplied course-project archive contains an Agent-Kernel campus adaptation, profile descriptions, a decision-prompt builder, and earlier peer-probe ideas. We inherit these components. We do not claim a new agent architecture or invention of the general probe. Instead, we contribute a traceable controlled evaluation, newly sampled model outputs, and an uncertainty-aware audit of this interface.
+
+The scope is deliberately narrow. Each completion is a fresh decision with no evolving memory or reciprocal interaction. Thirty completions of one prompt are Monte Carlo observations of a model, not thirty students. The primary outcome is the probability of obtaining a valid \code{study} decision per completed call. We also retain invalid outputs, conditional-on-valid rates, and every alternative action.
+
+Three questions organize the study: (1) does the peer-summary field change this outcome for each fixed profile; (2) how do the observed responses compare between two checkpoints and between 11:00 and 16:00 for Qwen3; and (3) do basic-state controls elicit their intended target actions? The second question is partly descriptive: checkpoint family, training, and size differ together, and the time extension covers only Qwen3.
+
+\section{Related Work}
+Generative Agents evaluates a 25-agent environment with memory, reflection, and planning \cite{park2023generative}; Agent-Kernel provides the framework provenance for the supplied implementation \cite{mao2025agentkernel}. Our single-step experiment omits these system dynamics, so it cannot reproduce their system-level evaluations. This distinction makes the experiment auditable but limits its conclusions.
+
+Persona conditioning has also been studied as a way to construct synthetic human responses. Argyle et al. compare demographic conditioning with survey data \cite{argyle2023out}, and Aher et al. examine replication of human-subject findings \cite{aher2023using}. These studies use external targets that our campus task lacks. Santurkar et al. document opinion-distribution mismatches despite group steering \cite{santurkar2023whose}; Bisbee et al. show that apparently plausible synthetic averages can conceal problems in variation and associations \cite{bisbee2024synthetic}. These findings motivate task-specific validation, rather than establishing the errors of the present checkpoints. Here, a profile-dependent output is evidence about a prompt, not demographic fidelity or human behavioral realism.
+
+\section{Controlled Decision Protocol}
+\subsection{Interface and fixed context}
+The inherited Chinese interface requests one of seven actions: \code{study}, \code{go\_class}, \code{exercise}, \code{chat}, \code{rest}, \code{eat}, or \code{wander}. The system prompt requests JSON and permits optional duration and contextual-effect fields. The user prompt contains behavioral principles, state values, action examples, and peer information. Its instruction to prioritize basic needs and fit identity and goals is retained; successful state responses can therefore reflect instruction following.
+
+All main conditions describe 11:00 on a sunny weekday in a dormitory, with no class duty, empty recent-action and memory text, and three peers currently resting. Their actions and locations never change. The peer intervention changes only the displayed scalar summarizing \emph{recent} peer study intensity; it does not create studying peers or a live social network.
+
+The four existing profile bundles P01--P04 vary identity, personality description, habits, and goals together. Names are replaced by the same anonymous label. Numerical conscientiousness is fixed at 0.65 and motivation at 0.50, with course group A1. Thus, profile comparisons concern complete text bundles, not isolated psychological traits. Brief translations appear in Appendix A; the repository preserves the exact Chinese inputs.
+
+\subsection{Levels and factorial layout}
+The manipulation range is calibrated using 458 student LLM-decision records with successful parsing from one supplied historical simulator trace. The filter retains class-duty records, including 99 such decisions. These rows define an interface operating range, not independent students, human ground truth, or evaluation outcomes. Their original serving checkpoint is not established. Quantiles use linear interpolation at position $(n-1)p$; the prompt builder then rounds values to two decimal places.
+
+\begin{table}[t]
+\caption{Values actually displayed in the prompt. Unchanged factors remain at their middle values.}
+\label{tab:levels}
+\centering\small\setlength{\tabcolsep}{3.5pt}
+\begin{tabular}{lccc}\toprule
+Field & Low (q10) & Middle (q50) & High (q90)\\\midrule
+Recent peer study & 0.06 & 0.13 & 0.24\\
+Energy & 0.33 & 0.50 & 0.81\\
+Satiety & 0.46 & 0.70 & 0.95\\
+Social state & -- & 0.98 & --\\
+Mood & -- & 0.98 & --\\\bottomrule
+\end{tabular}
+\end{table}
+
+The main design has 28 cells: four profiles crossed with three peer levels (12 cells), low/high energy (eight), and low/high satiety (eight). Each cell receives 30 calls, totaling 840 per checkpoint. State arms hold the peer summary at 0.13 and vary only their own field. The center peer cell is not sampled again for the state arms. The source variable named \code{hunger} is displayed as \emph{satiety}: lower values mean less satisfied. The intended controls are more \code{rest} at low energy and more \code{eat} at low satiety.
+
+Offline checks confirm a common system prompt, anonymous names, distinct rounded levels, unique inputs, and one changed user-prompt line per within-profile intervention relative to its center. These checks exclude unintended text changes within an arm; they do not establish that independently chosen marginal quantiles form a common real-world situation.
+
+\subsection{Pre-result freezes and actual execution}
+Before formal sampling, the scientific plan fixed both 840-call checkpoint runs and a 360-call, peer-only Qwen3 extension at 16:00. The latter repeats the 12 peer cells without state controls. Scientific and execution manifests record the chronology. A separate 112-call set of interface and capacity pilots was excluded from every formal result. Execution choices were finalized before formal sampling, and no failures were selectively replaced.
+
+We used Qwen3-4B-Instruct-2507, a non-thinking-only checkpoint \cite{qwen3card}, and Qwen2.5-7B-Instruct \cite{qwen25card}. Immutable revisions are listed in Appendix B. The actual engine was direct, in-process Transformers 4.57.1, with PyTorch 2.8.0+cu128, BF16, SDPA attention, and batch size 16 on one RTX 4090. This replaces the earlier pilot HTTP adapter; formal data contain no HTTP requests. Every conversation starts fresh. Within each run, a fixed shuffled schedule interleaves cells, with base seed 20261122 plus the one-based batch index. Rows share a batch PRNG stream; they are not independently reseeded simulation episodes.
+
+Sampling is explicit: temperature 1, top-$p$ 1, top-$k$ 0, repetition penalty 1, maximum 1,024 new tokens, and \code{use\_model\_defaults=False}. Checkpoint generation defaults therefore do not silently determine the experiment. Left-padded token inputs, masks, unpadded token lists, effective configuration, model identity, raw content, output tokens, and finish reasons are logged. The inherited literal suffix \code{/no\_think} is fixed across conditions; it is not an experimental reasoning-mode comparison. Source, input, and output hashes support internal consistency checks, not cryptographic attestation or independent reproduction of a stochastic completion.
+
+\section{Outcomes and Strengthened Analysis}
+\subsection{Registered accounting and contrasts}
+An output is valid if the registered parser finds a decision object with a legal action, the checked optional fields have acceptable types/ranges, and termination is EOS/stop rather than length exhaustion. Optional \code{duration\_ticks}, if present, must be an integer from 1 to 6; \code{contextual\_effects}, if present, must be an object. This is a structural validity measure, not semantic correctness of the explanation or validation of every nested effect.
+
+For cell $c$, let $N_c$ be completed calls, $V_c$ valid outputs, and $K_{c,a}$ valid outputs choosing action $a$. We report
+\begin{equation}
+\widehat\theta_{c,a}=K_{c,a}/N_c,\qquad
+\widehat p_{c,a}=K_{c,a}/V_c.
+\end{equation}
+The first is the joint valid-and-action probability; the second is conditional on validity. Invalid text is not treated as an observed alternative action. Uncompleted calls would not be imputed as failures; in the present data all planned calls completed. The primary contrast is high-minus-low peer signal for \code{study}; state contrasts are low-minus-high for their target action. \code{go\_class} is always separate.
+
+The frozen analysis uses Wilson 95\% intervals for proportions and Newcombe's independent-proportion Wilson hybrid intervals for differences \cite{newcombe1998}. These are pointwise intervals, not simultaneous bands. For invalid-output sensitivity we retain the assignment range
+\begin{equation}
+\left[K_{c,a}/N_c,\;(K_{c,a}+N_c-V_c)/N_c\right].
+\end{equation}
+It is a worst-case accounting range, not a confidence interval or proof that an invalid response has a latent true action.
+
+\subsection{Post-result improvements}
+After inspecting the original results, we fixed a separate enhancement plan on 23 November 2026. It adds no model calls and leaves the original freezes, outputs, and analyses unchanged. These improvements must not be represented as pre-result registration.
+
+First, we include \emph{all} 12 profile-specific peer contrasts across the three runs in one family. Clopper--Pearson endpoint intervals \cite{clopper1934} receive two-sided error $0.05/24$ for its 24 endpoint proportions. If endpoint intervals are $[L_A,U_A]$ and $[L_B,U_B]$, a difference interval is
+\begin{equation}
+[L_A-U_B,\;U_A-L_B].
+\end{equation}
+The union bound gives at least 95\% simultaneous coverage for this family under binomial marginal assumptions. The 16 state contrasts form a separate family with 32 endpoints and error $0.05/32$ per endpoint. The two families together are not claimed to have 95\% joint coverage. These intervals are intentionally conservative. We also form a sensitivity envelope allowing invalid counts to be assigned to the target.
+
+Second, we resample observed computational batches with replacement 10,000 times within each run, retaining all rows of each selected batch, using separately fixed seeds. Percentile intervals are a check on computational grouping, not evidence that batches are random population clusters. Shared PRNG alone does not establish dependence, and the original binomial assumptions are not thereby proven. Undefined resamples are counted rather than replaced by zeros. A bootstrap cannot create unseen successes in an all-zero cell, so its zero-width interval at a floor is not evidence of certainty; the exact binomial intervals remain necessary.
+
+Third, we display all seven valid actions plus invalid outputs. Model and time differences of peer contrasts are explicitly exploratory, with no claim of a fully crossed model-by-time design. No p-values, post-hoc action merging, or favorable-cell resampling are used.
+
+\section{Results}
+\subsection{Complete execution and validity}
+\begin{table}[t]
+\caption{Formal completion accounting. Every run had zero truncated outputs; pilots are excluded.}
+\label{tab:completion}
+\centering\small
+\begin{tabular}{lrrr}\toprule
+Checkpoint/context & Calls & Valid & Invalid\\\midrule
+\Qthree{}, 11:00 & 840 & 821 & 19\\
+\Qthree{}, 16:00 & 360 & 342 & 18\\
+\Qtwo{}, 11:00 & 840 & 836 & 4\\\midrule
+Total & 2,040 & 1,999 & 41\\\bottomrule
+\end{tabular}
+\end{table}
+All 2,040 scheduled calls completed (Table~\ref{tab:completion}). Validity was 97.7\%, 95.0\%, and 99.5\% in the three runs, respectively. No completion reached the token limit. Independent CPU checks verified complete per-cell quotas, model revisions, frozen source/configuration hashes, seeds, token/content records, parser decisions, and analysis counts. They verify artifact consistency without rerunning a model.
+
+\subsection{Peer responses and multiplicity}
+At 11:00, Qwen3 P02 produced valid \code{study} counts of 1, 6, and 9 out of 30 at the three peer levels. Its high-minus-low contrast is +26.7 percentage points (pp), with pointwise 95\% interval [7.8, 44.8] pp. All 90 outputs for this profile's peer arm are valid, so validity conditioning does not change this estimate. P01, P03, and P04 produced zero valid-study responses at every peer level. P03 nevertheless had nine invalid peer-arm outputs, making an all-zero valid-study count different from observing 90 valid alternative actions.
+
+Qwen2.5's low/high study counts were 10/12 for P01, 25/28 for P02, 3/0 for P03, and 2/4 for P04, each count from 30 calls. Corresponding high-minus-low differences are +6.7, +10.0, -10.0, and +6.7 pp. These estimates do not reproduce the Qwen3 P02 contrast as a common checkpoint response. The high baseline study share for Qwen2.5 P02 also illustrates why differences in baseline policy matter when comparing responsiveness.
+
+\input{results_enhanced.tex}
+
+\subsection{Time context, actions, and validity sensitivity}
+At 16:00, all 12 Qwen3 cells had zero valid-study outputs. P03 accounts for all 18 invalid outputs in that run; its low/high peer endpoints have 8/4 invalid outputs. Its completed-data invalid-assignment range for the high-minus-low study contrast is therefore [-26.7, +13.3] pp. Conditional-on-valid study rates remain zero, but they cannot recover a missing action from invalid text. Zero observed successes with 30 calls has a pointwise Wilson upper bound of approximately 11.4\%; it does not imply that the true probability is exactly zero.
+
+Figure~\ref{fig:overview}B shows why study alone is insufficient for interpreting an interface: a floor in its study outcome can coexist with structured allocation among other actions. Neither a shifted action composition nor a plausible explanation establishes human realism. Time comparisons concern only Qwen3, and any contrast-of-contrasts is a post-result contextual comparison rather than a replicated general time effect.
+
+The state controls are selective. For Qwen3 P02, low-minus-high energy increases valid \code{rest} by 56.7 pp (pointwise interval [35.8, 72.6] pp). Its simultaneous control-family interval is [6.4, 82.7] pp: it is the only one of the 16 controls excluding zero. For Qwen2.5 P02 the corresponding increase is 23.3 pp (pointwise [5.1, 41.3] pp), but its simultaneous interval is [-20.6, 56.9] pp. Other rest differences are smaller. Low-satiety \code{eat} differences are zero for all Qwen3 profiles and range from -3.3 to +6.7 pp for Qwen2.5. Thus, the interface is not uniformly responsive to every semantically relevant scalar. The fixed state levels, other high state values, and inherited examples constrain what these controls test. Table~\ref{tab:allcontrols} reports every state contrast.
+
+\section{Discussion and Limitations}
+The strongest pointwise peer estimate is local to one profile and context. The strengthened analysis prevents this estimate from being promoted to a universal social mechanism after searching across conditions. At the same time, broad simultaneous intervals do not establish absence or equivalence. A useful conclusion is methodological: evaluating both sensitivity and uncertainty changes the interpretation of an apparently convincing local response.
+
+\textbf{Restricted estimand.} We intervene on a scalar inside an instructed Chinese prompt. The prompt already encourages identity-consistent behavior, basic-needs priority, and use of peer information, and it contains suggested activity examples and proportions. Observed changes may reflect those semantic priors. We do not execute movement, state transitions, planning continuation, memory retrieval, reflection, or reciprocal influence. Results concern the decision interface, not the reliability of the complete Agent-Kernel adaptation or long-run social contagion.
+
+\textbf{Limited conditions.} Four authored text bundles and two fixed checkpoints are not representative samples. Profile factors change together; checkpoint version, size, and training change together. The historical calibration trace has an unknown served checkpoint and includes class-duty decisions, whereas the evaluation has no current duty. Marginal median social and mood values are near 0.98 and may produce an unusual combined context. A fixed current-resting-peer scene is also only one relationship between live and cumulative peer signals. We have no external human labels with which to assess behavioral fidelity.
+
+\textbf{Finite samples and assumptions.} Thirty calls per cell provide limited resolution and wide intervals. Exact marginal interval coverage still assumes appropriate binomial sampling from a stable configuration. Bonferroni coverage does not require independence between endpoint intervals. Fixed batching and shared PRNG warrant transparency, while batch resampling only checks one sensitivity. Runs reuse the generation seed rule, and cross-run independence has not been established; exploratory cross-run intervals based on independently resampled runs are therefore not confirmatory inference. Nonparametric bootstrap floors are particularly uninformative. Invalid rates vary by profile, so dropping invalid outputs would select a different observed subset; worst-case assignment ranges expose but do not solve that problem.
+
+\textbf{Chronology and reproducibility.} The original sampling and execution plans preceded formal responses, but the multiplicity and batch analyses were chosen afterwards. Reporting their complete families reduces selective interpretation without making the enhancement prospective. The public release includes exact prepared prompts, formal replies, configuration and hashes, deterministic CPU reanalysis, figure generation, and fixed-revision model acquisition instructions. Recomputing tables from archived outputs is distinguished from rerunning stochastic GPU inference. The latter can vary across hardware/software even with fixed seeds.
+
+Future work should prospectively cross more contexts, profile components, and current-peer behaviors, choose a meaningful equivalence margin before data collection, and validate against suitable external behavioral targets. A repaired full simulator would also need trajectory-level checks beyond this component audit. These are extensions, not unperformed results of this project.
+
+\balance
+\section{Conclusion}
+A controlled, fully accounted 2,040-completion audit finds a positive pointwise peer response for one Qwen3 profile at 11:00, different checkpoint baselines, and a study floor in the afternoon context. Validity-aware accounting and post-result robustness checks support a cautious, conditional interpretation. The project delivers a reproducible evaluation of an inherited agent component; it does not establish a population peer-influence effect or validate a campus society.
+\label{maintextend}
+
+\clearpage
+\balance
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+\clearpage
+\onecolumn
+\appendices
+\section{Profiles and Prompt Scope}
+These are brief English summaries of fixed fictional-role text bundles, not measured student traits. P01 is an academically average, uncertain second-year engineering student described as introverted, spontaneous, prone to procrastination, and interested in games. P02 is a disciplined engineering student preparing for postgraduate study, with library and note-taking habits and a computing-related goal. P03 is a sociable sports enthusiast with limited study motivation and a sports-oriented goal. P04 is socially active and outdoors-oriented, sometimes unfocused, and prioritizes exploring campus life. All receive identical numerical conscientiousness, motivation, names, and non-profile context.
+
+The actual Chinese prompt contains: behavioral guidance; seven available actions; the four profile fields; time/weather; own state; current resting peers; the manipulated recent peer-study scalar; examples; and a JSON-only output request. The exact source text, including the fixed suffix, is released. These summaries do not replace that source or remove the prompt's behavioral priors.
+
+\section{Execution and Reproduction Details}
+The checkpoints are identified by the following immutable Hugging Face revisions:
+\begin{itemize}
+\item Qwen3-4B-Instruct-2507:\\{\footnotesize\path{cdbee75f17c01a7cc42f958dc650907174af0554}}.
+\item Qwen2.5-7B-Instruct:\\{\footnotesize\path{a09a35458c702b33eeacc393d103063234e8bc28}}.
+\end{itemize}
+Python 3.12.3, Transformers 4.57.1, PyTorch 2.8.0+cu128, Accelerate 1.11.0, Tokenizers 0.22.2, and Safetensors 0.6.2 describe the inference environment. Each main run has 53 batches and a final batch of eight; the afternoon run has 23 batches and a final batch of eight. Model weights are not redistributed. Pilot data are excluded from the public formal data path.
+
+The public README separates the CPU reproduction command, which verifies and expands the archived formal data and regenerates results, from optional GPU commands for acquiring and running the fixed checkpoints. No private original ZIP or cloud credentials are needed to reproduce the reported tables. Public artifact hashes cover the released files; original freeze hashes identify the scientific inputs. These identities are distinct from a guarantee of byte-for-byte stochastic model reproduction.
+
+\section{Student Contribution and Assistance}
+Wenkang Zhu is the sole student author. The project scope comprises provenance checking, controlled evaluation, execution validation, statistical analysis, and reporting. AI coding assistance supported implementation, analysis tooling, and drafting. Numerical results are computed from the archived model outputs rather than supplied by the drafting assistant. The student author is responsible for reviewing the submitted work.
+\clearpage
+\section{Complete State-Control Results}
+\input{controls_generated.tex}
+\end{document}

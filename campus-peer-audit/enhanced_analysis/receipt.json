@@ -1,0 +1,22 @@
+{
+  "analysis_stage": "posthoc_cpu_robustness_enhancement",
+  "files_sha256": {
+    "DEPENDENCIES.md": "598306d81129668095d2013c8cef1669d22f8f532e67635b909d0b82737bcec6",
+    "action_distribution.csv": "c1b910b2e4d2329d4a28cb6b8cfda1a9dd7955a6a34d1eeb7767a6311fe76b63",
+    "control_effects.csv": "a5c49a96f302901835419ccc37015d3717346914582877664cbfd18b21be0527",
+    "exploratory_dose_comparisons.csv": "88659aa3cc9538491c2858945c56d46b2b0be4601b639f373c745357c62fcb10",
+    "exploratory_peer_response_differences.csv": "776af549ad4a668c6e0931f0d375235d4621318df1bada935c0148feed63f7c3",
+    "peer_effects.csv": "00bcc1cd3c11c709516130ef76ba8954043899cd08bea274b43569b2c446563b",
+    "robustness.json": "195202e46b681b68dba75b82327e3cc83b13b3d7f7b2f848d4725922a8d3dea2",
+    "robustness_overview.pdf": "27b3341bd496f4fb5d06c5d15c7b214389f81a90c97a29302d4c099111ddf8f3",
+    "robustness_overview.png": "728175c25def5b25d680d966be33f4a7b11edbb91f68b005eecfcfd761d7fb22"
+  },
+  "formal_calls": 2040,
+  "plan_sha256": "ad4dcc983bbf8aabddd3121c94c73f0b2ed2e8021aec0e61afd1af3a991023fb",
+  "tool_sha256": "b8a97f6a6d494f1edd4878324581acfe0ace81f40019431355d34a03b1c471b6",
+  "versions": {
+    "matplotlib": "3.11.2",
+    "numpy": "2.5.5",
+    "python": "3.12.14"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "action_composition": "All 7 valid actions plus invalid; counts and completed/valid denominators by run/profile/arm/level. Overview heatmap uses peer arm only and pools 3 equally sampled peer levels (90 completed per profile/run), explicitly descriptive.",
+  "batch_bootstrap": {
+    "interpretation": "Sensitivity to the computational grouping. Shared PRNG does not itself establish within-batch correlation or make batches a superior statistical sampling unit. Not a population or randomized-cluster inference.",
+    "interval": "pointwise percentile 2.5% and 97.5%",
+    "master_seed": 20261123,
+    "resamples": 10000,
+    "run_seeds": {
+      "qwen25_main": 2026112303,
+      "qwen3_main": 2026112301,
+      "qwen3_time16": 2026112302
+    },
+    "sampling": "resample the observed number of batches with replacement, include all rows of selected batches; independent resampling streams across runs",
+    "undefined": "retain and report count of undefined replicates, never substitute zero",
+    "unit": "observed computational batch_index within each run"
+  },
+  "created_at_utc": "2026-11-23T14:31:08.459014+00:00",
+  "disclosure": "Original formal outcomes have already been inspected. This is not a retrospective preregistration; original scientific/execution freezes and all original analyses remain unchanged.",
+  "exploratory_only": {
+    "model": "Qwen2.5-7B 11:00 minus Qwen3-4B 11:00; per-dose changes and difference of high-low peer responses, 4 fixed profiles only",
+    "scope": "Only these two fixed checkpoints and these fixed contexts; no checkpoint-size, reasoning-capability, or student-population causal claim. No new model calls.",
+    "time": "Qwen3 16:00 minus Qwen3 11:00; per-dose changes and difference of high-low peer responses, 4 fixed profiles only"
+  },
+  "formal_calls": 2040,
+  "formal_runs": [
+    "qwen3_main",
+    "qwen3_time16",
+    "qwen25_main"
+  ],
+  "implementation": "stdlib finite-binomial-tail inversion for CP (n=30 endpoints); numpy/matplotlib only for visualization; no scipy/statsmodels runtime requirement.",
+  "invalid_sensitivity": {
+    "additional": "CP/Bonferroni sensitivity envelope uses lower CP bound at valid-target count and upper CP bound at valid-target+invalid count. This is a hypothetical binary-outcome assignment sensitivity, not proof that invalid outputs possess a true latent action.",
+    "retained": [
+      "valid-only estimate and original Newcombe interval",
+      "completed-data worst-case target assignment identification range"
+    ]
+  },
+  "method_source": "https://www.statsmodels.org/stable/generated/statsmodels.stats.proportion.proportion_confint.html",
+  "multiplicity": {
+    "controls_family": {
+      "contrasts": 16,
+      "family_alpha": 0.05,
+      "two_sided_CP_alpha_per_endpoint": 0.0015625,
+      "unique_endpoint_proportions": 32
+    },
+    "coverage": "At least 95% simultaneous coverage within each separately defined family under binomial marginal sampling assumptions. Two families are not jointly a single 95% family; exact endpoint construction is conservative.",
+    "method": "Clopper-Pearson exact binomial endpoint intervals; Bonferroni allocation across all endpoints of each complete family; difference interval [L_A-U_B,U_A-L_B].",
+    "no_p_values": true,
+    "peer_family": {
+      "contrasts": 12,
+      "family_alpha": 0.05,
+      "two_sided_CP_alpha_per_endpoint": 0.0020833333333333333,
+      "unique_endpoint_proportions": 24
+    }
+  },
+  "outcome": {
+    "control_energy": "valid AND action == rest per completed call",
+    "control_satiety": "valid AND action == eat per completed call",
+    "go_class": "separate action, never merged with study",
+    "primary": "valid AND action == study per completed call"
+  },
+  "outputs": "NEW enhanced_analysis/ JSON and CSV statistical artifacts, compact peer forest + action heatmap PDF/PNG, dependency notes; no edits to original frozen/raw/analysis and no paper file written by this tool.",
+  "pilots_included": false,
+  "prespecified_contrasts_retained": {
+    "peer": "q90 minus q10, 4 fixed profiles x 3 runs = 12 contrasts",
+    "state_controls": "q10 minus q90, 4 profiles x 2 arms x 2 model runs = 16 contrasts"
+  },
+  "schema_version": 1,
+  "status": "posthoc_cpu_enhancement_plan_fixed_before_enhancement_execution"
+}

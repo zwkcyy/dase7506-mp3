@@ -1,0 +1,67 @@
+{
+  "files": {
+    "runs/qwen25_main/attempts.jsonl": {
+      "bytes": 3582667,
+      "sha256": "6178e4ae141918ca5ad6357478118b86df6b2442cb4887dcce030db93dec21ce"
+    },
+    "runs/qwen25_main/engine_identity.json": {
+      "bytes": 1336,
+      "sha256": "f4c967a31e9860c985ec1d33d1c03403c3f2740334fcae37086352c2b285dee5"
+    },
+    "runs/qwen25_main/final.jsonl": {
+      "bytes": 10087923,
+      "sha256": "5301e8a9ea1e6aef2cc750fd07f3e664b81331fc9a7a7546cdd5c63db79c0fae"
+    },
+    "runs/qwen25_main/generation.jsonl": {
+      "bytes": 7604546,
+      "sha256": "8ac2c4d782ceeda7249cbdc27f27dee18f251f5d8516ea647c2099d5806a98a3"
+    },
+    "runs/qwen25_main/manifest.json": {
+      "bytes": 1594,
+      "sha256": "417f39cc809efac425ec5bb02d241a4e5dee211441b1741abb5cb7addb45856c"
+    },
+    "runs/qwen3_main/attempts.jsonl": {
+      "bytes": 3585187,
+      "sha256": "45fa50e193aaa12099e6656fbd77132643c32b16f8304f0500865bab07f307da"
+    },
+    "runs/qwen3_main/engine_identity.json": {
+      "bytes": 1342,
+      "sha256": "e8510dc67f408f80e895a59bdc573a763f7572f58f8b462f1d4472df0840a985"
+    },
+    "runs/qwen3_main/final.jsonl": {
+      "bytes": 11294503,
+      "sha256": "1100ff5c45bdda39317912cc5fbf38fe1edf93148cf22f3ecc41e1e23975af73"
+    },
+    "runs/qwen3_main/generation.jsonl": {
+      "bytes": 8095746,
+      "sha256": "2af04940088d035dcd29c9291d64973544808ffc472880ae3dde12dad33dbdd3"
+    },
+    "runs/qwen3_main/manifest.json": {
+      "bytes": 1597,
+      "sha256": "f93bc34a910ea29fc24f0c47dee2426a9fac95d1512347056f0dca188fc49c7b"
+    },
+    "runs/qwen3_time16/attempts.jsonl": {
+      "bytes": 1536607,
+      "sha256": "7b1aef9fe34bc3779264829219070d9ff9bcc6594016861dba1b69fdceb17a66"
+    },
+    "runs/qwen3_time16/engine_identity.json": {
+      "bytes": 1342,
+      "sha256": "bffc452998751aaf2e58cae2f17f27613cb5dab360d0b76ff375ecc0b67fd3bf"
+    },
+    "runs/qwen3_time16/final.jsonl": {
+      "bytes": 4833972,
+      "sha256": "962bd8cba71cbd5e983720efa68e086cb7abe987812f44dd574d28b529f56356"
+    },
+    "runs/qwen3_time16/generation.jsonl": {
+      "bytes": 3467380,
+      "sha256": "12b6189e9014634a8363ee087d30d9aa3b12e511b893aea16bfb240fccb57ed1"
+    },
+    "runs/qwen3_time16/manifest.json": {
+      "bytes": 1597,
+      "sha256": "fdadefd9e5c19d6c584004defae2056bc268eabbca22af716ba57f9c1b45ccf6"
+    }
+  },
+  "kind": "formal_model_observations",
+  "schema_version": 1,
+  "total_formal_calls": 2040
+}

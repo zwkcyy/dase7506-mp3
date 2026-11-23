@@ -1,0 +1,30 @@
+{
+  "data_sha256": "b9454c18ce79d1c7f5d431e8f43a739da28391c186ecc6695d20cc2684260724",
+  "event_requirement": "decision",
+  "excluded_fields": [
+    "name",
+    "agent_id",
+    "tick",
+    "text",
+    "actions",
+    "messages"
+  ],
+  "fields": [
+    "energy",
+    "hunger",
+    "social",
+    "mood",
+    "peer_cum_at_prompt"
+  ],
+  "has_duty_is_a_filter": false,
+  "quantile_rule": "Hyndman-Fan type 7; linear interpolation at (n-1)*p",
+  "rows": 458,
+  "schema_version": 1,
+  "selection": {
+    "decision_source": "llm",
+    "llm_parse_ok": true,
+    "role": "student"
+  },
+  "source_trace_sha256": "4256d16ae8ca92fc89e16a70d4aa45382ebf908a5fec2799b521b84527c03cd6",
+  "use": "Historical numerical input-range calibration only; not a human dataset or formal outcome dataset"
+}
