@@ -12,6 +12,11 @@
     "superseded private paper drafts and submission-only identifier"
   ],
   "files": {
+    ".gitattributes": {
+      "bytes": 88,
+      "kind": "new_public_document_or_tool",
+      "sha256": "b0a31d626be746730b554816b588e3a0788121db94b20bb314d9d9d811910f98"
+    },
     ".gitignore": {
       "bytes": 148,
       "kind": "new_public_document_or_tool",
@@ -368,5 +373,5 @@
   "repository": "zwkcyy/dase7506-mp3",
   "repository_path": "campus-peer-audit",
   "schema_version": 1,
-  "updated_at_utc": "2026-11-23T14:43:59.502510+00:00"
+  "updated_at_utc": "2026-11-23T14:44:33.544835+00:00"
 }
