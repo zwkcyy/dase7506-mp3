@@ -1,0 +1,13 @@
+run,persona_id,arm,action,contrast,analysis_stage,estimate_changed,change_in_estimate,strict_estimate,strict_lower,strict_upper,strict_a_count,strict_b_count,action_only_estimate,action_only_lower,action_only_upper,action_only_a_count,action_only_b_count
+qwen3_main,P01,peer_signal,study,q90_minus_q10,post_result_measurement_sensitivity,False,0.0,0.0,-0.11351339317396873,0.11351339317396873,0,0,0.0,-0.11351339317396873,0.11351339317396873,0,0
+qwen3_main,P02,peer_signal,study,q90_minus_q10,post_result_measurement_sensitivity,False,0.0,0.26666666666666666,0.07806495783979894,0.44751603562570685,9,1,0.26666666666666666,0.07806495783979894,0.44751603562570685,9,1
+qwen3_main,P03,peer_signal,study,q90_minus_q10,post_result_measurement_sensitivity,False,0.0,0.0,-0.11351339317396873,0.11351339317396873,0,0,0.0,-0.11351339317396873,0.11351339317396873,0,0
+qwen3_main,P04,peer_signal,study,q90_minus_q10,post_result_measurement_sensitivity,False,0.0,0.0,-0.11351339317396873,0.11351339317396873,0,0,0.0,-0.11351339317396873,0.11351339317396873,0,0
+qwen3_time16,P01,peer_signal,study,q90_minus_q10,post_result_measurement_sensitivity,False,0.0,0.0,-0.11351339317396873,0.11351339317396873,0,0,0.0,-0.11351339317396873,0.11351339317396873,0,0
+qwen3_time16,P02,peer_signal,study,q90_minus_q10,post_result_measurement_sensitivity,False,0.0,0.0,-0.11351339317396873,0.11351339317396873,0,0,0.0,-0.11351339317396873,0.11351339317396873,0,0
+qwen3_time16,P03,peer_signal,study,q90_minus_q10,post_result_measurement_sensitivity,False,0.0,0.0,-0.11351339317396873,0.11351339317396873,0,0,0.0,-0.11351339317396873,0.11351339317396873,0,0
+qwen3_time16,P04,peer_signal,study,q90_minus_q10,post_result_measurement_sensitivity,False,0.0,0.0,-0.11351339317396873,0.11351339317396873,0,0,0.0,-0.11351339317396873,0.11351339317396873,0,0
+qwen25_main,P01,peer_signal,study,q90_minus_q10,post_result_measurement_sensitivity,False,0.0,0.06666666666666671,-0.16942224429365926,0.29282139769197,12,10,0.06666666666666671,-0.16942224429365926,0.29282139769197,12,10
+qwen25_main,P02,peer_signal,study,q90_minus_q10,post_result_measurement_sensitivity,False,0.0,0.09999999999999998,-0.07374485954273044,0.27571401081095065,28,25,0.09999999999999998,-0.07374485954273044,0.27571401081095065,28,25
+qwen25_main,P03,peer_signal,study,q90_minus_q10,post_result_measurement_sensitivity,False,0.0,-0.1,-0.25621082579184085,0.031005591413989175,0,3,-0.1,-0.25621082579184085,0.031005591413989175,0,3
+qwen25_main,P04,peer_signal,study,q90_minus_q10,post_result_measurement_sensitivity,False,0.0,0.06666666666666667,-0.10042640591489792,0.2371012005304991,4,2,0.06666666666666667,-0.10042640591489792,0.2371012005304991,4,2

@@ -36,7 +36,7 @@ Batch resampling gives a pointwise interval of {interval(p2['batch_bootstrap']['
 \\begin{{figure*}}[t]
 \\centering
 \\includegraphics[width=\\textwidth]{{figures/robustness_overview.pdf}}
-\\caption{{Peer-response audit. (A) High-minus-low valid-study differences: colored bars are original pointwise Newcombe 95\\% intervals; gray bars are conservative Clopper--Pearson/Bonferroni intervals with at least 95\\% simultaneous coverage for the complete 12-contrast peer family under the stated assumptions. (B) Seven valid actions plus invalid outputs, pooling the three equally sampled peer levels (90 completed calls per profile/run). Pooling describes baseline composition; it is not the peer-effect estimator. Q3 and Q2.5 denote the two fixed checkpoints.}}
+\\caption{{Peer-response audit. (A) High-minus-low valid-study differences: colored bars are original pointwise Newcombe 95\\% intervals; gray bars are conservative Clopper--Pearson/Bonferroni intervals with at least 95\\% simultaneous coverage for the complete 12-contrast peer family under the stated assumptions. (B) Seven valid actions plus invalid outputs, pooling the three equally sampled peer levels (90 completed calls per profile/run). This pooled composition is not the peer-effect estimator or the middle-level baseline. Q3 and Q2.5 denote the two fixed checkpoints.}}
 \\label{{fig:overview}}
 \\end{{figure*}}
 """
@@ -46,8 +46,28 @@ Batch resampling gives a pointwise interval of {interval(p2['batch_bootstrap']['
         rows.append(f"{LABELS[r['run']]} & {r['persona_id']} & {target} & {percent(r['estimate'])} & {interval(r['original_newcombe95'])} & {interval(r['simultaneous_cp95'])}" + r"\\")
     rows += [r"\bottomrule\end{tabular}", r"\end{table}"]
     out.mkdir(parents=True, exist_ok=True)
-    (out / "results_enhanced.tex").write_text(text, encoding="utf-8")
-    (out / "controls_generated.tex").write_text("\n".join(rows) + "\n", encoding="utf-8")
+    # Explicit bytes retain identical LF source on Windows and POSIX.
+    (out / "results_enhanced.tex").write_bytes(text.encode("utf-8"))
+    (out / "controls_generated.tex").write_bytes(("\n".join(rows) + "\n").encode("utf-8"))
+    audit = json.loads((project / "measurement_audit/audit.json").read_text(encoding="utf-8"))
+    assert audit["formal_calls"] == 2040 and not audit["study_changed_cells"]
+    assert len(audit["cells"]) == 68
+    assert not any(r["estimate_changed"] for r in audit["peer_effects"] + audit["control_effects"])
+    rows = [r"% Generated from measurement_audit/audit.json; frozen primary retained.",
+            r"\begin{table}[t]",
+            r"\caption{Frozen parser versus action-only extraction. Action-only retains EOS, parseable JSON, and a legal action; auxiliary-field checks alone are relaxed. Counts cover all arms.}",
+            r"\label{tab:measurement}", r"\centering\small\setlength{\tabcolsep}{3pt}",
+            r"\begin{tabular}{lrrrr}\toprule",
+            r"Run & Calls & Frozen & Action-only & Added\\\midrule"]
+    totals = [0, 0, 0]
+    for run in LABELS:
+        r = audit["runs"][run]
+        vals = (r["completed"], r["strict_valid"], r["action_only_valid"])
+        totals = [a + b for a, b in zip(totals, vals)]
+        rows.append(f"{LABELS[run]} & {vals[0]} & {vals[1]} & {vals[2]} & {vals[2]-vals[1]}" + r"\\")
+    rows += [r"\midrule", f"Total & {totals[0]:,} & {totals[1]:,} & {totals[2]:,} & {totals[2]-totals[1]}" + r"\\",
+             r"\bottomrule\end{tabular}", r"\end{table}"]
+    (out / "measurement_generated.tex").write_bytes(("\n".join(rows) + "\n").encode("utf-8"))
     print(json.dumps({"source": "enhanced_analysis/robustness.json", "peer_contrasts": len(peers), "control_contrasts": len(controls), "simultaneous_peer_exclusions": n_excludes}))
 
 

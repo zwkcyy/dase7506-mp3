@@ -1,0 +1,10 @@
+run,persona_id,arm,level,reason,action,count
+qwen3_main,P03,energy_control,q90,duration_out_of_range,exercise,4
+qwen3_main,P03,hunger_control,q10,duration_out_of_range,exercise,1
+qwen3_main,P03,hunger_control,q90,duration_out_of_range,exercise,5
+qwen3_main,P03,peer_signal,q10,duration_out_of_range,exercise,3
+qwen3_main,P03,peer_signal,q50,duration_out_of_range,exercise,2
+qwen3_main,P03,peer_signal,q90,duration_out_of_range,exercise,4
+qwen3_time16,P03,peer_signal,q10,duration_out_of_range,exercise,8
+qwen3_time16,P03,peer_signal,q50,duration_out_of_range,exercise,6
+qwen3_time16,P03,peer_signal,q90,duration_out_of_range,exercise,4

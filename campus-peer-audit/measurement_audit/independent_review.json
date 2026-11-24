@@ -1,0 +1,156 @@
+{
+  "census": {
+    "action_only_valid_total": 2036,
+    "all_eos_and_termination_consistent": true,
+    "audit_artifact_hashes": {
+      "action_distributions.csv": "3163612ca30775e8cdc9e3ba0fa4d26823145a16b60451a4e159a85a42b397f3",
+      "all_cells.csv": "186ef2226710a2211cbd9b9cec0137b03d5df69676596ddf9f8964ead4638187",
+      "audit.json": "37d8798e1ed338eef56b5bfa0d98f4ec25281c0175f7bfa253d3611811b7edfa",
+      "call_classification.csv": "67c8f12c9568dcdc5cb2c49072b83500d9593988e69e1dc188966979264db85f",
+      "control_contrasts.csv": "b4c57ef49b3606e1b13b4528af98042ad6a7082fc5b329ec93e8c8dec52dbd0f",
+      "duration_values.csv": "8552a255beb15ec14f95e19bbcbef3e2f31753db7231be83e11654dad05f6852",
+      "optional_failure_reasons.csv": "48a8859d910032f0d69e26bd8eaf8c7778d0e9aba5bf74c7fcc9876d70c9f3dc",
+      "peer_contrasts.csv": "5833233047ec1aefb0fa9e084080e8585bf7bb84f1673d0b916ba959c99c80be",
+      "peer_dose_measurement_audit.pdf": "106f39963be74b7ab55c9540a1ad421e265bbe4334df617d124260d536a15a63",
+      "peer_dose_measurement_audit.png": "b5997794074ca19692a08c03186a79294020d06119f5a6f0c0163e37f41dccfb"
+    },
+    "audit_receipt_sha256": "3ff573790f2b620184bef523ac4c63dca9d027d1b2b65446ec6abfd8b8e4c861",
+    "calls_per_cell": 30,
+    "cells": 68,
+    "control_contrasts": 16,
+    "formal_calls": 2040,
+    "max_independent_newcombe_endpoint_residual": 5.551115123125783e-17,
+    "peer_contrasts": 12,
+    "protocol_freeze_sha256": "185aaa45c5f218cd3a5fb9e31136b662261c56ec9cfe832c2138ee7a62d18008",
+    "recovered_action": "exercise",
+    "recovered_action_total": 37,
+    "recovered_duration_values": {
+      "300": 36,
+      "360": 1
+    },
+    "recovered_persona": "P03",
+    "runs": {
+      "qwen25_main": {
+        "action_only_valid": 836,
+        "categories": {
+          "illegal_action": 2,
+          "invalid_json": 2,
+          "strict_valid": 836
+        },
+        "completed": 840,
+        "recovered_actions": {},
+        "strict_valid": 836,
+        "study_action_only": 269,
+        "study_strict": 269
+      },
+      "qwen3_main": {
+        "action_only_valid": 840,
+        "categories": {
+          "recoverable_action_auxiliary_schema_failure": 19,
+          "strict_valid": 821
+        },
+        "completed": 840,
+        "recovered_actions": {
+          "exercise": 19
+        },
+        "strict_valid": 821,
+        "study_action_only": 41,
+        "study_strict": 41
+      },
+      "qwen3_time16": {
+        "action_only_valid": 360,
+        "categories": {
+          "recoverable_action_auxiliary_schema_failure": 18,
+          "strict_valid": 342
+        },
+        "completed": 360,
+        "recovered_actions": {
+          "exercise": 18
+        },
+        "strict_valid": 342,
+        "study_action_only": 0,
+        "study_strict": 0
+      }
+    },
+    "seven_csvs_independently_checked": true,
+    "source_hashes": {
+      "measurement_audit_plan.json": "b0d7502a73e4dffea1f58f1a8ba91d3d6cbbce0bea0780dd4f8d42cb92943323",
+      "remote_return/analysis/qwen25_main/analysis.json": "045d6b637c97d080770cac143c8877665bb23dc7a5d90099c64c9485159b91af",
+      "remote_return/analysis/qwen3_main/analysis.json": "4ae6aaf618c74d32cd5b04801314d0ac62c08cf5550b08639550fb52b5bfcd43",
+      "remote_return/analysis/qwen3_time16/analysis.json": "cc00858c155852e9cda7acf8c03c0d7db41197a4ee7026ccd43ade372abca67d",
+      "remote_return/prepared/cells.jsonl": "4f6052a8815380ea3ef19d9becd5409d659c59404f8b23770bc02c5ced2a9d26",
+      "remote_return/prepared/preflight.json": "b78a58ab240c65ad062e34922a5bf6c939dc68cbcf72e8e0ffdb16606d5094fe",
+      "remote_return/prepared/schedule.jsonl": "18233cdacd9cdc8b8816ebcd67fc3e6a21224cdeddbfb9009c174392a05b4d41",
+      "remote_return/prepared_time16/cells.jsonl": "9d427a7cea32743e5a91ec597e426892e8e8851c023d9499eb73f65547be185b",
+      "remote_return/prepared_time16/preflight.json": "6f385b31457eaa0a73f5c8c294ca785a34434640076d2325d4b1169eacbea705",
+      "remote_return/prepared_time16/schedule.jsonl": "1a5f5f7120471de01d7715b2b1ada597be1ff995248ee1cc1dc8c5784db6b631",
+      "remote_return/runs/qwen25_main/final.jsonl": "5301e8a9ea1e6aef2cc750fd07f3e664b81331fc9a7a7546cdd5c63db79c0fae",
+      "remote_return/runs/qwen25_main/manifest.json": "417f39cc809efac425ec5bb02d241a4e5dee211441b1741abb5cb7addb45856c",
+      "remote_return/runs/qwen3_main/final.jsonl": "1100ff5c45bdda39317912cc5fbf38fe1edf93148cf22f3ecc41e1e23975af73",
+      "remote_return/runs/qwen3_main/manifest.json": "f93bc34a910ea29fc24f0c47dee2426a9fac95d1512347056f0dca188fc49c7b",
+      "remote_return/runs/qwen3_time16/final.jsonl": "962bd8cba71cbd5e983720efa68e086cb7abe987812f44dd574d28b529f56356",
+      "remote_return/runs/qwen3_time16/manifest.json": "fdadefd9e5c19d6c584004defae2056bc268eabbca22af716ba57f9c1b45ccf6"
+    },
+    "strict_valid_total": 1999,
+    "study_cells_changed": 0,
+    "target_contrasts_changed": 0,
+    "unique_run_call_ids": 2040
+  },
+  "fixtures": {
+    "nonfinite_policy": "Same Python json.loads semantics as the registered parser; nonfinite auxiliary duration is wrong type, never strict-valid.",
+    "parser_fixture_count": 43,
+    "parser_fixture_names": [
+      "missing_optional",
+      "duration_min",
+      "duration_max",
+      "normalized",
+      "unknown_extra_ignored",
+      "nested_effects_unvalidated",
+      "registered_brace_extraction",
+      "duplicate_last_key",
+      "duration_false",
+      "duration_true",
+      "duration_float",
+      "duration_null",
+      "duration_string",
+      "duration_low",
+      "duration_high",
+      "duration_negative",
+      "duration_300",
+      "duration_nonfinite_nan",
+      "duration_nonfinite_inf",
+      "effects_null",
+      "effects_list",
+      "effects_string",
+      "effects_integer",
+      "malformed_json",
+      "two_objects",
+      "missing_text",
+      "empty_object",
+      "missing_action",
+      "illegal_label",
+      "illegal_label2",
+      "action_null",
+      "action_bool",
+      "action_number",
+      "action_object",
+      "action_nan",
+      "no_braces",
+      "action_study",
+      "action_go_class",
+      "action_exercise",
+      "action_chat",
+      "action_rest",
+      "action_eat",
+      "action_wander"
+    ],
+    "semantic_scope": "Only optional-field validation is removed. Illegal labels and malformed JSON are not repaired; termination remains required.",
+    "termination_fixture_count": 8
+  },
+  "interpretation": "This reclassifies the same observed outputs under an auxiliary-field measurement rule. It is not a causal intervention on model behavior, does not repair executable decisions, and leaves the registered primary analysis unchanged.",
+  "reviewed_script_sha256": "a3f595729626b97848b34710250b46b647a5cc62623957c7177de50beebd806f",
+  "reviewer_script_sha256": "9ab448db711bf31491bf3f1cf15cf472294a2a7c88d6544e9762c5cdbe108651",
+  "schema_version": 1,
+  "scope": "independent CPU fixture matrix and raw formal-call census; no new model calls",
+  "status": "passed"
+}

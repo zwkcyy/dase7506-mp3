@@ -1,0 +1,4655 @@
+{
+  "analysis_stage": "post_result_measurement_sensitivity",
+  "cached_parsed_fields_used_for_classification": false,
+  "cells": [
+    {
+      "action_only": {
+        "actions": {
+          "chat": 4,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 0,
+          "study": 0,
+          "wander": 26
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "peer_signal",
+      "categories": {
+        "strict_valid": 30
+      },
+      "cell_id": "C001",
+      "completed": 30,
+      "level": "q10",
+      "level_rendered": "0.06",
+      "persona_id": "P01",
+      "planned": 30,
+      "recovered_auxiliary": 0,
+      "run": "qwen3_main",
+      "strict": {
+        "actions": {
+          "chat": 4,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 0,
+          "study": 0,
+          "wander": 26
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 4,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 0,
+          "study": 0,
+          "wander": 26
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "peer_signal",
+      "categories": {
+        "strict_valid": 30
+      },
+      "cell_id": "C002",
+      "completed": 30,
+      "level": "q50",
+      "level_rendered": "0.13",
+      "persona_id": "P01",
+      "planned": 30,
+      "recovered_auxiliary": 0,
+      "run": "qwen3_main",
+      "strict": {
+        "actions": {
+          "chat": 4,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 0,
+          "study": 0,
+          "wander": 26
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 2,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 2,
+          "study": 0,
+          "wander": 26
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "peer_signal",
+      "categories": {
+        "strict_valid": 30
+      },
+      "cell_id": "C003",
+      "completed": 30,
+      "level": "q90",
+      "level_rendered": "0.24",
+      "persona_id": "P01",
+      "planned": 30,
+      "recovered_auxiliary": 0,
+      "run": "qwen3_main",
+      "strict": {
+        "actions": {
+          "chat": 2,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 2,
+          "study": 0,
+          "wander": 26
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 0,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 29,
+          "study": 1,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "peer_signal",
+      "categories": {
+        "strict_valid": 30
+      },
+      "cell_id": "C004",
+      "completed": 30,
+      "level": "q10",
+      "level_rendered": "0.06",
+      "persona_id": "P02",
+      "planned": 30,
+      "recovered_auxiliary": 0,
+      "run": "qwen3_main",
+      "strict": {
+        "actions": {
+          "chat": 0,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 29,
+          "study": 1,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 0,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 24,
+          "study": 6,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "peer_signal",
+      "categories": {
+        "strict_valid": 30
+      },
+      "cell_id": "C005",
+      "completed": 30,
+      "level": "q50",
+      "level_rendered": "0.13",
+      "persona_id": "P02",
+      "planned": 30,
+      "recovered_auxiliary": 0,
+      "run": "qwen3_main",
+      "strict": {
+        "actions": {
+          "chat": 0,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 24,
+          "study": 6,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 0,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 19,
+          "study": 9,
+          "wander": 2
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "peer_signal",
+      "categories": {
+        "strict_valid": 30
+      },
+      "cell_id": "C006",
+      "completed": 30,
+      "level": "q90",
+      "level_rendered": "0.24",
+      "persona_id": "P02",
+      "planned": 30,
+      "recovered_auxiliary": 0,
+      "run": "qwen3_main",
+      "strict": {
+        "actions": {
+          "chat": 0,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 19,
+          "study": 9,
+          "wander": 2
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 24,
+          "eat": 0,
+          "exercise": 6,
+          "go_class": 0,
+          "rest": 0,
+          "study": 0,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "peer_signal",
+      "categories": {
+        "recoverable_action_auxiliary_schema_failure": 3,
+        "strict_valid": 27
+      },
+      "cell_id": "C007",
+      "completed": 30,
+      "level": "q10",
+      "level_rendered": "0.06",
+      "persona_id": "P03",
+      "planned": 30,
+      "recovered_auxiliary": 3,
+      "run": "qwen3_main",
+      "strict": {
+        "actions": {
+          "chat": 24,
+          "eat": 0,
+          "exercise": 3,
+          "go_class": 0,
+          "rest": 0,
+          "study": 0,
+          "wander": 0
+        },
+        "invalid": 3,
+        "valid": 27
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 14,
+          "eat": 0,
+          "exercise": 15,
+          "go_class": 0,
+          "rest": 0,
+          "study": 0,
+          "wander": 1
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "peer_signal",
+      "categories": {
+        "recoverable_action_auxiliary_schema_failure": 2,
+        "strict_valid": 28
+      },
+      "cell_id": "C008",
+      "completed": 30,
+      "level": "q50",
+      "level_rendered": "0.13",
+      "persona_id": "P03",
+      "planned": 30,
+      "recovered_auxiliary": 2,
+      "run": "qwen3_main",
+      "strict": {
+        "actions": {
+          "chat": 14,
+          "eat": 0,
+          "exercise": 13,
+          "go_class": 0,
+          "rest": 0,
+          "study": 0,
+          "wander": 1
+        },
+        "invalid": 2,
+        "valid": 28
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 15,
+          "eat": 0,
+          "exercise": 15,
+          "go_class": 0,
+          "rest": 0,
+          "study": 0,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "peer_signal",
+      "categories": {
+        "recoverable_action_auxiliary_schema_failure": 4,
+        "strict_valid": 26
+      },
+      "cell_id": "C009",
+      "completed": 30,
+      "level": "q90",
+      "level_rendered": "0.24",
+      "persona_id": "P03",
+      "planned": 30,
+      "recovered_auxiliary": 4,
+      "run": "qwen3_main",
+      "strict": {
+        "actions": {
+          "chat": 15,
+          "eat": 0,
+          "exercise": 11,
+          "go_class": 0,
+          "rest": 0,
+          "study": 0,
+          "wander": 0
+        },
+        "invalid": 4,
+        "valid": 26
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 30,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 0,
+          "study": 0,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "peer_signal",
+      "categories": {
+        "strict_valid": 30
+      },
+      "cell_id": "C010",
+      "completed": 30,
+      "level": "q10",
+      "level_rendered": "0.06",
+      "persona_id": "P04",
+      "planned": 30,
+      "recovered_auxiliary": 0,
+      "run": "qwen3_main",
+      "strict": {
+        "actions": {
+          "chat": 30,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 0,
+          "study": 0,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 30,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 0,
+          "study": 0,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "peer_signal",
+      "categories": {
+        "strict_valid": 30
+      },
+      "cell_id": "C011",
+      "completed": 30,
+      "level": "q50",
+      "level_rendered": "0.13",
+      "persona_id": "P04",
+      "planned": 30,
+      "recovered_auxiliary": 0,
+      "run": "qwen3_main",
+      "strict": {
+        "actions": {
+          "chat": 30,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 0,
+          "study": 0,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 30,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 0,
+          "study": 0,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "peer_signal",
+      "categories": {
+        "strict_valid": 30
+      },
+      "cell_id": "C012",
+      "completed": 30,
+      "level": "q90",
+      "level_rendered": "0.24",
+      "persona_id": "P04",
+      "planned": 30,
+      "recovered_auxiliary": 0,
+      "run": "qwen3_main",
+      "strict": {
+        "actions": {
+          "chat": 30,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 0,
+          "study": 0,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 7,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 1,
+          "study": 0,
+          "wander": 22
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "energy_control",
+      "categories": {
+        "strict_valid": 30
+      },
+      "cell_id": "C013",
+      "completed": 30,
+      "level": "q10",
+      "level_rendered": "0.33",
+      "persona_id": "P01",
+      "planned": 30,
+      "recovered_auxiliary": 0,
+      "run": "qwen3_main",
+      "strict": {
+        "actions": {
+          "chat": 7,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 1,
+          "study": 0,
+          "wander": 22
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 0,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 0,
+          "study": 0,
+          "wander": 30
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "energy_control",
+      "categories": {
+        "strict_valid": 30
+      },
+      "cell_id": "C014",
+      "completed": 30,
+      "level": "q90",
+      "level_rendered": "0.81",
+      "persona_id": "P01",
+      "planned": 30,
+      "recovered_auxiliary": 0,
+      "run": "qwen3_main",
+      "strict": {
+        "actions": {
+          "chat": 0,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 0,
+          "study": 0,
+          "wander": 30
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 0,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 30,
+          "study": 0,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "energy_control",
+      "categories": {
+        "strict_valid": 30
+      },
+      "cell_id": "C015",
+      "completed": 30,
+      "level": "q10",
+      "level_rendered": "0.33",
+      "persona_id": "P02",
+      "planned": 30,
+      "recovered_auxiliary": 0,
+      "run": "qwen3_main",
+      "strict": {
+        "actions": {
+          "chat": 0,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 30,
+          "study": 0,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 0,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 13,
+          "study": 17,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "energy_control",
+      "categories": {
+        "strict_valid": 30
+      },
+      "cell_id": "C016",
+      "completed": 30,
+      "level": "q90",
+      "level_rendered": "0.81",
+      "persona_id": "P02",
+      "planned": 30,
+      "recovered_auxiliary": 0,
+      "run": "qwen3_main",
+      "strict": {
+        "actions": {
+          "chat": 0,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 13,
+          "study": 17,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 19,
+          "eat": 0,
+          "exercise": 11,
+          "go_class": 0,
+          "rest": 0,
+          "study": 0,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "energy_control",
+      "categories": {
+        "strict_valid": 30
+      },
+      "cell_id": "C017",
+      "completed": 30,
+      "level": "q10",
+      "level_rendered": "0.33",
+      "persona_id": "P03",
+      "planned": 30,
+      "recovered_auxiliary": 0,
+      "run": "qwen3_main",
+      "strict": {
+        "actions": {
+          "chat": 19,
+          "eat": 0,
+          "exercise": 11,
+          "go_class": 0,
+          "rest": 0,
+          "study": 0,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 3,
+          "eat": 0,
+          "exercise": 26,
+          "go_class": 0,
+          "rest": 0,
+          "study": 0,
+          "wander": 1
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "energy_control",
+      "categories": {
+        "recoverable_action_auxiliary_schema_failure": 4,
+        "strict_valid": 26
+      },
+      "cell_id": "C018",
+      "completed": 30,
+      "level": "q90",
+      "level_rendered": "0.81",
+      "persona_id": "P03",
+      "planned": 30,
+      "recovered_auxiliary": 4,
+      "run": "qwen3_main",
+      "strict": {
+        "actions": {
+          "chat": 3,
+          "eat": 0,
+          "exercise": 22,
+          "go_class": 0,
+          "rest": 0,
+          "study": 0,
+          "wander": 1
+        },
+        "invalid": 4,
+        "valid": 26
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 30,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 0,
+          "study": 0,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "energy_control",
+      "categories": {
+        "strict_valid": 30
+      },
+      "cell_id": "C019",
+      "completed": 30,
+      "level": "q10",
+      "level_rendered": "0.33",
+      "persona_id": "P04",
+      "planned": 30,
+      "recovered_auxiliary": 0,
+      "run": "qwen3_main",
+      "strict": {
+        "actions": {
+          "chat": 30,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 0,
+          "study": 0,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 30,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 0,
+          "study": 0,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "energy_control",
+      "categories": {
+        "strict_valid": 30
+      },
+      "cell_id": "C020",
+      "completed": 30,
+      "level": "q90",
+      "level_rendered": "0.81",
+      "persona_id": "P04",
+      "planned": 30,
+      "recovered_auxiliary": 0,
+      "run": "qwen3_main",
+      "strict": {
+        "actions": {
+          "chat": 30,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 0,
+          "study": 0,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 0,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 7,
+          "study": 0,
+          "wander": 23
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "hunger_control",
+      "categories": {
+        "strict_valid": 30
+      },
+      "cell_id": "C021",
+      "completed": 30,
+      "level": "q10",
+      "level_rendered": "0.46",
+      "persona_id": "P01",
+      "planned": 30,
+      "recovered_auxiliary": 0,
+      "run": "qwen3_main",
+      "strict": {
+        "actions": {
+          "chat": 0,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 7,
+          "study": 0,
+          "wander": 23
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 1,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 6,
+          "study": 0,
+          "wander": 23
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "hunger_control",
+      "categories": {
+        "strict_valid": 30
+      },
+      "cell_id": "C022",
+      "completed": 30,
+      "level": "q90",
+      "level_rendered": "0.95",
+      "persona_id": "P01",
+      "planned": 30,
+      "recovered_auxiliary": 0,
+      "run": "qwen3_main",
+      "strict": {
+        "actions": {
+          "chat": 1,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 6,
+          "study": 0,
+          "wander": 23
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 0,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 28,
+          "study": 2,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "hunger_control",
+      "categories": {
+        "strict_valid": 30
+      },
+      "cell_id": "C023",
+      "completed": 30,
+      "level": "q10",
+      "level_rendered": "0.46",
+      "persona_id": "P02",
+      "planned": 30,
+      "recovered_auxiliary": 0,
+      "run": "qwen3_main",
+      "strict": {
+        "actions": {
+          "chat": 0,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 28,
+          "study": 2,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 0,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 24,
+          "study": 6,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "hunger_control",
+      "categories": {
+        "strict_valid": 30
+      },
+      "cell_id": "C024",
+      "completed": 30,
+      "level": "q90",
+      "level_rendered": "0.95",
+      "persona_id": "P02",
+      "planned": 30,
+      "recovered_auxiliary": 0,
+      "run": "qwen3_main",
+      "strict": {
+        "actions": {
+          "chat": 0,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 24,
+          "study": 6,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 20,
+          "eat": 0,
+          "exercise": 10,
+          "go_class": 0,
+          "rest": 0,
+          "study": 0,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "hunger_control",
+      "categories": {
+        "recoverable_action_auxiliary_schema_failure": 1,
+        "strict_valid": 29
+      },
+      "cell_id": "C025",
+      "completed": 30,
+      "level": "q10",
+      "level_rendered": "0.46",
+      "persona_id": "P03",
+      "planned": 30,
+      "recovered_auxiliary": 1,
+      "run": "qwen3_main",
+      "strict": {
+        "actions": {
+          "chat": 20,
+          "eat": 0,
+          "exercise": 9,
+          "go_class": 0,
+          "rest": 0,
+          "study": 0,
+          "wander": 0
+        },
+        "invalid": 1,
+        "valid": 29
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 1,
+          "eat": 0,
+          "exercise": 29,
+          "go_class": 0,
+          "rest": 0,
+          "study": 0,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "hunger_control",
+      "categories": {
+        "recoverable_action_auxiliary_schema_failure": 5,
+        "strict_valid": 25
+      },
+      "cell_id": "C026",
+      "completed": 30,
+      "level": "q90",
+      "level_rendered": "0.95",
+      "persona_id": "P03",
+      "planned": 30,
+      "recovered_auxiliary": 5,
+      "run": "qwen3_main",
+      "strict": {
+        "actions": {
+          "chat": 1,
+          "eat": 0,
+          "exercise": 24,
+          "go_class": 0,
+          "rest": 0,
+          "study": 0,
+          "wander": 0
+        },
+        "invalid": 5,
+        "valid": 25
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 30,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 0,
+          "study": 0,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "hunger_control",
+      "categories": {
+        "strict_valid": 30
+      },
+      "cell_id": "C027",
+      "completed": 30,
+      "level": "q10",
+      "level_rendered": "0.46",
+      "persona_id": "P04",
+      "planned": 30,
+      "recovered_auxiliary": 0,
+      "run": "qwen3_main",
+      "strict": {
+        "actions": {
+          "chat": 30,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 0,
+          "study": 0,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 29,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 0,
+          "study": 0,
+          "wander": 1
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "hunger_control",
+      "categories": {
+        "strict_valid": 30
+      },
+      "cell_id": "C028",
+      "completed": 30,
+      "level": "q90",
+      "level_rendered": "0.95",
+      "persona_id": "P04",
+      "planned": 30,
+      "recovered_auxiliary": 0,
+      "run": "qwen3_main",
+      "strict": {
+        "actions": {
+          "chat": 29,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 0,
+          "study": 0,
+          "wander": 1
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 7,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 0,
+          "study": 0,
+          "wander": 23
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "peer_signal",
+      "categories": {
+        "strict_valid": 30
+      },
+      "cell_id": "C001",
+      "completed": 30,
+      "level": "q10",
+      "level_rendered": "0.06",
+      "persona_id": "P01",
+      "planned": 30,
+      "recovered_auxiliary": 0,
+      "run": "qwen3_time16",
+      "strict": {
+        "actions": {
+          "chat": 7,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 0,
+          "study": 0,
+          "wander": 23
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 3,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 0,
+          "study": 0,
+          "wander": 27
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "peer_signal",
+      "categories": {
+        "strict_valid": 30
+      },
+      "cell_id": "C002",
+      "completed": 30,
+      "level": "q50",
+      "level_rendered": "0.13",
+      "persona_id": "P01",
+      "planned": 30,
+      "recovered_auxiliary": 0,
+      "run": "qwen3_time16",
+      "strict": {
+        "actions": {
+          "chat": 3,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 0,
+          "study": 0,
+          "wander": 27
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 3,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 0,
+          "study": 0,
+          "wander": 27
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "peer_signal",
+      "categories": {
+        "strict_valid": 30
+      },
+      "cell_id": "C003",
+      "completed": 30,
+      "level": "q90",
+      "level_rendered": "0.24",
+      "persona_id": "P01",
+      "planned": 30,
+      "recovered_auxiliary": 0,
+      "run": "qwen3_time16",
+      "strict": {
+        "actions": {
+          "chat": 3,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 0,
+          "study": 0,
+          "wander": 27
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 0,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 30,
+          "study": 0,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "peer_signal",
+      "categories": {
+        "strict_valid": 30
+      },
+      "cell_id": "C004",
+      "completed": 30,
+      "level": "q10",
+      "level_rendered": "0.06",
+      "persona_id": "P02",
+      "planned": 30,
+      "recovered_auxiliary": 0,
+      "run": "qwen3_time16",
+      "strict": {
+        "actions": {
+          "chat": 0,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 30,
+          "study": 0,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 0,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 30,
+          "study": 0,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "peer_signal",
+      "categories": {
+        "strict_valid": 30
+      },
+      "cell_id": "C005",
+      "completed": 30,
+      "level": "q50",
+      "level_rendered": "0.13",
+      "persona_id": "P02",
+      "planned": 30,
+      "recovered_auxiliary": 0,
+      "run": "qwen3_time16",
+      "strict": {
+        "actions": {
+          "chat": 0,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 30,
+          "study": 0,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 0,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 30,
+          "study": 0,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "peer_signal",
+      "categories": {
+        "strict_valid": 30
+      },
+      "cell_id": "C006",
+      "completed": 30,
+      "level": "q90",
+      "level_rendered": "0.24",
+      "persona_id": "P02",
+      "planned": 30,
+      "recovered_auxiliary": 0,
+      "run": "qwen3_time16",
+      "strict": {
+        "actions": {
+          "chat": 0,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 30,
+          "study": 0,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 0,
+          "eat": 0,
+          "exercise": 30,
+          "go_class": 0,
+          "rest": 0,
+          "study": 0,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "peer_signal",
+      "categories": {
+        "recoverable_action_auxiliary_schema_failure": 8,
+        "strict_valid": 22
+      },
+      "cell_id": "C007",
+      "completed": 30,
+      "level": "q10",
+      "level_rendered": "0.06",
+      "persona_id": "P03",
+      "planned": 30,
+      "recovered_auxiliary": 8,
+      "run": "qwen3_time16",
+      "strict": {
+        "actions": {
+          "chat": 0,
+          "eat": 0,
+          "exercise": 22,
+          "go_class": 0,
+          "rest": 0,
+          "study": 0,
+          "wander": 0
+        },
+        "invalid": 8,
+        "valid": 22
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 0,
+          "eat": 0,
+          "exercise": 30,
+          "go_class": 0,
+          "rest": 0,
+          "study": 0,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "peer_signal",
+      "categories": {
+        "recoverable_action_auxiliary_schema_failure": 6,
+        "strict_valid": 24
+      },
+      "cell_id": "C008",
+      "completed": 30,
+      "level": "q50",
+      "level_rendered": "0.13",
+      "persona_id": "P03",
+      "planned": 30,
+      "recovered_auxiliary": 6,
+      "run": "qwen3_time16",
+      "strict": {
+        "actions": {
+          "chat": 0,
+          "eat": 0,
+          "exercise": 24,
+          "go_class": 0,
+          "rest": 0,
+          "study": 0,
+          "wander": 0
+        },
+        "invalid": 6,
+        "valid": 24
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 0,
+          "eat": 0,
+          "exercise": 30,
+          "go_class": 0,
+          "rest": 0,
+          "study": 0,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "peer_signal",
+      "categories": {
+        "recoverable_action_auxiliary_schema_failure": 4,
+        "strict_valid": 26
+      },
+      "cell_id": "C009",
+      "completed": 30,
+      "level": "q90",
+      "level_rendered": "0.24",
+      "persona_id": "P03",
+      "planned": 30,
+      "recovered_auxiliary": 4,
+      "run": "qwen3_time16",
+      "strict": {
+        "actions": {
+          "chat": 0,
+          "eat": 0,
+          "exercise": 26,
+          "go_class": 0,
+          "rest": 0,
+          "study": 0,
+          "wander": 0
+        },
+        "invalid": 4,
+        "valid": 26
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 30,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 0,
+          "study": 0,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "peer_signal",
+      "categories": {
+        "strict_valid": 30
+      },
+      "cell_id": "C010",
+      "completed": 30,
+      "level": "q10",
+      "level_rendered": "0.06",
+      "persona_id": "P04",
+      "planned": 30,
+      "recovered_auxiliary": 0,
+      "run": "qwen3_time16",
+      "strict": {
+        "actions": {
+          "chat": 30,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 0,
+          "study": 0,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 30,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 0,
+          "study": 0,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "peer_signal",
+      "categories": {
+        "strict_valid": 30
+      },
+      "cell_id": "C011",
+      "completed": 30,
+      "level": "q50",
+      "level_rendered": "0.13",
+      "persona_id": "P04",
+      "planned": 30,
+      "recovered_auxiliary": 0,
+      "run": "qwen3_time16",
+      "strict": {
+        "actions": {
+          "chat": 30,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 0,
+          "study": 0,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 30,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 0,
+          "study": 0,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "peer_signal",
+      "categories": {
+        "strict_valid": 30
+      },
+      "cell_id": "C012",
+      "completed": 30,
+      "level": "q90",
+      "level_rendered": "0.24",
+      "persona_id": "P04",
+      "planned": 30,
+      "recovered_auxiliary": 0,
+      "run": "qwen3_time16",
+      "strict": {
+        "actions": {
+          "chat": 30,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 0,
+          "study": 0,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 5,
+          "eat": 0,
+          "exercise": 1,
+          "go_class": 0,
+          "rest": 14,
+          "study": 10,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "peer_signal",
+      "categories": {
+        "strict_valid": 30
+      },
+      "cell_id": "C001",
+      "completed": 30,
+      "level": "q10",
+      "level_rendered": "0.06",
+      "persona_id": "P01",
+      "planned": 30,
+      "recovered_auxiliary": 0,
+      "run": "qwen25_main",
+      "strict": {
+        "actions": {
+          "chat": 5,
+          "eat": 0,
+          "exercise": 1,
+          "go_class": 0,
+          "rest": 14,
+          "study": 10,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 6,
+          "eat": 0,
+          "exercise": 4,
+          "go_class": 0,
+          "rest": 12,
+          "study": 8,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "peer_signal",
+      "categories": {
+        "strict_valid": 30
+      },
+      "cell_id": "C002",
+      "completed": 30,
+      "level": "q50",
+      "level_rendered": "0.13",
+      "persona_id": "P01",
+      "planned": 30,
+      "recovered_auxiliary": 0,
+      "run": "qwen25_main",
+      "strict": {
+        "actions": {
+          "chat": 6,
+          "eat": 0,
+          "exercise": 4,
+          "go_class": 0,
+          "rest": 12,
+          "study": 8,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 5,
+          "eat": 0,
+          "exercise": 1,
+          "go_class": 0,
+          "rest": 9,
+          "study": 12,
+          "wander": 3
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "peer_signal",
+      "categories": {
+        "strict_valid": 30
+      },
+      "cell_id": "C003",
+      "completed": 30,
+      "level": "q90",
+      "level_rendered": "0.24",
+      "persona_id": "P01",
+      "planned": 30,
+      "recovered_auxiliary": 0,
+      "run": "qwen25_main",
+      "strict": {
+        "actions": {
+          "chat": 5,
+          "eat": 0,
+          "exercise": 1,
+          "go_class": 0,
+          "rest": 9,
+          "study": 12,
+          "wander": 3
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 2,
+          "eat": 1,
+          "exercise": 0,
+          "go_class": 1,
+          "rest": 1,
+          "study": 25,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "peer_signal",
+      "categories": {
+        "strict_valid": 30
+      },
+      "cell_id": "C004",
+      "completed": 30,
+      "level": "q10",
+      "level_rendered": "0.06",
+      "persona_id": "P02",
+      "planned": 30,
+      "recovered_auxiliary": 0,
+      "run": "qwen25_main",
+      "strict": {
+        "actions": {
+          "chat": 2,
+          "eat": 1,
+          "exercise": 0,
+          "go_class": 1,
+          "rest": 1,
+          "study": 25,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 1,
+          "eat": 3,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 2,
+          "study": 24,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "peer_signal",
+      "categories": {
+        "strict_valid": 30
+      },
+      "cell_id": "C005",
+      "completed": 30,
+      "level": "q50",
+      "level_rendered": "0.13",
+      "persona_id": "P02",
+      "planned": 30,
+      "recovered_auxiliary": 0,
+      "run": "qwen25_main",
+      "strict": {
+        "actions": {
+          "chat": 1,
+          "eat": 3,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 2,
+          "study": 24,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 0,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 2,
+          "study": 28,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "peer_signal",
+      "categories": {
+        "strict_valid": 30
+      },
+      "cell_id": "C006",
+      "completed": 30,
+      "level": "q90",
+      "level_rendered": "0.24",
+      "persona_id": "P02",
+      "planned": 30,
+      "recovered_auxiliary": 0,
+      "run": "qwen25_main",
+      "strict": {
+        "actions": {
+          "chat": 0,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 2,
+          "study": 28,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 1,
+          "eat": 1,
+          "exercise": 24,
+          "go_class": 0,
+          "rest": 0,
+          "study": 3,
+          "wander": 1
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "peer_signal",
+      "categories": {
+        "strict_valid": 30
+      },
+      "cell_id": "C007",
+      "completed": 30,
+      "level": "q10",
+      "level_rendered": "0.06",
+      "persona_id": "P03",
+      "planned": 30,
+      "recovered_auxiliary": 0,
+      "run": "qwen25_main",
+      "strict": {
+        "actions": {
+          "chat": 1,
+          "eat": 1,
+          "exercise": 24,
+          "go_class": 0,
+          "rest": 0,
+          "study": 3,
+          "wander": 1
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 5,
+          "eat": 0,
+          "exercise": 23,
+          "go_class": 0,
+          "rest": 1,
+          "study": 1,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "peer_signal",
+      "categories": {
+        "strict_valid": 30
+      },
+      "cell_id": "C008",
+      "completed": 30,
+      "level": "q50",
+      "level_rendered": "0.13",
+      "persona_id": "P03",
+      "planned": 30,
+      "recovered_auxiliary": 0,
+      "run": "qwen25_main",
+      "strict": {
+        "actions": {
+          "chat": 5,
+          "eat": 0,
+          "exercise": 23,
+          "go_class": 0,
+          "rest": 1,
+          "study": 1,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 2,
+          "eat": 0,
+          "exercise": 27,
+          "go_class": 0,
+          "rest": 0,
+          "study": 0,
+          "wander": 1
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "peer_signal",
+      "categories": {
+        "strict_valid": 30
+      },
+      "cell_id": "C009",
+      "completed": 30,
+      "level": "q90",
+      "level_rendered": "0.24",
+      "persona_id": "P03",
+      "planned": 30,
+      "recovered_auxiliary": 0,
+      "run": "qwen25_main",
+      "strict": {
+        "actions": {
+          "chat": 2,
+          "eat": 0,
+          "exercise": 27,
+          "go_class": 0,
+          "rest": 0,
+          "study": 0,
+          "wander": 1
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 7,
+          "eat": 0,
+          "exercise": 17,
+          "go_class": 0,
+          "rest": 2,
+          "study": 2,
+          "wander": 1
+        },
+        "invalid": 1,
+        "valid": 29
+      },
+      "arm": "peer_signal",
+      "categories": {
+        "invalid_json": 1,
+        "strict_valid": 29
+      },
+      "cell_id": "C010",
+      "completed": 30,
+      "level": "q10",
+      "level_rendered": "0.06",
+      "persona_id": "P04",
+      "planned": 30,
+      "recovered_auxiliary": 0,
+      "run": "qwen25_main",
+      "strict": {
+        "actions": {
+          "chat": 7,
+          "eat": 0,
+          "exercise": 17,
+          "go_class": 0,
+          "rest": 2,
+          "study": 2,
+          "wander": 1
+        },
+        "invalid": 1,
+        "valid": 29
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 5,
+          "eat": 0,
+          "exercise": 23,
+          "go_class": 0,
+          "rest": 0,
+          "study": 2,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "peer_signal",
+      "categories": {
+        "strict_valid": 30
+      },
+      "cell_id": "C011",
+      "completed": 30,
+      "level": "q50",
+      "level_rendered": "0.13",
+      "persona_id": "P04",
+      "planned": 30,
+      "recovered_auxiliary": 0,
+      "run": "qwen25_main",
+      "strict": {
+        "actions": {
+          "chat": 5,
+          "eat": 0,
+          "exercise": 23,
+          "go_class": 0,
+          "rest": 0,
+          "study": 2,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 3,
+          "eat": 0,
+          "exercise": 21,
+          "go_class": 0,
+          "rest": 1,
+          "study": 4,
+          "wander": 1
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "peer_signal",
+      "categories": {
+        "strict_valid": 30
+      },
+      "cell_id": "C012",
+      "completed": 30,
+      "level": "q90",
+      "level_rendered": "0.24",
+      "persona_id": "P04",
+      "planned": 30,
+      "recovered_auxiliary": 0,
+      "run": "qwen25_main",
+      "strict": {
+        "actions": {
+          "chat": 3,
+          "eat": 0,
+          "exercise": 21,
+          "go_class": 0,
+          "rest": 1,
+          "study": 4,
+          "wander": 1
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 4,
+          "eat": 0,
+          "exercise": 1,
+          "go_class": 0,
+          "rest": 17,
+          "study": 6,
+          "wander": 2
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "energy_control",
+      "categories": {
+        "strict_valid": 30
+      },
+      "cell_id": "C013",
+      "completed": 30,
+      "level": "q10",
+      "level_rendered": "0.33",
+      "persona_id": "P01",
+      "planned": 30,
+      "recovered_auxiliary": 0,
+      "run": "qwen25_main",
+      "strict": {
+        "actions": {
+          "chat": 4,
+          "eat": 0,
+          "exercise": 1,
+          "go_class": 0,
+          "rest": 17,
+          "study": 6,
+          "wander": 2
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 3,
+          "eat": 1,
+          "exercise": 1,
+          "go_class": 0,
+          "rest": 13,
+          "study": 12,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "energy_control",
+      "categories": {
+        "strict_valid": 30
+      },
+      "cell_id": "C014",
+      "completed": 30,
+      "level": "q90",
+      "level_rendered": "0.81",
+      "persona_id": "P01",
+      "planned": 30,
+      "recovered_auxiliary": 0,
+      "run": "qwen25_main",
+      "strict": {
+        "actions": {
+          "chat": 3,
+          "eat": 1,
+          "exercise": 1,
+          "go_class": 0,
+          "rest": 13,
+          "study": 12,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 0,
+          "eat": 1,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 8,
+          "study": 21,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "energy_control",
+      "categories": {
+        "strict_valid": 30
+      },
+      "cell_id": "C015",
+      "completed": 30,
+      "level": "q10",
+      "level_rendered": "0.33",
+      "persona_id": "P02",
+      "planned": 30,
+      "recovered_auxiliary": 0,
+      "run": "qwen25_main",
+      "strict": {
+        "actions": {
+          "chat": 0,
+          "eat": 1,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 8,
+          "study": 21,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 2,
+          "eat": 2,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 1,
+          "study": 24,
+          "wander": 0
+        },
+        "invalid": 1,
+        "valid": 29
+      },
+      "arm": "energy_control",
+      "categories": {
+        "illegal_action": 1,
+        "strict_valid": 29
+      },
+      "cell_id": "C016",
+      "completed": 30,
+      "level": "q90",
+      "level_rendered": "0.81",
+      "persona_id": "P02",
+      "planned": 30,
+      "recovered_auxiliary": 0,
+      "run": "qwen25_main",
+      "strict": {
+        "actions": {
+          "chat": 2,
+          "eat": 2,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 1,
+          "study": 24,
+          "wander": 0
+        },
+        "invalid": 1,
+        "valid": 29
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 0,
+          "eat": 0,
+          "exercise": 28,
+          "go_class": 0,
+          "rest": 0,
+          "study": 2,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "energy_control",
+      "categories": {
+        "strict_valid": 30
+      },
+      "cell_id": "C017",
+      "completed": 30,
+      "level": "q10",
+      "level_rendered": "0.33",
+      "persona_id": "P03",
+      "planned": 30,
+      "recovered_auxiliary": 0,
+      "run": "qwen25_main",
+      "strict": {
+        "actions": {
+          "chat": 0,
+          "eat": 0,
+          "exercise": 28,
+          "go_class": 0,
+          "rest": 0,
+          "study": 2,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 3,
+          "eat": 0,
+          "exercise": 23,
+          "go_class": 0,
+          "rest": 0,
+          "study": 3,
+          "wander": 1
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "energy_control",
+      "categories": {
+        "strict_valid": 30
+      },
+      "cell_id": "C018",
+      "completed": 30,
+      "level": "q90",
+      "level_rendered": "0.81",
+      "persona_id": "P03",
+      "planned": 30,
+      "recovered_auxiliary": 0,
+      "run": "qwen25_main",
+      "strict": {
+        "actions": {
+          "chat": 3,
+          "eat": 0,
+          "exercise": 23,
+          "go_class": 0,
+          "rest": 0,
+          "study": 3,
+          "wander": 1
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 6,
+          "eat": 0,
+          "exercise": 21,
+          "go_class": 0,
+          "rest": 1,
+          "study": 2,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "energy_control",
+      "categories": {
+        "strict_valid": 30
+      },
+      "cell_id": "C019",
+      "completed": 30,
+      "level": "q10",
+      "level_rendered": "0.33",
+      "persona_id": "P04",
+      "planned": 30,
+      "recovered_auxiliary": 0,
+      "run": "qwen25_main",
+      "strict": {
+        "actions": {
+          "chat": 6,
+          "eat": 0,
+          "exercise": 21,
+          "go_class": 0,
+          "rest": 1,
+          "study": 2,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 6,
+          "eat": 0,
+          "exercise": 22,
+          "go_class": 0,
+          "rest": 0,
+          "study": 2,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "energy_control",
+      "categories": {
+        "strict_valid": 30
+      },
+      "cell_id": "C020",
+      "completed": 30,
+      "level": "q90",
+      "level_rendered": "0.81",
+      "persona_id": "P04",
+      "planned": 30,
+      "recovered_auxiliary": 0,
+      "run": "qwen25_main",
+      "strict": {
+        "actions": {
+          "chat": 6,
+          "eat": 0,
+          "exercise": 22,
+          "go_class": 0,
+          "rest": 0,
+          "study": 2,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 3,
+          "eat": 0,
+          "exercise": 4,
+          "go_class": 0,
+          "rest": 9,
+          "study": 13,
+          "wander": 1
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "hunger_control",
+      "categories": {
+        "strict_valid": 30
+      },
+      "cell_id": "C021",
+      "completed": 30,
+      "level": "q10",
+      "level_rendered": "0.46",
+      "persona_id": "P01",
+      "planned": 30,
+      "recovered_auxiliary": 0,
+      "run": "qwen25_main",
+      "strict": {
+        "actions": {
+          "chat": 3,
+          "eat": 0,
+          "exercise": 4,
+          "go_class": 0,
+          "rest": 9,
+          "study": 13,
+          "wander": 1
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 3,
+          "eat": 1,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 15,
+          "study": 9,
+          "wander": 0
+        },
+        "invalid": 2,
+        "valid": 28
+      },
+      "arm": "hunger_control",
+      "categories": {
+        "illegal_action": 1,
+        "invalid_json": 1,
+        "strict_valid": 28
+      },
+      "cell_id": "C022",
+      "completed": 30,
+      "level": "q90",
+      "level_rendered": "0.95",
+      "persona_id": "P01",
+      "planned": 30,
+      "recovered_auxiliary": 0,
+      "run": "qwen25_main",
+      "strict": {
+        "actions": {
+          "chat": 3,
+          "eat": 1,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 15,
+          "study": 9,
+          "wander": 0
+        },
+        "invalid": 2,
+        "valid": 28
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 0,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 4,
+          "study": 26,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "hunger_control",
+      "categories": {
+        "strict_valid": 30
+      },
+      "cell_id": "C023",
+      "completed": 30,
+      "level": "q10",
+      "level_rendered": "0.46",
+      "persona_id": "P02",
+      "planned": 30,
+      "recovered_auxiliary": 0,
+      "run": "qwen25_main",
+      "strict": {
+        "actions": {
+          "chat": 0,
+          "eat": 0,
+          "exercise": 0,
+          "go_class": 0,
+          "rest": 4,
+          "study": 26,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 2,
+          "eat": 0,
+          "exercise": 1,
+          "go_class": 0,
+          "rest": 5,
+          "study": 22,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "hunger_control",
+      "categories": {
+        "strict_valid": 30
+      },
+      "cell_id": "C024",
+      "completed": 30,
+      "level": "q90",
+      "level_rendered": "0.95",
+      "persona_id": "P02",
+      "planned": 30,
+      "recovered_auxiliary": 0,
+      "run": "qwen25_main",
+      "strict": {
+        "actions": {
+          "chat": 2,
+          "eat": 0,
+          "exercise": 1,
+          "go_class": 0,
+          "rest": 5,
+          "study": 22,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 3,
+          "eat": 2,
+          "exercise": 21,
+          "go_class": 0,
+          "rest": 0,
+          "study": 3,
+          "wander": 1
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "hunger_control",
+      "categories": {
+        "strict_valid": 30
+      },
+      "cell_id": "C025",
+      "completed": 30,
+      "level": "q10",
+      "level_rendered": "0.46",
+      "persona_id": "P03",
+      "planned": 30,
+      "recovered_auxiliary": 0,
+      "run": "qwen25_main",
+      "strict": {
+        "actions": {
+          "chat": 3,
+          "eat": 2,
+          "exercise": 21,
+          "go_class": 0,
+          "rest": 0,
+          "study": 3,
+          "wander": 1
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 1,
+          "eat": 0,
+          "exercise": 26,
+          "go_class": 0,
+          "rest": 0,
+          "study": 3,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "hunger_control",
+      "categories": {
+        "strict_valid": 30
+      },
+      "cell_id": "C026",
+      "completed": 30,
+      "level": "q90",
+      "level_rendered": "0.95",
+      "persona_id": "P03",
+      "planned": 30,
+      "recovered_auxiliary": 0,
+      "run": "qwen25_main",
+      "strict": {
+        "actions": {
+          "chat": 1,
+          "eat": 0,
+          "exercise": 26,
+          "go_class": 0,
+          "rest": 0,
+          "study": 3,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 8,
+          "eat": 2,
+          "exercise": 17,
+          "go_class": 1,
+          "rest": 1,
+          "study": 1,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "hunger_control",
+      "categories": {
+        "strict_valid": 30
+      },
+      "cell_id": "C027",
+      "completed": 30,
+      "level": "q10",
+      "level_rendered": "0.46",
+      "persona_id": "P04",
+      "planned": 30,
+      "recovered_auxiliary": 0,
+      "run": "qwen25_main",
+      "strict": {
+        "actions": {
+          "chat": 8,
+          "eat": 2,
+          "exercise": 17,
+          "go_class": 1,
+          "rest": 1,
+          "study": 1,
+          "wander": 0
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "study_count_changed": false
+    },
+    {
+      "action_only": {
+        "actions": {
+          "chat": 6,
+          "eat": 0,
+          "exercise": 22,
+          "go_class": 0,
+          "rest": 0,
+          "study": 1,
+          "wander": 1
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "arm": "hunger_control",
+      "categories": {
+        "strict_valid": 30
+      },
+      "cell_id": "C028",
+      "completed": 30,
+      "level": "q90",
+      "level_rendered": "0.95",
+      "persona_id": "P04",
+      "planned": 30,
+      "recovered_auxiliary": 0,
+      "run": "qwen25_main",
+      "strict": {
+        "actions": {
+          "chat": 6,
+          "eat": 0,
+          "exercise": 22,
+          "go_class": 0,
+          "rest": 0,
+          "study": 1,
+          "wander": 1
+        },
+        "invalid": 0,
+        "valid": 30
+      },
+      "study_count_changed": false
+    }
+  ],
+  "control_effects": [
+    {
+      "a_cell_id": "C013",
+      "action": "rest",
+      "action_only": {
+        "a": {
+          "count": 1,
+          "denominator": 30,
+          "estimate": 0.03333333333333333,
+          "wilson95": [
+            0.005908590381612455,
+            0.1667039099140917
+          ]
+        },
+        "b": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "estimate": 0.03333333333333333,
+        "newcombe_wilson95": [
+          -0.0834459754325434,
+          0.1667039099140917
+        ]
+      },
+      "analysis_stage": "post_result_measurement_sensitivity",
+      "arm": "energy_control",
+      "b_cell_id": "C014",
+      "change_in_estimate": 0.0,
+      "contrast": "q10_minus_q90",
+      "estimate_changed": false,
+      "persona_id": "P01",
+      "run": "qwen3_main",
+      "strict": {
+        "a": {
+          "count": 1,
+          "denominator": 30,
+          "estimate": 0.03333333333333333,
+          "wilson95": [
+            0.005908590381612455,
+            0.1667039099140917
+          ]
+        },
+        "b": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "estimate": 0.03333333333333333,
+        "newcombe_wilson95": [
+          -0.0834459754325434,
+          0.1667039099140917
+        ]
+      }
+    },
+    {
+      "a_cell_id": "C021",
+      "action": "eat",
+      "action_only": {
+        "a": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "b": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "estimate": 0.0,
+        "newcombe_wilson95": [
+          -0.11351339317396873,
+          0.11351339317396873
+        ]
+      },
+      "analysis_stage": "post_result_measurement_sensitivity",
+      "arm": "hunger_control",
+      "b_cell_id": "C022",
+      "change_in_estimate": 0.0,
+      "contrast": "q10_minus_q90",
+      "estimate_changed": false,
+      "persona_id": "P01",
+      "run": "qwen3_main",
+      "strict": {
+        "a": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "b": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "estimate": 0.0,
+        "newcombe_wilson95": [
+          -0.11351339317396873,
+          0.11351339317396873
+        ]
+      }
+    },
+    {
+      "a_cell_id": "C015",
+      "action": "rest",
+      "action_only": {
+        "a": {
+          "count": 30,
+          "denominator": 30,
+          "estimate": 1.0,
+          "wilson95": [
+            0.8864866068260314,
+            1.0
+          ]
+        },
+        "b": {
+          "count": 13,
+          "denominator": 30,
+          "estimate": 0.43333333333333335,
+          "wilson95": [
+            0.2737748557646653,
+            0.6080269299918639
+          ]
+        },
+        "estimate": 0.5666666666666667,
+        "newcombe_wilson95": [
+          0.3583324564577781,
+          0.7262251442353347
+        ]
+      },
+      "analysis_stage": "post_result_measurement_sensitivity",
+      "arm": "energy_control",
+      "b_cell_id": "C016",
+      "change_in_estimate": 0.0,
+      "contrast": "q10_minus_q90",
+      "estimate_changed": false,
+      "persona_id": "P02",
+      "run": "qwen3_main",
+      "strict": {
+        "a": {
+          "count": 30,
+          "denominator": 30,
+          "estimate": 1.0,
+          "wilson95": [
+            0.8864866068260314,
+            1.0
+          ]
+        },
+        "b": {
+          "count": 13,
+          "denominator": 30,
+          "estimate": 0.43333333333333335,
+          "wilson95": [
+            0.2737748557646653,
+            0.6080269299918639
+          ]
+        },
+        "estimate": 0.5666666666666667,
+        "newcombe_wilson95": [
+          0.3583324564577781,
+          0.7262251442353347
+        ]
+      }
+    },
+    {
+      "a_cell_id": "C023",
+      "action": "eat",
+      "action_only": {
+        "a": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "b": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "estimate": 0.0,
+        "newcombe_wilson95": [
+          -0.11351339317396873,
+          0.11351339317396873
+        ]
+      },
+      "analysis_stage": "post_result_measurement_sensitivity",
+      "arm": "hunger_control",
+      "b_cell_id": "C024",
+      "change_in_estimate": 0.0,
+      "contrast": "q10_minus_q90",
+      "estimate_changed": false,
+      "persona_id": "P02",
+      "run": "qwen3_main",
+      "strict": {
+        "a": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "b": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "estimate": 0.0,
+        "newcombe_wilson95": [
+          -0.11351339317396873,
+          0.11351339317396873
+        ]
+      }
+    },
+    {
+      "a_cell_id": "C017",
+      "action": "rest",
+      "action_only": {
+        "a": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "b": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "estimate": 0.0,
+        "newcombe_wilson95": [
+          -0.11351339317396873,
+          0.11351339317396873
+        ]
+      },
+      "analysis_stage": "post_result_measurement_sensitivity",
+      "arm": "energy_control",
+      "b_cell_id": "C018",
+      "change_in_estimate": 0.0,
+      "contrast": "q10_minus_q90",
+      "estimate_changed": false,
+      "persona_id": "P03",
+      "run": "qwen3_main",
+      "strict": {
+        "a": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "b": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "estimate": 0.0,
+        "newcombe_wilson95": [
+          -0.11351339317396873,
+          0.11351339317396873
+        ]
+      }
+    },
+    {
+      "a_cell_id": "C025",
+      "action": "eat",
+      "action_only": {
+        "a": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "b": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "estimate": 0.0,
+        "newcombe_wilson95": [
+          -0.11351339317396873,
+          0.11351339317396873
+        ]
+      },
+      "analysis_stage": "post_result_measurement_sensitivity",
+      "arm": "hunger_control",
+      "b_cell_id": "C026",
+      "change_in_estimate": 0.0,
+      "contrast": "q10_minus_q90",
+      "estimate_changed": false,
+      "persona_id": "P03",
+      "run": "qwen3_main",
+      "strict": {
+        "a": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "b": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "estimate": 0.0,
+        "newcombe_wilson95": [
+          -0.11351339317396873,
+          0.11351339317396873
+        ]
+      }
+    },
+    {
+      "a_cell_id": "C019",
+      "action": "rest",
+      "action_only": {
+        "a": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "b": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "estimate": 0.0,
+        "newcombe_wilson95": [
+          -0.11351339317396873,
+          0.11351339317396873
+        ]
+      },
+      "analysis_stage": "post_result_measurement_sensitivity",
+      "arm": "energy_control",
+      "b_cell_id": "C020",
+      "change_in_estimate": 0.0,
+      "contrast": "q10_minus_q90",
+      "estimate_changed": false,
+      "persona_id": "P04",
+      "run": "qwen3_main",
+      "strict": {
+        "a": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "b": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "estimate": 0.0,
+        "newcombe_wilson95": [
+          -0.11351339317396873,
+          0.11351339317396873
+        ]
+      }
+    },
+    {
+      "a_cell_id": "C027",
+      "action": "eat",
+      "action_only": {
+        "a": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "b": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "estimate": 0.0,
+        "newcombe_wilson95": [
+          -0.11351339317396873,
+          0.11351339317396873
+        ]
+      },
+      "analysis_stage": "post_result_measurement_sensitivity",
+      "arm": "hunger_control",
+      "b_cell_id": "C028",
+      "change_in_estimate": 0.0,
+      "contrast": "q10_minus_q90",
+      "estimate_changed": false,
+      "persona_id": "P04",
+      "run": "qwen3_main",
+      "strict": {
+        "a": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "b": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "estimate": 0.0,
+        "newcombe_wilson95": [
+          -0.11351339317396873,
+          0.11351339317396873
+        ]
+      }
+    },
+    {
+      "a_cell_id": "C013",
+      "action": "rest",
+      "action_only": {
+        "a": {
+          "count": 17,
+          "denominator": 30,
+          "estimate": 0.5666666666666667,
+          "wilson95": [
+            0.3919730700081361,
+            0.7262251442353347
+          ]
+        },
+        "b": {
+          "count": 13,
+          "denominator": 30,
+          "estimate": 0.43333333333333335,
+          "wilson95": [
+            0.2737748557646653,
+            0.6080269299918639
+          ]
+        },
+        "estimate": 0.1333333333333333,
+        "newcombe_wilson95": [
+          -0.11372072032089584,
+          0.3589830963025469
+        ]
+      },
+      "analysis_stage": "post_result_measurement_sensitivity",
+      "arm": "energy_control",
+      "b_cell_id": "C014",
+      "change_in_estimate": 0.0,
+      "contrast": "q10_minus_q90",
+      "estimate_changed": false,
+      "persona_id": "P01",
+      "run": "qwen25_main",
+      "strict": {
+        "a": {
+          "count": 17,
+          "denominator": 30,
+          "estimate": 0.5666666666666667,
+          "wilson95": [
+            0.3919730700081361,
+            0.7262251442353347
+          ]
+        },
+        "b": {
+          "count": 13,
+          "denominator": 30,
+          "estimate": 0.43333333333333335,
+          "wilson95": [
+            0.2737748557646653,
+            0.6080269299918639
+          ]
+        },
+        "estimate": 0.1333333333333333,
+        "newcombe_wilson95": [
+          -0.11372072032089584,
+          0.3589830963025469
+        ]
+      }
+    },
+    {
+      "a_cell_id": "C021",
+      "action": "eat",
+      "action_only": {
+        "a": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "b": {
+          "count": 1,
+          "denominator": 30,
+          "estimate": 0.03333333333333333,
+          "wilson95": [
+            0.005908590381612455,
+            0.1667039099140917
+          ]
+        },
+        "estimate": -0.03333333333333333,
+        "newcombe_wilson95": [
+          -0.1667039099140917,
+          0.0834459754325434
+        ]
+      },
+      "analysis_stage": "post_result_measurement_sensitivity",
+      "arm": "hunger_control",
+      "b_cell_id": "C022",
+      "change_in_estimate": 0.0,
+      "contrast": "q10_minus_q90",
+      "estimate_changed": false,
+      "persona_id": "P01",
+      "run": "qwen25_main",
+      "strict": {
+        "a": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "b": {
+          "count": 1,
+          "denominator": 30,
+          "estimate": 0.03333333333333333,
+          "wilson95": [
+            0.005908590381612455,
+            0.1667039099140917
+          ]
+        },
+        "estimate": -0.03333333333333333,
+        "newcombe_wilson95": [
+          -0.1667039099140917,
+          0.0834459754325434
+        ]
+      }
+    },
+    {
+      "a_cell_id": "C015",
+      "action": "rest",
+      "action_only": {
+        "a": {
+          "count": 8,
+          "denominator": 30,
+          "estimate": 0.26666666666666666,
+          "wilson95": [
+            0.14182663319596325,
+            0.44447961695188887
+          ]
+        },
+        "b": {
+          "count": 1,
+          "denominator": 30,
+          "estimate": 0.03333333333333333,
+          "wilson95": [
+            0.005908590381612455,
+            0.1667039099140917
+          ]
+        },
+        "estimate": 0.23333333333333334,
+        "newcombe_wilson95": [
+          0.05065124703462073,
+          0.4132487629526488
+        ]
+      },
+      "analysis_stage": "post_result_measurement_sensitivity",
+      "arm": "energy_control",
+      "b_cell_id": "C016",
+      "change_in_estimate": 0.0,
+      "contrast": "q10_minus_q90",
+      "estimate_changed": false,
+      "persona_id": "P02",
+      "run": "qwen25_main",
+      "strict": {
+        "a": {
+          "count": 8,
+          "denominator": 30,
+          "estimate": 0.26666666666666666,
+          "wilson95": [
+            0.14182663319596325,
+            0.44447961695188887
+          ]
+        },
+        "b": {
+          "count": 1,
+          "denominator": 30,
+          "estimate": 0.03333333333333333,
+          "wilson95": [
+            0.005908590381612455,
+            0.1667039099140917
+          ]
+        },
+        "estimate": 0.23333333333333334,
+        "newcombe_wilson95": [
+          0.05065124703462073,
+          0.4132487629526488
+        ]
+      }
+    },
+    {
+      "a_cell_id": "C023",
+      "action": "eat",
+      "action_only": {
+        "a": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "b": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "estimate": 0.0,
+        "newcombe_wilson95": [
+          -0.11351339317396873,
+          0.11351339317396873
+        ]
+      },
+      "analysis_stage": "post_result_measurement_sensitivity",
+      "arm": "hunger_control",
+      "b_cell_id": "C024",
+      "change_in_estimate": 0.0,
+      "contrast": "q10_minus_q90",
+      "estimate_changed": false,
+      "persona_id": "P02",
+      "run": "qwen25_main",
+      "strict": {
+        "a": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "b": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "estimate": 0.0,
+        "newcombe_wilson95": [
+          -0.11351339317396873,
+          0.11351339317396873
+        ]
+      }
+    },
+    {
+      "a_cell_id": "C017",
+      "action": "rest",
+      "action_only": {
+        "a": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "b": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "estimate": 0.0,
+        "newcombe_wilson95": [
+          -0.11351339317396873,
+          0.11351339317396873
+        ]
+      },
+      "analysis_stage": "post_result_measurement_sensitivity",
+      "arm": "energy_control",
+      "b_cell_id": "C018",
+      "change_in_estimate": 0.0,
+      "contrast": "q10_minus_q90",
+      "estimate_changed": false,
+      "persona_id": "P03",
+      "run": "qwen25_main",
+      "strict": {
+        "a": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "b": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "estimate": 0.0,
+        "newcombe_wilson95": [
+          -0.11351339317396873,
+          0.11351339317396873
+        ]
+      }
+    },
+    {
+      "a_cell_id": "C025",
+      "action": "eat",
+      "action_only": {
+        "a": {
+          "count": 2,
+          "denominator": 30,
+          "estimate": 0.06666666666666667,
+          "wilson95": [
+            0.01847702379127039,
+            0.21323458362616918
+          ]
+        },
+        "b": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "estimate": 0.06666666666666667,
+        "newcombe_wilson95": [
+          -0.05665215635044715,
+          0.21323458362616915
+        ]
+      },
+      "analysis_stage": "post_result_measurement_sensitivity",
+      "arm": "hunger_control",
+      "b_cell_id": "C026",
+      "change_in_estimate": 0.0,
+      "contrast": "q10_minus_q90",
+      "estimate_changed": false,
+      "persona_id": "P03",
+      "run": "qwen25_main",
+      "strict": {
+        "a": {
+          "count": 2,
+          "denominator": 30,
+          "estimate": 0.06666666666666667,
+          "wilson95": [
+            0.01847702379127039,
+            0.21323458362616918
+          ]
+        },
+        "b": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "estimate": 0.06666666666666667,
+        "newcombe_wilson95": [
+          -0.05665215635044715,
+          0.21323458362616915
+        ]
+      }
+    },
+    {
+      "a_cell_id": "C019",
+      "action": "rest",
+      "action_only": {
+        "a": {
+          "count": 1,
+          "denominator": 30,
+          "estimate": 0.03333333333333333,
+          "wilson95": [
+            0.005908590381612455,
+            0.1667039099140917
+          ]
+        },
+        "b": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "estimate": 0.03333333333333333,
+        "newcombe_wilson95": [
+          -0.0834459754325434,
+          0.1667039099140917
+        ]
+      },
+      "analysis_stage": "post_result_measurement_sensitivity",
+      "arm": "energy_control",
+      "b_cell_id": "C020",
+      "change_in_estimate": 0.0,
+      "contrast": "q10_minus_q90",
+      "estimate_changed": false,
+      "persona_id": "P04",
+      "run": "qwen25_main",
+      "strict": {
+        "a": {
+          "count": 1,
+          "denominator": 30,
+          "estimate": 0.03333333333333333,
+          "wilson95": [
+            0.005908590381612455,
+            0.1667039099140917
+          ]
+        },
+        "b": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "estimate": 0.03333333333333333,
+        "newcombe_wilson95": [
+          -0.0834459754325434,
+          0.1667039099140917
+        ]
+      }
+    },
+    {
+      "a_cell_id": "C027",
+      "action": "eat",
+      "action_only": {
+        "a": {
+          "count": 2,
+          "denominator": 30,
+          "estimate": 0.06666666666666667,
+          "wilson95": [
+            0.01847702379127039,
+            0.21323458362616918
+          ]
+        },
+        "b": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "estimate": 0.06666666666666667,
+        "newcombe_wilson95": [
+          -0.05665215635044715,
+          0.21323458362616915
+        ]
+      },
+      "analysis_stage": "post_result_measurement_sensitivity",
+      "arm": "hunger_control",
+      "b_cell_id": "C028",
+      "change_in_estimate": 0.0,
+      "contrast": "q10_minus_q90",
+      "estimate_changed": false,
+      "persona_id": "P04",
+      "run": "qwen25_main",
+      "strict": {
+        "a": {
+          "count": 2,
+          "denominator": 30,
+          "estimate": 0.06666666666666667,
+          "wilson95": [
+            0.01847702379127039,
+            0.21323458362616918
+          ]
+        },
+        "b": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "estimate": 0.06666666666666667,
+        "newcombe_wilson95": [
+          -0.05665215635044715,
+          0.21323458362616915
+        ]
+      }
+    }
+  ],
+  "created_at_utc": "2026-11-24T06:39:16.165651+00:00",
+  "formal_calls": 2040,
+  "hash_validation_and_interval_helper_sha256": "d62c25c663d0421174fdd78f9ca91bebd9eea875e4e465cc70e953bbccc21f80",
+  "limitations": [
+    "This is a post-result alternative measurement rule, not a replacement for the frozen strict primary outcome.",
+    "Recovering a legal action does not repair an executable decision with invalid duration/effects or validate its explanation.",
+    "Malformed JSON and illegal action labels remain rejected; only optional-field checks differ.",
+    "Both estimates retain completed-call denominators. Validity rates change their meaning under the two rules.",
+    "Intervals are pointwise Wilson/Newcombe summaries, not a new confirmatory multiple-comparison family.",
+    "Duration values are recorded as generated; no seconds-to-ticks conversion or inferred cause is imposed."
+  ],
+  "original_primary_preserved": true,
+  "peer_effects": [
+    {
+      "a_cell_id": "C003",
+      "action": "study",
+      "action_only": {
+        "a": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "b": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "estimate": 0.0,
+        "newcombe_wilson95": [
+          -0.11351339317396873,
+          0.11351339317396873
+        ]
+      },
+      "analysis_stage": "post_result_measurement_sensitivity",
+      "arm": "peer_signal",
+      "b_cell_id": "C001",
+      "change_in_estimate": 0.0,
+      "contrast": "q90_minus_q10",
+      "estimate_changed": false,
+      "persona_id": "P01",
+      "run": "qwen3_main",
+      "strict": {
+        "a": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "b": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "estimate": 0.0,
+        "newcombe_wilson95": [
+          -0.11351339317396873,
+          0.11351339317396873
+        ]
+      }
+    },
+    {
+      "a_cell_id": "C006",
+      "action": "study",
+      "action_only": {
+        "a": {
+          "count": 9,
+          "denominator": 30,
+          "estimate": 0.3,
+          "wilson95": [
+            0.16664748268243804,
+            0.4787578745871496
+          ]
+        },
+        "b": {
+          "count": 1,
+          "denominator": 30,
+          "estimate": 0.03333333333333333,
+          "wilson95": [
+            0.005908590381612455,
+            0.1667039099140917
+          ]
+        },
+        "estimate": 0.26666666666666666,
+        "newcombe_wilson95": [
+          0.07806495783979894,
+          0.44751603562570685
+        ]
+      },
+      "analysis_stage": "post_result_measurement_sensitivity",
+      "arm": "peer_signal",
+      "b_cell_id": "C004",
+      "change_in_estimate": 0.0,
+      "contrast": "q90_minus_q10",
+      "estimate_changed": false,
+      "persona_id": "P02",
+      "run": "qwen3_main",
+      "strict": {
+        "a": {
+          "count": 9,
+          "denominator": 30,
+          "estimate": 0.3,
+          "wilson95": [
+            0.16664748268243804,
+            0.4787578745871496
+          ]
+        },
+        "b": {
+          "count": 1,
+          "denominator": 30,
+          "estimate": 0.03333333333333333,
+          "wilson95": [
+            0.005908590381612455,
+            0.1667039099140917
+          ]
+        },
+        "estimate": 0.26666666666666666,
+        "newcombe_wilson95": [
+          0.07806495783979894,
+          0.44751603562570685
+        ]
+      }
+    },
+    {
+      "a_cell_id": "C009",
+      "action": "study",
+      "action_only": {
+        "a": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "b": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "estimate": 0.0,
+        "newcombe_wilson95": [
+          -0.11351339317396873,
+          0.11351339317396873
+        ]
+      },
+      "analysis_stage": "post_result_measurement_sensitivity",
+      "arm": "peer_signal",
+      "b_cell_id": "C007",
+      "change_in_estimate": 0.0,
+      "contrast": "q90_minus_q10",
+      "estimate_changed": false,
+      "persona_id": "P03",
+      "run": "qwen3_main",
+      "strict": {
+        "a": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "b": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "estimate": 0.0,
+        "newcombe_wilson95": [
+          -0.11351339317396873,
+          0.11351339317396873
+        ]
+      }
+    },
+    {
+      "a_cell_id": "C012",
+      "action": "study",
+      "action_only": {
+        "a": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "b": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "estimate": 0.0,
+        "newcombe_wilson95": [
+          -0.11351339317396873,
+          0.11351339317396873
+        ]
+      },
+      "analysis_stage": "post_result_measurement_sensitivity",
+      "arm": "peer_signal",
+      "b_cell_id": "C010",
+      "change_in_estimate": 0.0,
+      "contrast": "q90_minus_q10",
+      "estimate_changed": false,
+      "persona_id": "P04",
+      "run": "qwen3_main",
+      "strict": {
+        "a": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "b": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "estimate": 0.0,
+        "newcombe_wilson95": [
+          -0.11351339317396873,
+          0.11351339317396873
+        ]
+      }
+    },
+    {
+      "a_cell_id": "C003",
+      "action": "study",
+      "action_only": {
+        "a": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "b": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "estimate": 0.0,
+        "newcombe_wilson95": [
+          -0.11351339317396873,
+          0.11351339317396873
+        ]
+      },
+      "analysis_stage": "post_result_measurement_sensitivity",
+      "arm": "peer_signal",
+      "b_cell_id": "C001",
+      "change_in_estimate": 0.0,
+      "contrast": "q90_minus_q10",
+      "estimate_changed": false,
+      "persona_id": "P01",
+      "run": "qwen3_time16",
+      "strict": {
+        "a": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "b": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "estimate": 0.0,
+        "newcombe_wilson95": [
+          -0.11351339317396873,
+          0.11351339317396873
+        ]
+      }
+    },
+    {
+      "a_cell_id": "C006",
+      "action": "study",
+      "action_only": {
+        "a": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "b": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "estimate": 0.0,
+        "newcombe_wilson95": [
+          -0.11351339317396873,
+          0.11351339317396873
+        ]
+      },
+      "analysis_stage": "post_result_measurement_sensitivity",
+      "arm": "peer_signal",
+      "b_cell_id": "C004",
+      "change_in_estimate": 0.0,
+      "contrast": "q90_minus_q10",
+      "estimate_changed": false,
+      "persona_id": "P02",
+      "run": "qwen3_time16",
+      "strict": {
+        "a": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "b": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "estimate": 0.0,
+        "newcombe_wilson95": [
+          -0.11351339317396873,
+          0.11351339317396873
+        ]
+      }
+    },
+    {
+      "a_cell_id": "C009",
+      "action": "study",
+      "action_only": {
+        "a": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "b": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "estimate": 0.0,
+        "newcombe_wilson95": [
+          -0.11351339317396873,
+          0.11351339317396873
+        ]
+      },
+      "analysis_stage": "post_result_measurement_sensitivity",
+      "arm": "peer_signal",
+      "b_cell_id": "C007",
+      "change_in_estimate": 0.0,
+      "contrast": "q90_minus_q10",
+      "estimate_changed": false,
+      "persona_id": "P03",
+      "run": "qwen3_time16",
+      "strict": {
+        "a": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "b": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "estimate": 0.0,
+        "newcombe_wilson95": [
+          -0.11351339317396873,
+          0.11351339317396873
+        ]
+      }
+    },
+    {
+      "a_cell_id": "C012",
+      "action": "study",
+      "action_only": {
+        "a": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "b": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "estimate": 0.0,
+        "newcombe_wilson95": [
+          -0.11351339317396873,
+          0.11351339317396873
+        ]
+      },
+      "analysis_stage": "post_result_measurement_sensitivity",
+      "arm": "peer_signal",
+      "b_cell_id": "C010",
+      "change_in_estimate": 0.0,
+      "contrast": "q90_minus_q10",
+      "estimate_changed": false,
+      "persona_id": "P04",
+      "run": "qwen3_time16",
+      "strict": {
+        "a": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "b": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "estimate": 0.0,
+        "newcombe_wilson95": [
+          -0.11351339317396873,
+          0.11351339317396873
+        ]
+      }
+    },
+    {
+      "a_cell_id": "C003",
+      "action": "study",
+      "action_only": {
+        "a": {
+          "count": 12,
+          "denominator": 30,
+          "estimate": 0.4,
+          "wilson95": [
+            0.24590628116801863,
+            0.5767963974667752
+          ]
+        },
+        "b": {
+          "count": 10,
+          "denominator": 30,
+          "estimate": 0.3333333333333333,
+          "wilson95": [
+            0.19230498083676142,
+            0.5121994835545616
+          ]
+        },
+        "estimate": 0.06666666666666671,
+        "newcombe_wilson95": [
+          -0.16942224429365926,
+          0.29282139769197
+        ]
+      },
+      "analysis_stage": "post_result_measurement_sensitivity",
+      "arm": "peer_signal",
+      "b_cell_id": "C001",
+      "change_in_estimate": 0.0,
+      "contrast": "q90_minus_q10",
+      "estimate_changed": false,
+      "persona_id": "P01",
+      "run": "qwen25_main",
+      "strict": {
+        "a": {
+          "count": 12,
+          "denominator": 30,
+          "estimate": 0.4,
+          "wilson95": [
+            0.24590628116801863,
+            0.5767963974667752
+          ]
+        },
+        "b": {
+          "count": 10,
+          "denominator": 30,
+          "estimate": 0.3333333333333333,
+          "wilson95": [
+            0.19230498083676142,
+            0.5121994835545616
+          ]
+        },
+        "estimate": 0.06666666666666671,
+        "newcombe_wilson95": [
+          -0.16942224429365926,
+          0.29282139769197
+        ]
+      }
+    },
+    {
+      "a_cell_id": "C006",
+      "action": "study",
+      "action_only": {
+        "a": {
+          "count": 28,
+          "denominator": 30,
+          "estimate": 0.9333333333333333,
+          "wilson95": [
+            0.7867654163738309,
+            0.9815229762087296
+          ]
+        },
+        "b": {
+          "count": 25,
+          "denominator": 30,
+          "estimate": 0.8333333333333334,
+          "wilson95": [
+            0.6643564949358398,
+            0.9266345762815145
+          ]
+        },
+        "estimate": 0.09999999999999998,
+        "newcombe_wilson95": [
+          -0.07374485954273044,
+          0.27571401081095065
+        ]
+      },
+      "analysis_stage": "post_result_measurement_sensitivity",
+      "arm": "peer_signal",
+      "b_cell_id": "C004",
+      "change_in_estimate": 0.0,
+      "contrast": "q90_minus_q10",
+      "estimate_changed": false,
+      "persona_id": "P02",
+      "run": "qwen25_main",
+      "strict": {
+        "a": {
+          "count": 28,
+          "denominator": 30,
+          "estimate": 0.9333333333333333,
+          "wilson95": [
+            0.7867654163738309,
+            0.9815229762087296
+          ]
+        },
+        "b": {
+          "count": 25,
+          "denominator": 30,
+          "estimate": 0.8333333333333334,
+          "wilson95": [
+            0.6643564949358398,
+            0.9266345762815145
+          ]
+        },
+        "estimate": 0.09999999999999998,
+        "newcombe_wilson95": [
+          -0.07374485954273044,
+          0.27571401081095065
+        ]
+      }
+    },
+    {
+      "a_cell_id": "C009",
+      "action": "study",
+      "action_only": {
+        "a": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "b": {
+          "count": 3,
+          "denominator": 30,
+          "estimate": 0.1,
+          "wilson95": [
+            0.03459988874733419,
+            0.25621082579184085
+          ]
+        },
+        "estimate": -0.1,
+        "newcombe_wilson95": [
+          -0.25621082579184085,
+          0.031005591413989175
+        ]
+      },
+      "analysis_stage": "post_result_measurement_sensitivity",
+      "arm": "peer_signal",
+      "b_cell_id": "C007",
+      "change_in_estimate": 0.0,
+      "contrast": "q90_minus_q10",
+      "estimate_changed": false,
+      "persona_id": "P03",
+      "run": "qwen25_main",
+      "strict": {
+        "a": {
+          "count": 0,
+          "denominator": 30,
+          "estimate": 0.0,
+          "wilson95": [
+            0.0,
+            0.11351339317396873
+          ]
+        },
+        "b": {
+          "count": 3,
+          "denominator": 30,
+          "estimate": 0.1,
+          "wilson95": [
+            0.03459988874733419,
+            0.25621082579184085
+          ]
+        },
+        "estimate": -0.1,
+        "newcombe_wilson95": [
+          -0.25621082579184085,
+          0.031005591413989175
+        ]
+      }
+    },
+    {
+      "a_cell_id": "C012",
+      "action": "study",
+      "action_only": {
+        "a": {
+          "count": 4,
+          "denominator": 30,
+          "estimate": 0.13333333333333333,
+          "wilson95": [
+            0.053096554840547455,
+            0.2968132668203629
+          ]
+        },
+        "b": {
+          "count": 2,
+          "denominator": 30,
+          "estimate": 0.06666666666666667,
+          "wilson95": [
+            0.01847702379127039,
+            0.21323458362616918
+          ]
+        },
+        "estimate": 0.06666666666666667,
+        "newcombe_wilson95": [
+          -0.10042640591489792,
+          0.2371012005304991
+        ]
+      },
+      "analysis_stage": "post_result_measurement_sensitivity",
+      "arm": "peer_signal",
+      "b_cell_id": "C010",
+      "change_in_estimate": 0.0,
+      "contrast": "q90_minus_q10",
+      "estimate_changed": false,
+      "persona_id": "P04",
+      "run": "qwen25_main",
+      "strict": {
+        "a": {
+          "count": 4,
+          "denominator": 30,
+          "estimate": 0.13333333333333333,
+          "wilson95": [
+            0.053096554840547455,
+            0.2968132668203629
+          ]
+        },
+        "b": {
+          "count": 2,
+          "denominator": 30,
+          "estimate": 0.06666666666666667,
+          "wilson95": [
+            0.01847702379127039,
+            0.21323458362616918
+          ]
+        },
+        "estimate": 0.06666666666666667,
+        "newcombe_wilson95": [
+          -0.10042640591489792,
+          0.2371012005304991
+        ]
+      }
+    }
+  ],
+  "pilots_included": false,
+  "plan": {
+    "action_only_rule": "Parsed object + legal action + EOS; ignore optional duration_ticks and contextual_effects checks. This is recoverable action-choice sensitivity, not a repaired executable decision or a replacement primary outcome.",
+    "analysis_stage": "post_result_measurement_sensitivity",
+    "client_date": "2026-11-24",
+    "contrasts": {
+      "controls": "All 16 frozen low-minus-high rest/energy or eat/satiety contrasts for both rules.",
+      "peer": "All 12 frozen high-minus-low study contrasts for both measurement rules, counts per completed denominator; compare whether study counts or effects change.",
+      "uncertainty": "Retain pointwise Wilson/Newcombe 95% as descriptive measurement sensitivity. No p-values, no new confirmatory family, no classifier selection based on favorable outcome."
+    },
+    "created_at_utc": "2026-11-24T06:32:02.318865+00:00",
+    "disclosure": "Formal outcomes and failure categories have already been inspected, including legal exercise actions with duration_ticks=300 rejected by the strict parser. This is not preregistration, does not replace the registered primary outcome, and makes no new model calls.",
+    "extraction": "Use original first opening brace through last closing brace, json.loads; require one parsed dict. Do not repair malformed JSON or substitute/salvage illegal actions. Action normalization is the registered strip().lower() only.",
+    "figure": "NEW compact 3-run x 4-profile peer-dose plot using all three levels, strict and action-only curves/pointwise Wilson intervals; annotate differences explicitly. No old/pilot data.",
+    "formal_calls": 2040,
+    "formal_runs": [
+      "qwen3_main",
+      "qwen3_time16",
+      "qwen25_main"
+    ],
+    "outcomes": "Per run/profile/arm/level: strict/action-only validity and all seven action counts; raw parsing, action, optional schema, termination reasons; duration type/value and optional-context failure summaries.",
+    "outputs": "NEW measurement_audit/ JSON/CSV plus optional PDF/PNG figure and hash receipt. Do not edit frozen/raw/original analysis/paper files.",
+    "pilots_included": false,
+    "raw_source": "All formal final.jsonl raw_content strings and generated_token_ids/EOS metadata; cached parsed/action/parse_status fields are not used to classify audit outcomes. Existing hashes and planned-call identities are validated.",
+    "schema_version": 1,
+    "strict_rule": "Parsed object + legal action + EOS; optional duration_ticks, if supplied, must have exact int type and lie in [1,6]; optional contextual_effects, if supplied, must be an object. Mirrors registered structural validity independently.",
+    "termination": "Require generated token sequence to terminate at EOS, with logged stop/eos and no truncation. Record any token/log termination mismatch.",
+    "timezone": "Asia/Shanghai",
+    "validation": "Independent parser fixtures for malformed JSON, illegal action, duration=300, bool/float duration, nonobject effects, and non-EOS; verify strict agrees with archived structural-validity decisions and show all disagreements rather than overwrite them."
+  },
+  "runs": {
+    "qwen25_main": {
+      "action_only_valid": 836,
+      "categories": {
+        "illegal_action": 2,
+        "invalid_json": 2,
+        "strict_valid": 836
+      },
+      "completed": 840,
+      "recovered_actions": {},
+      "strict_valid": 836,
+      "study_action_only": 269,
+      "study_strict": 269
+    },
+    "qwen3_main": {
+      "action_only_valid": 840,
+      "categories": {
+        "recoverable_action_auxiliary_schema_failure": 19,
+        "strict_valid": 821
+      },
+      "completed": 840,
+      "recovered_actions": {
+        "exercise": 19
+      },
+      "strict_valid": 821,
+      "study_action_only": 41,
+      "study_strict": 41
+    },
+    "qwen3_time16": {
+      "action_only_valid": 360,
+      "categories": {
+        "recoverable_action_auxiliary_schema_failure": 18,
+        "strict_valid": 342
+      },
+      "completed": 360,
+      "recovered_actions": {
+        "exercise": 18
+      },
+      "strict_valid": 342,
+      "study_action_only": 0,
+      "study_strict": 0
+    }
+  },
+  "schema_version": 1,
+  "source_hashes": {
+    "measurement_audit_plan.json": "b0d7502a73e4dffea1f58f1a8ba91d3d6cbbce0bea0780dd4f8d42cb92943323",
+    "remote_return/analysis/qwen25_main/analysis.json": "045d6b637c97d080770cac143c8877665bb23dc7a5d90099c64c9485159b91af",
+    "remote_return/analysis/qwen3_main/analysis.json": "4ae6aaf618c74d32cd5b04801314d0ac62c08cf5550b08639550fb52b5bfcd43",
+    "remote_return/analysis/qwen3_time16/analysis.json": "cc00858c155852e9cda7acf8c03c0d7db41197a4ee7026ccd43ade372abca67d",
+    "remote_return/prepared/cells.jsonl": "4f6052a8815380ea3ef19d9becd5409d659c59404f8b23770bc02c5ced2a9d26",
+    "remote_return/prepared/preflight.json": "b78a58ab240c65ad062e34922a5bf6c939dc68cbcf72e8e0ffdb16606d5094fe",
+    "remote_return/prepared/schedule.jsonl": "18233cdacd9cdc8b8816ebcd67fc3e6a21224cdeddbfb9009c174392a05b4d41",
+    "remote_return/prepared_time16/cells.jsonl": "9d427a7cea32743e5a91ec597e426892e8e8851c023d9499eb73f65547be185b",
+    "remote_return/prepared_time16/preflight.json": "6f385b31457eaa0a73f5c8c294ca785a34434640076d2325d4b1169eacbea705",
+    "remote_return/prepared_time16/schedule.jsonl": "1a5f5f7120471de01d7715b2b1ada597be1ff995248ee1cc1dc8c5784db6b631",
+    "remote_return/runs/qwen25_main/final.jsonl": "5301e8a9ea1e6aef2cc750fd07f3e664b81331fc9a7a7546cdd5c63db79c0fae",
+    "remote_return/runs/qwen25_main/manifest.json": "417f39cc809efac425ec5bb02d241a4e5dee211441b1741abb5cb7addb45856c",
+    "remote_return/runs/qwen3_main/final.jsonl": "1100ff5c45bdda39317912cc5fbf38fe1edf93148cf22f3ecc41e1e23975af73",
+    "remote_return/runs/qwen3_main/manifest.json": "f93bc34a910ea29fc24f0c47dee2426a9fac95d1512347056f0dca188fc49c7b",
+    "remote_return/runs/qwen3_time16/final.jsonl": "962bd8cba71cbd5e983720efa68e086cb7abe987812f44dd574d28b529f56356",
+    "remote_return/runs/qwen3_time16/manifest.json": "fdadefd9e5c19d6c584004defae2056bc268eabbca22af716ba57f9c1b45ccf6"
+  },
+  "strict_validity_disagreements": [],
+  "study_changed_cells": [],
+  "termination_disagreements": [],
+  "tool_sha256": "a3f595729626b97848b34710250b46b647a5cc62623957c7177de50beebd806f"
+}

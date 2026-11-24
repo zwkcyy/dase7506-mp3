@@ -1,0 +1,29 @@
+{
+  "action_only_rule": "Parsed object + legal action + EOS; ignore optional duration_ticks and contextual_effects checks. This is recoverable action-choice sensitivity, not a repaired executable decision or a replacement primary outcome.",
+  "analysis_stage": "post_result_measurement_sensitivity",
+  "client_date": "2026-11-24",
+  "contrasts": {
+    "controls": "All 16 frozen low-minus-high rest/energy or eat/satiety contrasts for both rules.",
+    "peer": "All 12 frozen high-minus-low study contrasts for both measurement rules, counts per completed denominator; compare whether study counts or effects change.",
+    "uncertainty": "Retain pointwise Wilson/Newcombe 95% as descriptive measurement sensitivity. No p-values, no new confirmatory family, no classifier selection based on favorable outcome."
+  },
+  "created_at_utc": "2026-11-24T06:32:02.318865+00:00",
+  "disclosure": "Formal outcomes and failure categories have already been inspected, including legal exercise actions with duration_ticks=300 rejected by the strict parser. This is not preregistration, does not replace the registered primary outcome, and makes no new model calls.",
+  "extraction": "Use original first opening brace through last closing brace, json.loads; require one parsed dict. Do not repair malformed JSON or substitute/salvage illegal actions. Action normalization is the registered strip().lower() only.",
+  "figure": "NEW compact 3-run x 4-profile peer-dose plot using all three levels, strict and action-only curves/pointwise Wilson intervals; annotate differences explicitly. No old/pilot data.",
+  "formal_calls": 2040,
+  "formal_runs": [
+    "qwen3_main",
+    "qwen3_time16",
+    "qwen25_main"
+  ],
+  "outcomes": "Per run/profile/arm/level: strict/action-only validity and all seven action counts; raw parsing, action, optional schema, termination reasons; duration type/value and optional-context failure summaries.",
+  "outputs": "NEW measurement_audit/ JSON/CSV plus optional PDF/PNG figure and hash receipt. Do not edit frozen/raw/original analysis/paper files.",
+  "pilots_included": false,
+  "raw_source": "All formal final.jsonl raw_content strings and generated_token_ids/EOS metadata; cached parsed/action/parse_status fields are not used to classify audit outcomes. Existing hashes and planned-call identities are validated.",
+  "schema_version": 1,
+  "strict_rule": "Parsed object + legal action + EOS; optional duration_ticks, if supplied, must have exact int type and lie in [1,6]; optional contextual_effects, if supplied, must be an object. Mirrors registered structural validity independently.",
+  "termination": "Require generated token sequence to terminate at EOS, with logged stop/eos and no truncation. Record any token/log termination mismatch.",
+  "timezone": "Asia/Shanghai",
+  "validation": "Independent parser fixtures for malformed JSON, illegal action, duration=300, bool/float duration, nonobject effects, and non-EOS; verify strict agrees with archived structural-validity decisions and show all disagreements rather than overwrite them."
+}

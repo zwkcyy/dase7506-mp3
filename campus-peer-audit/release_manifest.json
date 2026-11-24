@@ -44,14 +44,14 @@
       "sha256": "d028bad8b9f42b1442b942918d43ffa8be0f4cc89c10daa517341281334a4a6d"
     },
     "PUBLIC_DATA_AUDIT.json": {
-      "bytes": 1645,
+      "bytes": 1842,
       "kind": "new_public_document_or_tool",
-      "sha256": "aacdf6051c134d4a6711a23e39ecca22d7e3e1937f897687ab0b1ca4e0e28043"
+      "sha256": "bd846e444ef427b4491f64d65e30a015ee450f34c182652824ea82c86dd4f6d8"
     },
     "README.md": {
-      "bytes": 6175,
+      "bytes": 8829,
       "kind": "new_public_document_or_tool",
-      "sha256": "33e4edc6a1bb90b0d26c2c9a129e5a97ba2505d899f748562b4e3d13575d0f1a"
+      "sha256": "923c2cee107b1a83ef3b52da7cb914092a6e38f4ce9b95276b478835c3476cc6"
     },
     "analysis/qwen25_main/analysis.json": {
       "bytes": 235092,
@@ -204,10 +204,80 @@
       "sha256": "ccb58b6ef6f1aa9374ed658d100e97e93d1731038629286da29554afde8e12cd",
       "source_sha256": "ccb58b6ef6f1aa9374ed658d100e97e93d1731038629286da29554afde8e12cd"
     },
-    "paper/controls_generated.tex": {
-      "bytes": 1717,
+    "measurement_audit/action_distributions.csv": {
+      "bytes": 64929,
       "kind": "new_public_document_or_tool",
-      "sha256": "5aa9fe60877130023d95d70d6f9149a64df1222bdf90fdac9c3a5327b9f96603"
+      "sha256": "3163612ca30775e8cdc9e3ba0fa4d26823145a16b60451a4e159a85a42b397f3"
+    },
+    "measurement_audit/all_cells.csv": {
+      "bytes": 7085,
+      "kind": "new_public_document_or_tool",
+      "sha256": "186ef2226710a2211cbd9b9cec0137b03d5df69676596ddf9f8964ead4638187"
+    },
+    "measurement_audit/audit.json": {
+      "bytes": 112552,
+      "kind": "new_public_document_or_tool",
+      "sha256": "37d8798e1ed338eef56b5bfa0d98f4ec25281c0175f7bfa253d3611811b7edfa"
+    },
+    "measurement_audit/call_classification.csv": {
+      "bytes": 277887,
+      "kind": "new_public_document_or_tool",
+      "sha256": "67c8f12c9568dcdc5cb2c49072b83500d9593988e69e1dc188966979264db85f"
+    },
+    "measurement_audit/control_contrasts.csv": {
+      "bytes": 3598,
+      "kind": "new_public_document_or_tool",
+      "sha256": "b4c57ef49b3606e1b13b4528af98042ad6a7082fc5b329ec93e8c8dec52dbd0f"
+    },
+    "measurement_audit/duration_values.csv": {
+      "bytes": 13140,
+      "kind": "new_public_document_or_tool",
+      "sha256": "8552a255beb15ec14f95e19bbcbef3e2f31753db7231be83e11654dad05f6852"
+    },
+    "measurement_audit/independent_review.json": {
+      "bytes": 7132,
+      "kind": "new_public_document_or_tool",
+      "sha256": "f58225bb25ce51a01e31f60fd49dedd6110cf2ef7ad263e217e320bbdf70f01c"
+    },
+    "measurement_audit/optional_failure_reasons.csv": {
+      "bytes": 646,
+      "kind": "new_public_document_or_tool",
+      "sha256": "48a8859d910032f0d69e26bd8eaf8c7778d0e9aba5bf74c7fcc9876d70c9f3dc"
+    },
+    "measurement_audit/peer_contrasts.csv": {
+      "bytes": 2702,
+      "kind": "new_public_document_or_tool",
+      "sha256": "5833233047ec1aefb0fa9e084080e8585bf7bb84f1673d0b916ba959c99c80be"
+    },
+    "measurement_audit/peer_dose_measurement_audit.pdf": {
+      "bytes": 32562,
+      "kind": "new_public_document_or_tool",
+      "sha256": "106f39963be74b7ab55c9540a1ad421e265bbe4334df617d124260d536a15a63"
+    },
+    "measurement_audit/peer_dose_measurement_audit.png": {
+      "bytes": 309965,
+      "kind": "new_public_document_or_tool",
+      "sha256": "b5997794074ca19692a08c03186a79294020d06119f5a6f0c0163e37f41dccfb"
+    },
+    "measurement_audit/receipt.json": {
+      "bytes": 3115,
+      "kind": "new_public_document_or_tool",
+      "sha256": "3ff573790f2b620184bef523ac4c63dca9d027d1b2b65446ec6abfd8b8e4c861"
+    },
+    "measurement_audit_plan.json": {
+      "bytes": 3099,
+      "kind": "new_public_document_or_tool",
+      "sha256": "b0d7502a73e4dffea1f58f1a8ba91d3d6cbbce0bea0780dd4f8d42cb92943323"
+    },
+    "paper/controls_generated.tex": {
+      "bytes": 1692,
+      "kind": "new_public_document_or_tool",
+      "sha256": "5def79c94be99fa5b764ac3d32d2c85cb8997560b024e8e0b57bb438f547f579"
+    },
+    "paper/figures/peer_dose_curves.pdf": {
+      "bytes": 32562,
+      "kind": "new_public_document_or_tool",
+      "sha256": "106f39963be74b7ab55c9540a1ad421e265bbe4334df617d124260d536a15a63"
     },
     "paper/figures/robustness_overview.pdf": {
       "bytes": 41445,
@@ -215,19 +285,24 @@
       "sha256": "27b3341bd496f4fb5d06c5d15c7b214389f81a90c97a29302d4c099111ddf8f3"
     },
     "paper/main.tex": {
-      "bytes": 25046,
+      "bytes": 30341,
       "kind": "new_public_document_or_tool",
-      "sha256": "9954fd45289b6eb9cd02a1408f0fc533d0fa925a9573bfa45d4aa9303f84c97f"
+      "sha256": "4c499db0ad9589b2ff31af8127206d24ac91e4dc0efcd60ca7c20e9a38d9ea59"
+    },
+    "paper/measurement_generated.tex": {
+      "bytes": 608,
+      "kind": "new_public_document_or_tool",
+      "sha256": "9ca3a384d898b620bd16f8190d6de61bf4ab3130b48116841743f42707a4aabd"
     },
     "paper/references.bib": {
-      "bytes": 3861,
+      "bytes": 5125,
       "kind": "new_public_document_or_tool",
-      "sha256": "d0cff76e79b80ccee713ef8f005d1f65db1bc4c895789ce4ec2f47d4966c108e"
+      "sha256": "eaa08faf47d18249334a23d3a61720e6172c8d6e547e7ca30ff18db761460ba5"
     },
     "paper/results_enhanced.tex": {
-      "bytes": 1670,
+      "bytes": 1669,
       "kind": "new_public_document_or_tool",
-      "sha256": "48f93f16b5334c9053d285067cc4e5794cbcb84e4518f7f36a5358d160548cf9"
+      "sha256": "82ee299e26e25e6497413638642a3913eb430e27455f6b722b9a09028a27bd0f"
     },
     "prepared/cells.jsonl": {
       "bytes": 148660,
@@ -277,9 +352,9 @@
       "sha256": "084e2ad0f6bf62582fa99e48607de30068ccecfea967bf9acdd7cf93017c2d67"
     },
     "requirements-figures.lock": {
-      "bytes": 216,
+      "bytes": 231,
       "kind": "new_public_document_or_tool",
-      "sha256": "7990eba59da534373d862ef4bc1bbc39d3ef500b087c6233e90563785242cc7f"
+      "sha256": "f730dc0b26e5099aa686f98c0f29a6ac3ea0418d626ec242179e94e1593b6848"
     },
     "requirements-gpu.lock": {
       "bytes": 1012,
@@ -292,6 +367,11 @@
       "sha256": "d62c25c663d0421174fdd78f9ca91bebd9eea875e4e465cc70e953bbccc21f80",
       "source_sha256": "d62c25c663d0421174fdd78f9ca91bebd9eea875e4e465cc70e953bbccc21f80"
     },
+    "tools/analyze_measurement_audit.py": {
+      "bytes": 27428,
+      "kind": "new_public_document_or_tool",
+      "sha256": "a3f595729626b97848b34710250b46b647a5cc62623957c7177de50beebd806f"
+    },
     "tools/analyze_robustness.py": {
       "bytes": 29236,
       "kind": "byte_identical_copy",
@@ -299,9 +379,9 @@
       "source_sha256": "b8a97f6a6d494f1edd4878324581acfe0ace81f40019431355d34a03b1c471b6"
     },
     "tools/build_paper_tables.py": {
-      "bytes": 4289,
+      "bytes": 5778,
       "kind": "new_public_document_or_tool",
-      "sha256": "50b424b79a38598789422fcb7ae56136dca46e1e17b575ace409c9740a83053d"
+      "sha256": "8b355c20e63549044b70101d58c90108ba3b32cd019c795f66ac63994910d7e3"
     },
     "tools/check_inputs.py": {
       "bytes": 3841,
@@ -320,9 +400,14 @@
       "source_sha256": "f295b7a6c746f44218019cdb9ba896213ff06c5fbef4da87870d880921c1343f"
     },
     "tools/reproduce.py": {
-      "bytes": 6954,
+      "bytes": 12597,
       "kind": "new_public_document_or_tool",
-      "sha256": "4877e3fdab60c3b6ec2aa3f782086a2c1ba70370fb89ad55c437b8e07c68804a"
+      "sha256": "c83eafeeaf10f197c0dda2ead9c65bcc85b2ee38d432dea002203ae78f1f8437"
+    },
+    "tools/review_measurement_independent.py": {
+      "bytes": 28416,
+      "kind": "new_public_document_or_tool",
+      "sha256": "9ab448db711bf31491bf3f1cf15cf472294a2a7c88d6544e9762c5cdbe108651"
     },
     "tools/review_robustness_independent.py": {
       "bytes": 9285,
@@ -368,10 +453,12 @@
     }
   },
   "formal_calls": 2040,
-  "paper_main_text_pages": 5,
-  "paper_total_pages": 8,
+  "measurement_analysis_stage": "post_result_measurement_sensitivity",
+  "paper_main_text_pages": 6,
+  "paper_total_pages": 9,
+  "release_tag": "campus-audit-v2",
   "repository": "zwkcyy/dase7506-mp3",
   "repository_path": "campus-peer-audit",
   "schema_version": 1,
-  "updated_at_utc": "2026-11-23T14:44:33.544835+00:00"
+  "updated_at_utc": "2026-11-24T06:42:53.012456+00:00"
 }
